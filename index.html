@@ -9,9 +9,10 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,700,800" rel="stylesheet">
 	
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" type="text/css">
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" type="text/js"/>   
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.min.js" type="text/js"> 
 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
+<script src="https://kit.fontawesome.com/58e618022f.js" crossorigin="anonymous"></script>
    <link rel="stylesheet" href="assets/css/style.css">
 
     <title>HOME | Travel Agency</title>
@@ -19,12 +20,14 @@
 
 <body>
      <!-- NAVBAR CONTENT -->
+     <!-- Header-->
+	<header class="top-bar fixed-top">
         
 <!--Navigation element-->
-    <nav class="navbar navbar-expand-lg navbar-light bg-custom-white">
+    <nav class="navbar navbar-expand-lg navbar-light bg-custom-white sticky-top">
 
     <!-- Logo Image-->
-        <a class="navbar-brand" href="index.html">
+        <a class="navbar-brand" href="#">
             <img class="logo" src="assets/images/white.png" alt="marshal logo">
         </a>
         <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -34,7 +37,7 @@
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
+                <li class="nav-item active">
                     <a class="nav-link" href="#">
 
                     </a>
@@ -42,14 +45,14 @@
             </ul>
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link" href="index.html">Home</a>
+                    <a class="nav-link" href="#">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="services.html">Our Services</a>
+                    <a class="nav-link" href="#services">Our Services</a>
                 </li>
                 
 <div class="bookings">
-  <button class="dropbtn" data-toggle="bookings">Bookings</button>
+  <button class="dropbtn" data-toggle="#bookings">Bookings</button>
   <div class="bookings-content">
     <a href="flight.html">Flights</a>
     <a href="hotel.html">Hotels</a>
@@ -58,50 +61,253 @@
 </div>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="contact.html">Contact Us</a>
+                    <a class="nav-link" href="#contact">Contact Us</a>
                 </li>
             </ul>
         </div>
     </nav>
+	</header>
+ <!-- Hero Image -->
+ 
+ <div class="hero-image" style="height: 100%;">
+  <div class="hero-text">
+    <h1 class="caption">Perfect Vacation</h1>
+    <p class="write-ups">Lets help you see the world</p>
+    <button>BOOK NOW</button>
+  </div>
+  <div class="hero-exclusions">
+    <a href="#popup1">
+      <p class="exclusions write-ups">Click here for details</p>
+    </a>
+  </div>
 
-<div class="slideshow-container">
-
-<div class="mySlides fade">
-  <div class="numbertext">1 / 3</div>
-  <img src="assets/images/Vacation.jpg" style="width:100%">
-  <div class="text">Caption Text</div>
+  <div id="popup1" class="overlay">
+    <div class="popup">
+      <a class="close" href="#">&times;</a>
+      <div class="content mt-4 mb-5">
+        <h2>Have Fun with the Perfect Vacation</h2>
+        We organize trips/tours to some of the most fascinating destinations around the world.
+        We take you to these destinations at a cost that will keep you coming for more.
+       </div>
+    </div>
+  </div>
+</div>
+<div id="about us.html">
+<div class="container-aboutus">
+<div class="img-aboutus">  
+<img class="responsive" src="assets/images/aboutus.jpg" alt="aboutus"/>
+</div> 
+<div class="about-caption">
+<h1 class="our-story mb-1">Our Story</h1>
+<p class="aboutus-text">About Us</p>
+</div></div>
 </div>
 
-<div class="mySlides fade">
-  <div class="numbertext">2 / 3</div>
-  <img src="assets/images/vacation6.jpg" style="width:100%">
-  <div class="text">Caption Two</div>
-</div>
+<section id="intro">
+        <div class="container intro-container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <div class="intro-text">
+                    <p class="center-title intro mt-5"><strong>When you can no longer take what you 've been taking....</strong></p>
+                    <h1 class="intro-text-1"><strong>Take Vacation</strong></h1>
+                        <p class="intro-text-2 mt-5">“Wether it's a summer vacation with friends, a romantic escape with a loved one,
+                         or a family-sized adventure, we have the experience and passion to make it a trip you won't forget.
+                        We strain to renew your capacity to wonder, our sweeping comprehensive range is certain to overpower you!”</p>
+                    </div>
+                </div>
+            </div>
+        </div>  
+    </section>
 
-<div class="mySlides fade">
-  <div class="numbertext">3 / 3</div>
-  <img src="assets/images/tour3.jpg" style="width:100%">
-  <div class="text">Caption Three</div>
-</div>
+    <section id="services" class="section-full main-plain">
+        <!-- Section: Testimonials v.1 -->
+        <div class="container text-center my-5 p-1">
 
-<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-<a class="next" onclick="plusSlides(1)">&#10095;</a>
+            <!-- Section heading -->
+            <h2 class="h1-responsive font-weight-bold my-5">Our Services</h2>
+            <!-- Section description -->
+            <p class="dark-grey-text w-responsive mx-auto mb-5">
+                With access to over 500 IATA airlines worldwide for reservations and bookings, and over 500 IATA hoteliers worldwide for reservations and bookings, 
+                We assist our clients in planning their trips to cut down transportation cost, time and resources.
+                We manage the frequent flier memberships on behalf of clients to ensure maximum rewards and update them on latest beneficial information on their loved airlines. 
+                We also provide car hire needs of our clients in all major cities in the world, both pick ups and drop offs. To add to that, 
+                we provide airport protocol services at airports including a special meet-and-assist service.
+            </p>
 
-</div>
-<br>
+            <!-- Grid row -->
+            <div class="row">
 
-<div style="text-align:center">
-  <span class="dot" onclick="currentSlide(1)"></span> 
-  <span class="dot" onclick="currentSlide(2)"></span> 
-  <span class="dot" onclick="currentSlide(3)"></span> 
-</div>
+                <!--Grid column-->
+                <div class="col-lg-4 col-md-12 mb-lg-0 mb-4">
+                    <!--Card-->
+                    <div class="card testimonial-card shadow border-0">
+                        <!--Background color-->
+                        <div class="card-up info-color"></div>
+                        <!--Avatar-->
+                        <div class="avatar mx-auto white">
+                            <img src="assets/images/flight.jpg" class="img-fluid">
+                        </div>
+                        <div class="card-body">
+                            <!--Name-->
+                            <h4 class="font-weight-bold mb-4">Flight Bookings</h4>
+                            <hr>
+                            <!--Quotation-->
+                            <h3 class="dark-grey-text mt-4 mb-4">
+                                <b><i class="fas fa-plane" aria-hidden="true"></i></b>
+                            </h3>
+                            <a href="contact" class="btn btn-info">More Information</a>
+                        </div>
+                    </div>
+                    <!--Card-->
+                </div>
+                <!--Grid column-->
+
+                <!--Grid column-->
+                <div class="col-lg-4 col-md-6 mb-md-0 mb-4">
+                    <!--Card-->
+                    <div class="card testimonial-card shadow border-0">
+                        <!--Background color-->
+                        <div class="card-up blue-gradient">
+                        </div>
+                        <!--Avatar-->
+                        <div class="avatar mx-auto white">
+                            <img src="assets/images/hotel.jpg" class="img-fluid">
+                        </div>
+                        <div class="card-body">
+                            <!--Name-->
+                            <h4 class="font-weight-bold mb-4">Hotel Bookings</h4>
+                            <hr>
+                            <!--Quotation-->
+                            <h3 class="dark-grey-text mt-4 mb-4">
+                                <b><i class="fas fa-bed" aria-hidden="true"></i></b>
+                            </h3>
+                            <a href="contact" class="btn btn-info">More Information</a>
+                        </div>
+                    </div>
+                    <!--Card-->
+                </div>
+                <!--Grid column-->
+
+                <!--Grid column-->
+                <div class="col-lg-4 col-md-6">
+                    <!--Card-->
+                    <div class="card testimonial-card shadow border-0">
+                        <!--Background color-->
+                        <div class="card-up indigo"></div>
+                        <!--Avatar-->
+                        <div class="avatar mx-auto white">
+                            <img src="assets/images/car.png" class="img-fluid">
+                        </div>
+                        <div class="card-body">
+                            <!--Name-->
+                            <h4 class="font-weight-bold mb-4">Car Service</h4>
+                            <hr>
+                            <!--Quotation-->
+                            <h3 class="dark-grey-text mt-4 mb-4">
+                                <b><i class="fas fa-car" aria-hidden="true"></i></b>
+                            </h3>
+                            <a href="contact" class="btn btn-info">More Information</a>
+                        </div>
+                    </div>
+                    <!--Card-->
+                </div>
+                <!--Grid column-->
+
+            </div>
+            <!-- Grid row -->
+
+            <!-- Grid row -->
+            <div class="row mt-4">
+
+                <!--Grid column-->
+                <div class="col-lg-4 col-md-12 mb-lg-0 mb-4">
+                    <!--Card-->
+                    <div class="card testimonial-card shadow border-0">
+                        <!--Background color-->
+                        <div class="card-up info-color"></div>
+                        <!--Avatar-->
+                        <div class="avatar mx-auto white">
+                            <img src="assets/images/cruise.jpeg" class="img-fluid">
+                        </div>
+                        <div class="card-body">
+                            <!--Name-->
+                            <h4 class="font-weight-bold mb-4">Tour/Cruise Packaging</h4>
+                            <hr>
+                            <!--Quotation-->
+                            <h3 class="dark-grey-text mt-4 mb-4">
+                                <b><i class="fas fa-ship" aria-hidden="true"></i></b>
+                            </h3>
+                            <a href="contact" class="btn btn-info">More Information</a>
+                        </div>
+                    </div>
+                    <!--Card-->
+                </div>
+                <!--Grid column-->
+
+                <!--Grid column-->
+                <div class="col-lg-4 col-md-6 mb-md-0 mb-4">
+                    <!--Card-->
+                    <div class="card testimonial-card shadow border-0">
+                        <!--Background color-->
+                        <div class="card-up blue-gradient">
+                        </div>
+                        <!--Avatar-->
+                        <div class="avatar mx-auto white">
+                            <img src="assets/images/visa.jpeg" class="img-fluid">
+                        </div>
+                        <div class="card-body">
+                            <!--Name-->
+                            <h4 class="font-weight-bold mb-4">Visa Assistance</h4>
+                            <hr>
+                            <!--Quotation-->
+                            <h3 class="dark-grey-text mt-4 mb-4">
+                                <b><i class="fas fa-address-card" aria-hidden="true"></i></b>
+                            </h3>
+                            <a href="contact" class="btn btn-info">More Information</a>
+                        </div>
+                    </div>
+                    <!--Card-->
+                </div>
+                <!--Grid column-->
+
+                <!--Grid column-->
+                <div class="col-lg-4 col-md-6">
+                    <!--Card-->
+                    <div class="card testimonial-card shadow border-0">
+                        <!--Background color-->
+                        <div class="card-up indigo"></div>
+                        <!--Avatar-->
+                        <div class="avatar mx-auto white">
+                            <img src="assets/images/excursion.jpeg" class="img-fluid">
+                        </div>
+                        <div class="card-body">
+                            <!--Name-->
+                            <h4 class="font-weight-bold mb-4">Educational Exercusion</h4>
+                            <hr>
+                            <!--Quotation-->
+                            <h3 class="dark-grey-text mt-4 mb-4">
+                                <b><i class="fas fa-graduation-cap" aria-hidden="true"></i></b>
+                            </h3>
+                            <a href="contact" class="btn btn-info">More Information</a>
+                        </div>
+                    </div>
+                    <!--Card-->
+                </div>
+                <!--Grid column-->
+
+            </div>
+            <!-- Grid row -->
+
+        </div>
+        <!-- Section Our Services-->
+    </section>
 
 
-  
-</body>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    
+
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="assets/js/slider.js"></script>
-
+</body>
 </html>
