@@ -327,6 +327,12 @@ h4 {
     color: white;
   }
 }
+
+@media screen and (max-width: 700px) {
+  .contact-container {
+    width: 100%;
+  }
+}
 /* unvisited link */
 a:link {
   color: #fff;
@@ -584,8 +590,11 @@ span {
     color:#fffff9;
 }
 
+.book-text {
+    color:#fffff9;
+}
 .selection-tab {
-    background-color:  #1d2527;
+    background-color:#1d2527;
 }
 
 
@@ -663,3 +672,21 @@ span {
  .search {
      float: right;
  }
+
+ .contact-section {
+    background-color: #1E2123;
+    color: #fff;
+    width: 100%;
+    overflow: auto;
+       
+}
+
+.contact-container {
+    padding-left: 19%;
+    padding-right: 19%; 
+}
+
+.selection-tab{
+    padding-top: 2%;
+    padding-bottom: 5%;
+}

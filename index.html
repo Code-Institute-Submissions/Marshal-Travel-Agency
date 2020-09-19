@@ -29,7 +29,7 @@
 
     <!-- Logo Image-->
         <a class="navbar-brand" href="#">
-            <img class="logo" src="assets/images/white.png" alt="marshal logo">
+            <img class="logo" src="assets/images/logo.png" alt="marshal logo">
         </a>
         <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -51,8 +51,11 @@
                 <li class="nav-item">
                     <a class="nav-link" href="#services">Our Services</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#bookings">Bookings</a>
+                </li>
                 
-<div class="bookings">
+<!--<div class="bookings">
   <button class="dropbtn" data-toggle="#bookings">Bookings</button>
   <div class="bookings-content">
   <a href="#flight">Flights</a>
@@ -61,7 +64,7 @@
     <a href="#hotel">Hotels</a>
     <a href="#car">Car Service</a>
   </div>
-</div>
+</div>--->
 
                 <li class="nav-item">
                     <a class="nav-link" href="#contact">Contact Us</a>
@@ -76,7 +79,7 @@
   <div class="hero-text">
     <h1 class="caption">Perfect Vacation</h1>
     <p class="write-ups">Lets help you see the world</p>
-    <button>BOOK NOW</button>
+    <a href="#bookings"><button class="book">BOOK NOW</button></a> 
   </div>
   <div class="hero-exclusions">
     <a href="#popup1">
@@ -127,7 +130,7 @@
         <div class="container text-center my-5 p-1">
 
             <!-- Section heading -->
-            <h2 class="h1-responsive font-weight-bold my-5">Our Services</h2>
+            <h2 class="h2-responsive font-weight-bold my-5">Our Services</h2>
             <!-- Section description -->
             <p class="dark-grey-text w-responsive mx-auto mb-5">
                 With access to over 500 IATA airlines and hoteliers worldwide for reservations and bookings, 
@@ -158,101 +161,9 @@
                             <h3 class="dark-grey-text mt-4 mb-4">
                                 <b><i class="fas fa-plane" aria-hidden="true"></i></b>
                             </h3>
-                            <a href="contact" class="btn btn-info">More Information</a>
-                        <div><a class="btn btn-info" href="contact" data-toggle="modal" data-target="#More-Information-modal">More Information</a></div>
-
-<!-- Modal for signup form -->
-					<div class="modal fade" id="More-Information-modal" tabindex="-1" role="dialog" aria-labelledby="More-Information-modal" aria-hidden="true">
-						<div class="modal-dialog modal-sm modal-dialog-centered" role="document">
-							<div class="modal-content">
-								<div class="modal-header">
-									<h5 class="modal-title">Let's Get You Signed Up!</h5>
-									<button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span>
-									</button>
-								</div>
-								<div class="modal-body">
-									<form action="submit">
-										<div class="form-group">
-											<label for="fname">First Name<span>*</span>
-											</label>
-											<input type="text" class="form-control" id="fname" placeholder="First Name" aria-label="first name" required>
-										</div>
-										<div class="form-group">
-											<label for="lname">Last Name<span>*</span>
-											</label>
-											<input type="text" class="form-control" id="lname" placeholder="Last Name" aria-label="last name" required>
-										</div>
-										<div class="form-group">
-											<label for="phone">Phone Number<span>*</span>
-											</label>
-											<input type="number" class="form-control" id="phone" placeholder="tel" aria-label="phone number" required>
-										</div>
-										<div class="form-group">
-											<label for="email">E-mail Address<span>*</span>
-											</label>
-											<input type="email" class="form-control" id="email" placeholder="Email" aria-label="Email" required>
-										</div>
-										<div class="form-group">
-											<input type="date" class="form-control" aria-label="date" required>
-										</div>
-										<div class="form-check form-check-inline">
-											<input class="form-check-input" type="radio" id="flight bookings" value="flight bookings" name="service_preference" aria-label="flight bookings" required>
-											<label class="form-check-label" for="flight bookings">Flight Bookings</label>
-										</div>
-										<div class="form-check form-check-inline">
-											<input class="form-check-input" type="radio" id="hotel bookings" value="hotel bookings" name="service_preference" aria-label="hotel bookings" required>
-											<label class="form-check-label" for="hotel bookings">Hotel Bookings</label>
-										</div>
-										<div class="form-check form-check-inline">
-											<input class="form-check-input" type="radio" id="car service" value="car service" name="service_preference" aria-label="car service" required>
-											<label class="form-check-label" for="car service">Car Service</label>
-										</div>
-										<div class="form-check form-check-inline">
-											<input class="form-check-input" type="radio" id="tour/cruise Packaging" value="tour/cruise Packaging" name="service_preference" aria-label="tour/cruise Packaging" required>
-											<label class="form-check-label" for="tour/cruise Packaging">Tour/Cruise Packaging</label>
-										</div>
-										<div class="form-check form-check-inline">
-											<input class="form-check-input" type="radio" id="visa assistance" value="visa assistance" name="service_preference" aria-label="visa assistance" required>
-											<label class="form-check-label" for="visa assistance">Visa Assistance</label>
-										</div>
-										<div class="form-check form-check-inline">
-											<input class="form-check-input" type="radio" id="educational excursion" value="educational excursion" name="service_preference" aria-label="educational excursion" required>
-											<label class="form-check-label" for="educational excursion">Educational Excursion</label>
-										</div>
-									</form>
-								</div>
-                                <div class="modal-footer">
-									<button type="button" class="btn btn-signUp" data-toggle="modal" data-target="#Submit">Submit</button>
-                                    
-									<!-- Modal for feedback message delivery -->
-									<div class="modal fade" id="Submit" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="Submit" aria-hidden="true">
-										<div class="modal-dialog modal-sm" role="document">
-											<div class="modal-content">
-												<div class="modal-header">
-													<div class="modal-title" id="staticBackdropLabel"><i class="fas fa-thumbs-up"></i>
-													</div>
-													<a class="logo" href="index.html">
-														<img src="assets/images/logo.png" alt="marshal logo" />
-													</a>
-													<button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span>
-													</button>
-												</div>
-												<div class="modal-body">
-													<p class="text-muted">Thank you for contacting Us. we will get back to you shortly! for urgent enquiries please call us on</p> <a class="link" aria-label="Phone number" href="tel:+41-77-961-89-40"><i class="fas fa-phone"></i>  +41-77-961-89-40</a>
-												</div>
-												<div class="modal-footer">
-													<button type="button" class="btn btn-secondary" data-dismiss="modal">Ok</button>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
+                            <a href="#contact" class="btn btn-info">More Information</a>
+                       </div>
 					</div>
-				
-                        </div>
-                    </div>
                     <!--Card-->
                 </div>
                 <!--Grid column-->
@@ -276,7 +187,7 @@
                             <h3 class="dark-grey-text mt-4 mb-4">
                                 <b><i class="fas fa-bed" aria-hidden="true"></i></b>
                             </h3>
-                            <a href="contact" class="btn btn-info">More Information</a>
+                            <a href="#contact" class="btn btn-info">More Information</a>
                         </div>
                     </div>
                     <!--Card-->
@@ -301,7 +212,7 @@
                             <h3 class="dark-grey-text mt-4 mb-4">
                                 <b><i class="fas fa-car" aria-hidden="true"></i></b>
                             </h3>
-                            <a href="contact" class="btn btn-info">More Information</a>
+                            <a href="#contact" class="btn btn-info">More Information</a>
                         </div>
                     </div>
                     <!--Card-->
@@ -332,7 +243,7 @@
                             <h3 class="dark-grey-text mt-4 mb-4">
                                 <b><i class="fas fa-ship" aria-hidden="true"></i></b>
                             </h3>
-                            <a href="contact" class="btn btn-info">More Information</a>
+                            <a href="#contact" class="btn btn-info">More Information</a>
                         </div>
                     </div>
                     <!--Card-->
@@ -358,7 +269,7 @@
                             <h3 class="dark-grey-text mt-4 mb-4">
                                 <b><i class="fas fa-address-card" aria-hidden="true"></i></b>
                             </h3>
-                            <a href="contact" class="btn btn-info">More Information</a>
+                            <a href="#contact" class="btn btn-info">More Information</a>
                         </div>
                     </div>
                     <!--Card-->
@@ -383,7 +294,7 @@
                             <h3 class="dark-grey-text mt-4 mb-4">
                                 <b><i class="fas fa-graduation-cap" aria-hidden="true"></i></b>
                             </h3>
-                            <a href="contact" class="btn btn-info">More Information</a>
+                            <a href="#contact" class="btn btn-info">More Information</a>
                         </div>
                     </div>
                     <!--Card-->
@@ -396,8 +307,9 @@
         </div>
         <!-- Section Our Services-->
     </section>
-    <section id="flight" class="selection-tab">
-<div class="container tab-container py-5">
+    <section id="bookings" class="selection-tab">
+ <div class="container container-tab p-1 py-4">
+ <h2 class="h2-responsive font-weight-bold text-center my-4 book-text">Bookings</h2>
     <div class="tab">
   <button class="tablinks rf" onclick="openCity(event, 'Flight')" id="defaultOpen"><b><i class="fas fa-plane-departure"></i></b>&nbsp;Flights</button>
   <button class="tablinks rb" onclick="openCity(event, 'Hotel')"><b><i class="fas fa-bed"></i></b>&nbsp;Hotels</button>
@@ -685,7 +597,57 @@
 </div> 
 </div>
 </div>
-</section>   
+</section>
+<section id="contact" class="contact-section">
+<div class="container my-5 p-1 py-4 contact-container">
+<h2 class="h1-responsive text-center font-weight-bold my-4">Get In Touch</h2>
+<form action="submit">
+<div class="row contact-container">
+<div class="form-group col-12">
+<label for="fname">Full Name<span>*</span></label>
+<input type="text" class="form-control" id="fullname" placeholder="Full Name" aria-label="full name" required>
+</div>
+<div class="form-group col-12">
+<label for="phone">Phone Number<span>*</span></label>
+<input type="number" class="form-control" id="phone2" placeholder="tel" aria-label="phone number" required>
+</div>
+<div class="form-group col-12">
+<label for="email">E-mail Address<span>*</span></label>
+<input type="email" class="form-control" id="email2" placeholder="Email" aria-label="Email" required>
+</div>
+<div class="form-group col-12">
+
+<label for="message">Comments/Questions<span>*</span></label>
+<textarea id="message" rows="4" class="form-control" placeholder="Feel free to ask a question..." aria-label="comments" required></textarea>
+</div>
+</div>
+<div class="form-button contact-container">
+<button type="submit" data-toggle="modal" data-target="#Submit" class="btn btn-info btn-lg col-12 text-uppercase mt-3">Submit</button>
+</div>
+<!-- Modal for feedback message delivery -->
+<div class="modal fade" id="Submit" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="Submit" aria-hidden="true">
+<div class="modal-dialog modal-sm" role="document">
+<div class="modal-content">
+<div class="modal-header">
+<div class="modal-title" id="staticBackdropLabel"><i class="fas fa-thumbs-up"></i></div>
+<a class="logo" href="index.html">
+<img src="assets/images/logo.png" alt="marshal logo"/>
+</a>
+<button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span></button>
+</div>
+<div class="modal-body">
+<p class="text-muted">Thank you for contacting Us. we will get back to you shortly! for urgent enquiries please call us on</p> <a class="link" aria-label="Phone number" href="tel:+41-77-961-89-40"><i class="fas fa-phone"></i>  +41-77-961-89-40</a>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-secondary" data-dismiss="modal">Ok</button>
+</div>
+</div>
+</div>
+</div>
+
+</form>
+</div>
+</section>  
     
 <!-- Back to top button -->
 <a id="button"></a>
