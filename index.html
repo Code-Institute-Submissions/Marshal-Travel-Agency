@@ -12,6 +12,7 @@
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
+
 <script src="https://kit.fontawesome.com/58e618022f.js" crossorigin="anonymous"></script>
    <link rel="stylesheet" href="assets/css/style.css">
 
@@ -21,7 +22,7 @@
 <body>
      <!-- NAVBAR CONTENT -->
      <!-- Header-->
-	<header class="top-bar fixed-top">
+	<header class="top-bar sticky-top">
         
 <!--Navigation element-->
     <nav class="navbar navbar-expand-lg navbar-light bg-custom-white sticky-top">
@@ -54,9 +55,11 @@
 <div class="bookings">
   <button class="dropbtn" data-toggle="#bookings">Bookings</button>
   <div class="bookings-content">
-    <a href="flight.html">Flights</a>
-    <a href="hotel.html">Hotels</a>
-    <a href="car.html">Car Service</a>
+  <a href="#flight">Flights</a>
+    
+  
+    <a href="#hotel">Hotels</a>
+    <a href="#car">Car Service</a>
   </div>
 </div>
 
@@ -120,16 +123,16 @@
     </section>
 
     <section id="services" class="section-full main-plain">
-        <!-- Section: Testimonials v.1 -->
+        <!-- Section Our Services -->
         <div class="container text-center my-5 p-1">
 
             <!-- Section heading -->
             <h2 class="h1-responsive font-weight-bold my-5">Our Services</h2>
             <!-- Section description -->
             <p class="dark-grey-text w-responsive mx-auto mb-5">
-                With access to over 500 IATA airlines worldwide for reservations and bookings, and over 500 IATA hoteliers worldwide for reservations and bookings, 
+                With access to over 500 IATA airlines and hoteliers worldwide for reservations and bookings, 
                 We assist our clients in planning their trips to cut down transportation cost, time and resources.
-                We manage the frequent flier memberships on behalf of clients to ensure maximum rewards and update them on latest beneficial information on their loved airlines. 
+                Our clients enjoy maximum rewards and update on latest beneficial information on their loved airlines. 
                 We also provide car hire needs of our clients in all major cities in the world, both pick ups and drop offs. To add to that, 
                 we provide airport protocol services at airports including a special meet-and-assist service.
             </p>
@@ -141,21 +144,113 @@
                 <div class="col-lg-4 col-md-12 mb-lg-0 mb-4">
                     <!--Card-->
                     <div class="card testimonial-card shadow border-0">
-                        <!--Background color-->
-                        <div class="card-up info-color"></div>
-                        <!--Avatar-->
-                        <div class="avatar mx-auto white">
+                        
+                        <div class="card-up"></div>
+                        
+                        <div class="avatar mx-auto">
                             <img src="assets/images/flight.jpg" class="img-fluid">
                         </div>
                         <div class="card-body">
-                            <!--Name-->
+                            
                             <h4 class="font-weight-bold mb-4">Flight Bookings</h4>
                             <hr>
-                            <!--Quotation-->
+                            
                             <h3 class="dark-grey-text mt-4 mb-4">
                                 <b><i class="fas fa-plane" aria-hidden="true"></i></b>
                             </h3>
                             <a href="contact" class="btn btn-info">More Information</a>
+                        <div><a class="btn btn-info" href="contact" data-toggle="modal" data-target="#More-Information-modal">More Information</a></div>
+
+<!-- Modal for signup form -->
+					<div class="modal fade" id="More-Information-modal" tabindex="-1" role="dialog" aria-labelledby="More-Information-modal" aria-hidden="true">
+						<div class="modal-dialog modal-sm modal-dialog-centered" role="document">
+							<div class="modal-content">
+								<div class="modal-header">
+									<h5 class="modal-title">Let's Get You Signed Up!</h5>
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span>
+									</button>
+								</div>
+								<div class="modal-body">
+									<form action="submit">
+										<div class="form-group">
+											<label for="fname">First Name<span>*</span>
+											</label>
+											<input type="text" class="form-control" id="fname" placeholder="First Name" aria-label="first name" required>
+										</div>
+										<div class="form-group">
+											<label for="lname">Last Name<span>*</span>
+											</label>
+											<input type="text" class="form-control" id="lname" placeholder="Last Name" aria-label="last name" required>
+										</div>
+										<div class="form-group">
+											<label for="phone">Phone Number<span>*</span>
+											</label>
+											<input type="number" class="form-control" id="phone" placeholder="tel" aria-label="phone number" required>
+										</div>
+										<div class="form-group">
+											<label for="email">E-mail Address<span>*</span>
+											</label>
+											<input type="email" class="form-control" id="email" placeholder="Email" aria-label="Email" required>
+										</div>
+										<div class="form-group">
+											<input type="date" class="form-control" aria-label="date" required>
+										</div>
+										<div class="form-check form-check-inline">
+											<input class="form-check-input" type="radio" id="flight bookings" value="flight bookings" name="service_preference" aria-label="flight bookings" required>
+											<label class="form-check-label" for="flight bookings">Flight Bookings</label>
+										</div>
+										<div class="form-check form-check-inline">
+											<input class="form-check-input" type="radio" id="hotel bookings" value="hotel bookings" name="service_preference" aria-label="hotel bookings" required>
+											<label class="form-check-label" for="hotel bookings">Hotel Bookings</label>
+										</div>
+										<div class="form-check form-check-inline">
+											<input class="form-check-input" type="radio" id="car service" value="car service" name="service_preference" aria-label="car service" required>
+											<label class="form-check-label" for="car service">Car Service</label>
+										</div>
+										<div class="form-check form-check-inline">
+											<input class="form-check-input" type="radio" id="tour/cruise Packaging" value="tour/cruise Packaging" name="service_preference" aria-label="tour/cruise Packaging" required>
+											<label class="form-check-label" for="tour/cruise Packaging">Tour/Cruise Packaging</label>
+										</div>
+										<div class="form-check form-check-inline">
+											<input class="form-check-input" type="radio" id="visa assistance" value="visa assistance" name="service_preference" aria-label="visa assistance" required>
+											<label class="form-check-label" for="visa assistance">Visa Assistance</label>
+										</div>
+										<div class="form-check form-check-inline">
+											<input class="form-check-input" type="radio" id="educational excursion" value="educational excursion" name="service_preference" aria-label="educational excursion" required>
+											<label class="form-check-label" for="educational excursion">Educational Excursion</label>
+										</div>
+									</form>
+								</div>
+                                <div class="modal-footer">
+									<button type="button" class="btn btn-signUp" data-toggle="modal" data-target="#Submit">Submit</button>
+                                    
+									<!-- Modal for feedback message delivery -->
+									<div class="modal fade" id="Submit" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="Submit" aria-hidden="true">
+										<div class="modal-dialog modal-sm" role="document">
+											<div class="modal-content">
+												<div class="modal-header">
+													<div class="modal-title" id="staticBackdropLabel"><i class="fas fa-thumbs-up"></i>
+													</div>
+													<a class="logo" href="index.html">
+														<img src="assets/images/logo.png" alt="marshal logo" />
+													</a>
+													<button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span>
+													</button>
+												</div>
+												<div class="modal-body">
+													<p class="text-muted">Thank you for contacting Us. we will get back to you shortly! for urgent enquiries please call us on</p> <a class="link" aria-label="Phone number" href="tel:+41-77-961-89-40"><i class="fas fa-phone"></i>  +41-77-961-89-40</a>
+												</div>
+												<div class="modal-footer">
+													<button type="button" class="btn btn-secondary" data-dismiss="modal">Ok</button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				
                         </div>
                     </div>
                     <!--Card-->
@@ -166,18 +261,18 @@
                 <div class="col-lg-4 col-md-6 mb-md-0 mb-4">
                     <!--Card-->
                     <div class="card testimonial-card shadow border-0">
-                        <!--Background color-->
-                        <div class="card-up blue-gradient">
+                        
+                        <div class="card-up">
                         </div>
-                        <!--Avatar-->
-                        <div class="avatar mx-auto white">
+                        
+                        <div class="avatar mx-auto">
                             <img src="assets/images/hotel.jpg" class="img-fluid">
                         </div>
                         <div class="card-body">
-                            <!--Name-->
+                            
                             <h4 class="font-weight-bold mb-4">Hotel Bookings</h4>
                             <hr>
-                            <!--Quotation-->
+                            
                             <h3 class="dark-grey-text mt-4 mb-4">
                                 <b><i class="fas fa-bed" aria-hidden="true"></i></b>
                             </h3>
@@ -192,17 +287,17 @@
                 <div class="col-lg-4 col-md-6">
                     <!--Card-->
                     <div class="card testimonial-card shadow border-0">
-                        <!--Background color-->
-                        <div class="card-up indigo"></div>
-                        <!--Avatar-->
-                        <div class="avatar mx-auto white">
+                        
+                        <div class="card-up"></div>
+                        
+                        <div class="avatar mx-auto">
                             <img src="assets/images/car.png" class="img-fluid">
                         </div>
                         <div class="card-body">
-                            <!--Name-->
+                            
                             <h4 class="font-weight-bold mb-4">Car Service</h4>
                             <hr>
-                            <!--Quotation-->
+                            
                             <h3 class="dark-grey-text mt-4 mb-4">
                                 <b><i class="fas fa-car" aria-hidden="true"></i></b>
                             </h3>
@@ -223,17 +318,17 @@
                 <div class="col-lg-4 col-md-12 mb-lg-0 mb-4">
                     <!--Card-->
                     <div class="card testimonial-card shadow border-0">
-                        <!--Background color-->
-                        <div class="card-up info-color"></div>
-                        <!--Avatar-->
-                        <div class="avatar mx-auto white">
+                        
+                        <div class="card-up"></div>
+                       
+                        <div class="avatar mx-auto">
                             <img src="assets/images/cruise.jpeg" class="img-fluid">
                         </div>
                         <div class="card-body">
-                            <!--Name-->
+                            
                             <h4 class="font-weight-bold mb-4">Tour/Cruise Packaging</h4>
                             <hr>
-                            <!--Quotation-->
+                            
                             <h3 class="dark-grey-text mt-4 mb-4">
                                 <b><i class="fas fa-ship" aria-hidden="true"></i></b>
                             </h3>
@@ -248,18 +343,18 @@
                 <div class="col-lg-4 col-md-6 mb-md-0 mb-4">
                     <!--Card-->
                     <div class="card testimonial-card shadow border-0">
-                        <!--Background color-->
-                        <div class="card-up blue-gradient">
+                        
+                        <div class="card-up">
                         </div>
-                        <!--Avatar-->
-                        <div class="avatar mx-auto white">
+                        
+                        <div class="avatar mx-auto">
                             <img src="assets/images/visa.jpeg" class="img-fluid">
                         </div>
                         <div class="card-body">
-                            <!--Name-->
+                            
                             <h4 class="font-weight-bold mb-4">Visa Assistance</h4>
                             <hr>
-                            <!--Quotation-->
+                            
                             <h3 class="dark-grey-text mt-4 mb-4">
                                 <b><i class="fas fa-address-card" aria-hidden="true"></i></b>
                             </h3>
@@ -274,17 +369,17 @@
                 <div class="col-lg-4 col-md-6">
                     <!--Card-->
                     <div class="card testimonial-card shadow border-0">
-                        <!--Background color-->
-                        <div class="card-up indigo"></div>
-                        <!--Avatar-->
-                        <div class="avatar mx-auto white">
+                        
+                        <div class="card-up"></div>
+                        
+                        <div class="avatar mx-auto">
                             <img src="assets/images/excursion.jpeg" class="img-fluid">
                         </div>
                         <div class="card-body">
-                            <!--Name-->
-                            <h4 class="font-weight-bold mb-4">Educational Exercusion</h4>
+                           
+                            <h4 class="font-weight-bold mb-4">Educational Excursion</h4>
                             <hr>
-                            <!--Quotation-->
+                            
                             <h3 class="dark-grey-text mt-4 mb-4">
                                 <b><i class="fas fa-graduation-cap" aria-hidden="true"></i></b>
                             </h3>
@@ -301,13 +396,303 @@
         </div>
         <!-- Section Our Services-->
     </section>
+    <section id="flight" class="selection-tab">
+<div class="container tab-container py-5">
+    <div class="tab">
+  <button class="tablinks rf" onclick="openCity(event, 'Flight')" id="defaultOpen"><b><i class="fas fa-plane-departure"></i></b>&nbsp;Flights</button>
+  <button class="tablinks rb" onclick="openCity(event, 'Hotel')"><b><i class="fas fa-bed"></i></b>&nbsp;Hotels</button>
+<button class="tablinks departure" onclick="openCity(event, 'Flight + Hotel')"><div class="plane-hotel"><div class="first"><i class="fas fa-plane-departure"></i></div><div class="second"><i class="fas fa-bed"></i></div></div>&nbsp;Flight + Hotel</button>
+  <button class="tablinks rc" onclick="openCity(event, 'Car Rental')"><b><i class="fas fa-car"></i></b>&nbsp;Car Rental</button>
+</div>
 
+<div id="Flight" class="tabcontent mt-2">
+<div class="class-options">
+ 
+  <div class="form-check form-check-inline">
+<input class="form-check-input" type="radio" id="return" value="return" name="flight_preference" aria-label="return" required>
+<label class="form-check-label" for="return">Return</label>
+</div>
+<div class="form-check form-check-inline">
+<input class="form-check-input" type="radio" id="oneway" value="oneway" name="flight_preference" aria-label="oneway" required>
+<label class="form-check-label" for="oneway">One Way</label>
+</div>
+<div class="form-check form-check-inline">
+<input class="form-check-input" type="radio" id="multicity" value="cardio" name="flight_preference" aria-label="multicity" required>
+<label class="form-check-label" for="multicity">Multi-City</label>
+</div>|
+<div class="form-group form-check form-check-inline">
+      <label for="inputClass"></label>
+      <select id="inputClass" class="form-control selected-class mb-2">
+        <option selected>Economy</option>
+        <option>Premium Economy</option>
+        <option>Business</option>
+        <option>First</option>
+      </select>
+    </div>|
+<div class="form-check col-md-2 form-check-inline mt-2">
+<input type="checkbox" class="form-check-input" id="exampleCheck1">
+<label class="form-check-label" for="exampleCheck1">Direct flights only</label>
+</div></div>
+<form>
+  <div class="form-row">
+    <div class="col-md-2">
+    <label for="from">From Where<span>*</span></label>
+      <input type="text" class="form-control" placeholder="From" aria-label="from" required>
+    </div>
+    <div class="col-md-2">
+    <label for="to">To Where<span>*</span></label>
+      <input type="text" class="form-control" placeholder="To" aria-label="to" required>
+    </div>
+    <div class="col-md-2">
+    <label for="departure">Depature<span>*</span></label>
+	<input type="date" class="form-control" placeholder="Departure" aria-label="date" required>
+	</div>
+    <div class="col-md-2">
+    <label for="return">Return<span>*</span></label>
+	<input type="date" class="form-control" aria-label="date" required>
+	</div>
+     <div class="col-md-1">
+    <label for="adults">Adults<span>*</span></label>
+      <input type="number" class="form-control" placeholder="16+" aria-label="adults" required>
+    </div>
+     <div class="col-md-1">
+    <label for="children">Children<span>*</span></label>
+      <input type="number" class="form-control" placeholder="2-15" aria-label="children" required>
+    </div>
+     <div class="col-md-1">
+    <label for="infants">Infants<span>*</span></label>
+      <input type="number" class="form-control" placeholder="<2" aria-label="infants" required>
+    </div>
+  </div>
+</form>
+<form>
+<div class="form-row">
+<div class="col-md-3 mt-3">
+<label for="fname">First Name<span>*</span></label>
+<input type="text" class="form-control" id="firstname" placeholder="First Name" aria-label="first name" required>
+</div>
 
+<div class="col-md-3  mt-3">
+<label for="lname">Last Name<span>*</span></label>
+<input type="text" class="form-control" id="lastname" placeholder="Last Name" aria-label="last name" required>
+</div>
+
+<div class="col-md-3  mt-3">
+<label for="phone">Phone Number<span>*</span></label>
+<input type="number" class="form-control" id="phonenumber" placeholder="tel" aria-label="phone number" required>
+</div>
+<div class="col-md-3  mt-3">
+<label for="email">E-mail Address<span>*</span></label>
+<input type="email" class="form-control" id="emailaddress" placeholder="Email" aria-label="email" required>
+</div>
+</div>
+</form>
+<div class="search py-3">
+ <a href="contact" class="btn btn-info"><strong>Search Flights</strong></a>
+</div>
+</div>
+<div id="Hotel" class="tabcontent">
+ <form>
+  <div class="form-row">
+    <div class="col py-3">
+      <input type="text" class="form-control" placeholder="Destination, Country, City, District or Landmark" aria-label="destination" required>
+    </div>
+  </div>
+ </form> 
+<form>
+<div class="form-row">
+ <div class="col-md-6">
+    <label for="departure">Check-in<span>*</span></label>
+	<input type="date" class="form-control" placeholder="Departure" aria-label="date" required>
+	</div>
+    <div class="col-md-6">
+    <label for="return">Check-out<span>*</span></label>
+	<input type="date" class="form-control" aria-label="date" required>
+	</div> 
+</div>
+</form>
+<form>
+<div class="form-row">
+ <div class="col-md-1 mt-3">
+    <label for="rooms">Rooms<span>*</span></label>
+      <input type="number" class="form-control" placeholder="0" aria-label="rooms" required>
+    </div>
+     <div class="col-md-1 mt-3">
+    <label for="adults">Adults<span>*</span></label>
+      <input type="number" class="form-control" placeholder="0" aria-label="adults" required>
+    </div>
+     <div class="col-md-1 mt-3">
+    <label for="children">Children<span>*</span></label>
+      <input type="number" class="form-control" placeholder="0" aria-label="children" required>
+    </div>
+    <div class="form-group form-check form-check-inline mt-5">
+      <label for="inputStar"></label>
+      <select id="inputStar" class="form-control selected-class">
+        <option selected>Hotel Rating</option>
+        <option>Any</option>
+        <option>1 Star</option>
+        <option>2 Stars</option>
+        <option>3 Stars</option>
+        <option>4 Stars</option>
+        <option>5 Stars</option>
+      </select>
+    </div>
+  </div>
+</form>
+<div class="search py-3">
+ <a href="contact" class="btn btn-info"><strong>Search Hotels</strong></a>
+</div>
+</div>
+
+<div id="Flight + Hotel" class="tabcontent">
+<div class="class-options">
+ 
+  <div class="form-check form-check-inline">
+<input class="form-check-input" type="radio" id="return2" value="return" name="flight_preference" aria-label="return" required>
+<label class="form-check-label" for="return">Return</label>
+</div>
+<div class="form-check form-check-inline">
+<input class="form-check-input" type="radio" id="oneway2" value="oneway" name="flight_preference" aria-label="oneway" required>
+<label class="form-check-label" for="oneway">One Way</label>
+</div>
+<div class="form-check form-check-inline">
+<input class="form-check-input" type="radio" id="multicity2" value="multicity" name="flight_preference" aria-label="multicity" required>
+<label class="form-check-label" for="multicity">Multi-City</label>
+</div>|
+<div class="form-group form-check form-check-inline">
+      <label for="inputClass"></label>
+      <select id="inputClass2" class="form-control selected-class mb-2">
+        <option selected>Economy</option>
+        <option>Premium Economy</option>
+        <option>Business</option>
+        <option>First</option>
+      </select>
+    </div>|
+<div class="form-check col-md-2 form-check-inline mt-2">
+<input type="checkbox" class="form-check-input" id="direct flight">
+<label class="form-check-label" for="direct flight">Direct flights only</label>
+</div></div> 
+<form>
+  <div class="form-row">
+    <div class="col-md-2">
+    <label for="from">From Where<span>*</span></label>
+      <input type="text" class="form-control" placeholder="From" aria-label="from" required>
+    </div>
+    <div class="col-md-2">
+    <label for="to">To Where<span>*</span></label>
+      <input type="text" class="form-control" placeholder="To" aria-label="to" required>
+    </div>
+    <div class="col-md-2">
+    <label for="departure">Depature<span>*</span></label>
+	<input type="date" class="form-control" placeholder="Departure" aria-label="date" required>
+	</div>
+    <div class="col-md-2">
+    <label for="return">Return<span>*</span></label>
+	<input type="date" class="form-control" aria-label="date" required>
+	</div>
+     <div class="col-md-1">
+    <label for="adults">Adults<span>*</span></label>
+      <input type="number" class="form-control" placeholder="16+" aria-label="adults" required>
+    </div>
+     <div class="col-md-1">
+    <label for="children">Children<span>*</span></label>
+      <input type="number" class="form-control" placeholder="2-15" aria-label="children" required>
+    </div>
+     <div class="col-md-1">
+    <label for="infants">Infants<span>*</span></label>
+      <input type="number" class="form-control" placeholder="<2" aria-label="infants" required>
+    </div>
+    <div class="col-md-1">
+    <label for="rooms">Rooms<span>*</span></label>
+      <input type="number" class="form-control" placeholder="0" aria-label="rooms" required>
+    </div>
+  </div>
+</form> 
+
+<form>
+<div class="form-row">
+<div class="col-md-3 mt-3">
+<label for="fname">First Name<span>*</span></label>
+<input type="text" class="form-control" id="first name" placeholder="First Name" aria-label="first name" required>
+</div>
+
+<div class="col-md-3  mt-3">
+<label for="lname">Last Name<span>*</span></label>
+<input type="text" class="form-control" id="last name" placeholder="Last Name" aria-label="last name" required>
+</div>
+
+<div class="col-md-3  mt-3">
+<label for="phone">Phone Number<span>*</span></label>
+<input type="number" class="form-control" id="phone number" placeholder="tel" aria-label="phone number" required>
+</div>
+<div class="col-md-3  mt-3">
+<label for="email">E-mail Address<span>*</span></label>
+<input type="email" class="form-control" id="email address" placeholder="Email" aria-label="email" required>
+</div>
+</div>
+</form>
+<div class="form-group form-check form-check-inline mt-3">
+      <label for="inputStar"></label>
+      <select id="inputStar2" class="form-control selected-class">
+        <option selected>Hotel Rating</option>
+        <option>Any</option>
+        <option>1 Star</option>
+        <option>2 Stars</option>
+        <option>3 Stars</option>
+        <option>4 Stars</option>
+        <option>5 Stars</option>
+      </select>
+    </div>
+<div class="search py-3">
+ <a href="contact" class="btn btn-info"><strong>Search</strong></a>
+</div>
+</div>
+<div id="Car Rental" class="tabcontent">
+<form>
+  <div class="form-row">
+    <div class="col py-3">
+      <input type="text" class="form-control" placeholder="Pickup Location, Airport, Station..." aria-label="destination" required>
+    </div>
+  </div>
+ </form>
+
+ <div class="form-check col-md-3 form-check-inline py-2">
+<input type="checkbox" class="form-check-input" id="different location">
+<label class="form-check-label" for="direct flight">Return to a different location</label>
+</div> 
+<form>
+  <div class="form-row">
+  <div class="col-md-4">
+    <label for="departure">Pick Up Date<span>*</span></label>
+	<input type="date" class="form-control" placeholder="pickup" aria-label="date" required>
+	</div>
+    <div class="col-md-2">
+    <label for="time">Time:<span>*</span></label>
+      <input type="time" name="time"  value="10:00" class="form-control"  id="time" placeholder="time" aria-label="from" required>
+    </div>
+   <div class="col-md-4">
+    <label for="return">Drop Off Date<span>*</span></label>
+	<input type="date" class="form-control" aria-label="date" required>
+    </div>
+    <div class="col-md-2">
+    <label for="time">Time:<span>*</span></label>
+      <input type="time" name="time"  value="10:00" class="form-control"  id="time2" placeholder="time" aria-label="from" required>
+    </div>
+    </div>
+ </form>
+ <div class="search py-4">
+ <a href="contact" class="btn btn-info"><strong>Search Cars</strong></a>
+</div> 
+</div>
+</div>
+</section>   
     
-
+<!-- Back to top button -->
+<a id="button"></a>
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="assets/js/slider.js"></script>
+    <script src="assets/js/back-to-top-button.js"></script>
+    <script src="assets/js/tab.js"></script>
 </body>
 </html>

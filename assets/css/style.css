@@ -21,7 +21,7 @@ h4 {
 /* ---------------------------------------------Header */
 
 .top-bar {
-	position: fixed;
+	position: sticky;
 	top: 0px;
 	z-index: 1;
 }
@@ -94,6 +94,7 @@ h4 {
   z-index: 1;
   float: right;
  }
+
 
 .bookings-content a {
   color: white;
@@ -319,7 +320,13 @@ h4 {
 	}
 }
 
-
+@media screen and (max-width: 700px) {
+  .selection-tab {
+    display: flex;
+    font-size: 1rem;
+    color: white;
+  }
+}
 /* unvisited link */
 a:link {
   color: #fff;
@@ -476,3 +483,183 @@ a:active {
 	background-color: rgba(241, 109, 107, .7);
 	color: #fffff9;
 }
+
+#button {
+  display: inline-block;
+  background-color: #EE6059;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: background-color .3s, 
+    opacity .5s, visibility .5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+}
+#button::after {
+  content: "\f077";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2em;
+  line-height: 50px;
+  color: #fff;
+}
+#button:hover {
+  cursor: pointer;
+  background-color: #333;
+}
+#button:active {
+  background-color: #555;
+}
+#button.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Styles for the content section */
+
+.content {
+  width: 77%;
+  margin: 50px auto;
+  font-family: 'Merriweather', serif;
+  font-size: 17px;
+  color: #6c767a;
+  line-height: 1.9;
+}
+@media (min-width: 500px) {
+  .content {
+    width: 43%;
+  }
+  #button {
+    margin: 30px;
+  }
+}
+.content h1 {
+  margin-bottom: -10px;
+  color: #03a9f4;
+  line-height: 1.5;
+}
+.content h3 {
+  font-style: italic;
+  color: #96a2a7;
+}
+.modal-content {
+    background-color: #1d2527;
+	color: white;
+    border: none;
+}
+
+.modal-header, .modal-body, .modal-footer {
+    border: none;
+}
+
+.row label + * {
+	color: red;
+}
+.row label {
+	font-weight: bold;
+	float: left;
+}
+span {
+	color: red;
+}
+
+.btn-signUp {
+    width: 100%; 
+}
+
+.btn-signUp:hover {
+	background-color: rgba(241, 109, 107, .7);
+	color: #fffff9; 
+    
+}
+
+.btn-signUp {
+    background-color: #EE6059;
+    color:#fffff9;
+}
+
+.selection-tab {
+    background-color:  #1d2527;
+}
+
+
+.tab {
+  overflow: hidden;
+  border: none;
+  background-color:#1d2527;
+
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: grey;
+  float: left;
+  border: 3px solid#1d2527;
+  outline: none;
+   outline-color: grey;
+  cursor: pointer;
+  padding: 14px 18px;
+  transition: 0.3s;
+  font-size: 17px;
+  border-radius:15px;
+  border-bottom: none;  
+}
+
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: grey;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid grey;
+  border-top: 1px solid grey;
+  height:320px;
+   background-color: grey;
+   border-radius:20px;
+}
+
+.tablinks {
+	border: 1px solid red;
+     display: inline;
+      padding: 6px 12px;
+    }
+
+
+ .plane-hotel {
+     float: left;
+     font-size: 10px;
+ }
+
+ .rf, .rb, .rc {
+    height:61px; 
+ }
+
+ .class-options {
+     display: inline;
+ }
+
+ .form-control {
+     border: none;
+     outline-style: none;
+     position: relative;
+     display: inline-block;
+ }
+
+ .search {
+     float: right;
+ }
