@@ -485,6 +485,17 @@ a:active {
 	cursor: pointer;
 	
 }
+.btn-primary {
+    background-color: #EE6059;
+	color: white;
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    background-color: rgba(241, 109, 107, .7);
+	color: #fffff9;
+}
+
 .btn-info:hover {
 	background-color: rgba(241, 109, 107, .7);
 	color: #fffff9;
@@ -680,13 +691,41 @@ span {
     overflow: auto;
        
 }
-
 .contact-container {
-    padding-left: 19%;
-    padding-right: 19%; 
+   
+    text-align: center;
+    
+    position: relative;    
 }
 
 .selection-tab{
     padding-top: 2%;
     padding-bottom: 5%;
+}
+footer {
+    background-color:  #121315;
+    color: #fafafa; 
+}
+
+.social-links, .socials {
+     text-align: center;
+}
+
+.social-links li a i {
+	width: 25px;
+	height: 25px;
+	padding: 9px 0;
+	border-radius: 32%;
+	font-size: 16px;
+	line-height: 10px;
+	text-align: center;
+	color: #fafafa;
+	background: black;
+	transition: all 0.35s ease-in-out;
+	-moz-transition: all 0.35s ease-in-out;
+	-webkit-transition: all 0.35s ease-in-out;
+	-o-transition: all 0.35s ease-in-out;
+}
+.social-links li a i:hover {
+	background: #e84610;
 }

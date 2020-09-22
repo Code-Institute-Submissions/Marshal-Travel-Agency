@@ -17,6 +17,15 @@
    <link rel="stylesheet" href="assets/css/style.css">
 
     <title>HOME | Travel Agency</title>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("user_UN0AJ6LHyr0IIvojL3oSW");
+      
+   })();
+</script>
 </head>
 
 <body>
@@ -309,12 +318,12 @@
     </section>
     <section id="bookings" class="selection-tab">
  <div class="container container-tab p-1 py-4">
- <h2 class="h2-responsive font-weight-bold text-center my-4 book-text">Bookings</h2>
+ <h2 class="h2-responsive font-weight-bold text-center my-5 book-text">Bookings</h2>
     <div class="tab">
-  <button class="tablinks rf" onclick="openCity(event, 'Flight')" id="defaultOpen"><b><i class="fas fa-plane-departure"></i></b>&nbsp;Flights</button>
-  <button class="tablinks rb" onclick="openCity(event, 'Hotel')"><b><i class="fas fa-bed"></i></b>&nbsp;Hotels</button>
-<button class="tablinks departure" onclick="openCity(event, 'Flight + Hotel')"><div class="plane-hotel"><div class="first"><i class="fas fa-plane-departure"></i></div><div class="second"><i class="fas fa-bed"></i></div></div>&nbsp;Flight + Hotel</button>
-  <button class="tablinks rc" onclick="openCity(event, 'Car Rental')"><b><i class="fas fa-car"></i></b>&nbsp;Car Rental</button>
+  <button class="tablinks col-md-2 rf" onclick="openCity(event, 'Flight')" id="defaultOpen"><b><i class="fas fa-plane-departure"></i></b>&nbsp;Flights</button>
+  <button class="tablinks col-md-2 rb" onclick="openCity(event, 'Hotel')"><b><i class="fas fa-bed"></i></b>&nbsp;Hotels</button>
+<button class="tablinks col-md-2 departure" onclick="openCity(event, 'Flight + Hotel')"><div class="plane-hotel"><div class="first"><i class="fas fa-plane-departure"></i></div><div class="second"><i class="fas fa-bed"></i></div></div>Flight + Hotel</button>
+  <button class="tablinks col-md-2 rc" onclick="openCity(event, 'Car Rental')"><b><i class="fas fa-car"></i></b>&nbsp;Car Rental</button>
 </div>
 
 <div id="Flight" class="tabcontent mt-2">
@@ -331,8 +340,8 @@
 <div class="form-check form-check-inline">
 <input class="form-check-input" type="radio" id="multicity" value="cardio" name="flight_preference" aria-label="multicity" required>
 <label class="form-check-label" for="multicity">Multi-City</label>
-</div>|
-<div class="form-group form-check form-check-inline">
+</div>|&nbsp; &nbsp; &nbsp;
+<div class="form-group col-md-2 form-check form-check-inline">
       <label for="inputClass"></label>
       <select id="inputClass" class="form-control selected-class mb-2">
         <option selected>Economy</option>
@@ -599,33 +608,33 @@
 </div>
 </section>
 <section id="contact" class="contact-section">
-<div class="container my-5 p-1 py-4 contact-container">
+<div class="container my-5 p-1 py-4 mx-auto">
 <h2 class="h1-responsive text-center font-weight-bold my-4">Get In Touch</h2>
-<form action="submit">
-<div class="row contact-container">
-<div class="form-group col-12">
+<form onsubmit="return sendMail(this);" method="POST" action="submit">
+<div class="row contact-container mx-auto">
+<div class="form-group col-md-7 mx-auto">
 <label for="fname">Full Name<span>*</span></label>
-<input type="text" class="form-control" id="fullname" placeholder="Full Name" aria-label="full name" required>
+<input type="text" name="name" class="form-control" id="fullname" placeholder="Full Name" aria-label="full name" required>
 </div>
-<div class="form-group col-12">
+<div class="form-group col-md-7 mx-auto">
 <label for="phone">Phone Number<span>*</span></label>
-<input type="number" class="form-control" id="phone2" placeholder="tel" aria-label="phone number" required>
+<input type="number" name="phonenumber" class="form-control" id="phone2" placeholder="tel" aria-label="phone number" required>
 </div>
-<div class="form-group col-12">
+<div class="form-group col-md-7 mx-auto">
 <label for="email">E-mail Address<span>*</span></label>
-<input type="email" class="form-control" id="email2" placeholder="Email" aria-label="Email" required>
+<input type="email" name="emailaddress" class="form-control" id="email2" placeholder="Email" aria-label="Email" required>
 </div>
-<div class="form-group col-12">
+<div class="form-group col-md-7 mx-auto">
 
-<label for="message">Comments/Questions<span>*</span></label>
-<textarea id="message" rows="4" class="form-control" placeholder="Feel free to ask a question..." aria-label="comments" required></textarea>
+<label for="message">Request/Comments<span>*</span></label>
+<textarea id="message" name="bookingsummary" rows="4" class="form-control" placeholder="Feel free to ask a question..." aria-label="comments" required></textarea>
 </div>
 </div>
-<div class="form-button contact-container">
-<button type="submit" data-toggle="modal" data-target="#Submit" class="btn btn-info btn-lg col-12 text-uppercase mt-3">Submit</button>
+<div class="form-button contact-container mx-auto justify-content-center">
+<button type="submit" data-toggle="modal" data-target="#Submit" class="btn btn-info btn-lg col-md-7 text-uppercase mt-3">Submit</button>
 </div>
 <!-- Modal for feedback message delivery -->
-<div class="modal fade" id="Submit" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="Submit" aria-hidden="true">
+<div class="modal fade mx-auto" id="Submit" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="Submit" aria-hidden="true">
 <div class="modal-dialog modal-sm" role="document">
 <div class="modal-content">
 <div class="modal-header">
@@ -647,7 +656,99 @@
 
 </form>
 </div>
-</section>  
+</section>
+ <!-- Footer -->
+    <footer class="page-footer font-small blue pt-4">
+
+        <!-- Footer Links -->
+        <div class="container-fluid text-center text-md-left">
+
+            <!-- Grid row -->
+            <div class="row">
+
+                <!-- Grid column -->
+                <div class="col-md-6 mt-md-0 mt-3">
+
+                    <!-- Content -->
+                    <div class="col-md-8">
+                        <form>
+                            <h6>SUBSCRIBE TO OUR NEWSLETTER</h6>
+                            <div class="input-group">
+                                <input type="email" class="form-control" placeholder="Enter your email" required>
+                                <span class="input-group-btn">
+                                    <button class="btn btn-primary no-border-radius" type="submit">Subscribe Now</button>
+                                </span>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="col-md-12 mt-3">
+                        <small>
+                            We strain to renew your capacity to wonder, our sweeping comprehensive range is certain to overpower you!
+                        </small>
+                    </div>
+                </div>
+                <!-- Grid column -->
+
+                <hr class="clearfix w-100 d-md-none pb-3">
+
+                <!-- Grid column -->
+                <div class="col-md-3 mb-md-0 mb-3">
+
+                    <!-- Links -->
+                    <h6 class="text-uppercase contact-details">Contact details</h6>
+
+                    <ul class="list-unstyled">
+                        <li>
+                            <small><i class="fas fa-home mt-3" aria-hidden="true"></i>&nbsp; 5 Rue Gustave-Revilliod, Les Acacias</small>
+                        </li>
+                        <li>
+                            <a class="link" aria-label="Phone number" href="tel:+41-77-961-89-40"><small><i class="fas fa-phone mt-3"></i>&nbsp; +41-77-961-89-40</small></a>
+                        </li>
+                        <li>
+                            <a class="link" aria-label="email" href="mailto:locatemarshal@gmail.com"><small><i class="fas fa-envelope mt-3"></i>&nbsp; locatemarshal@gmail.com</small></a>
+                        </li>
+                    </ul>
+
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-md-3 mb-md-0 mb-3">
+
+                    <!-- Links -->
+                    <h6 class="text-uppercase mb-3 socials">Connect with us</h6>
+
+                    <ul class="list-unstyled social-links">
+                        
+                        <li><a href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="Visit us on Facebook"><small><i class="fab fa-facebook-f mt-2" aria-hidden="true"></i>&nbsp; Facebook</small></a>
+							</li>
+                        
+                        <li><a href="https://twitter.com/" target="_blank" rel="noopener" aria-label="Visit us on Twitter"><small><i class="fab fa-twitter mt-2" aria-hidden="true"></i>&nbsp; Twitter</small></a>
+							</li>
+                        <li><a href="https://www.plus.google.com/" target="_blank" rel="noopener" aria-label="Visit us on Google"><small><i class="fab fa-google-plus-square mt-2" aria-hidden="true"></i>&nbsp; Google</small></a>
+							</li>
+                        <li><a href="https://www.linkedin.com/" target="_blank" rel="noopener" aria-label="Visit us on LinkedIn"><small><i class="fab fa-linkedin-in mt-2" aria-hidden="true"></i>&nbsp; LinkedIn</small></a>
+							</li>
+                        
+                    </ul>
+
+                </div>
+                <!-- Grid column -->
+
+            </div>
+            <!-- Grid row -->
+
+        </div>
+        <!-- Footer Links -->
+
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">
+            <small><p class="text-muted mb-3">© Copyright 2020 | Theme by Marshal | All Rights Reserved |</p></small>
+        </div>
+        <!-- Copyright -->
+
+    </footer>  
     
 <!-- Back to top button -->
 <a id="button"></a>
@@ -656,5 +757,6 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="assets/js/back-to-top-button.js"></script>
     <script src="assets/js/tab.js"></script>
+    <script src="assets/js/sendEmail.js"></script>
 </body>
 </html>
