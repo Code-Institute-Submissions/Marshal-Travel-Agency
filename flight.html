@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,700,800" rel="stylesheet">
+	
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" type="text/css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
+
+<script src="https://kit.fontawesome.com/58e618022f.js" crossorigin="anonymous"></script>
+
+   <link rel="stylesheet" href="assets/css/style.css">
+
+    <title>FLIGHT | Travel Agency</title>
+       
+    </head>
+     <body>
+          <!-- display flight result -->
+    <div id="output" style="margin: 0 auto;">
+        <table id="list" class="output-table table table-borderless table-striped">
+            <thead>
+                <tr>
+                    <th>Departure</th>
+                    <th>Terminal</th>
+                    <th>Price(Euros)</th>
+                    <th>Bookable Seats</th>
+                    <th>Flight No.</th> 
+                    <th>Carrier Code</th>
+                </tr>
+            </thead>
+            <tbody>
+               
+            
+            </tbody>
+        
+        </table>
+     </div>
+    </body>
+<script type="text/javascript" src="assets/js/getElem.js"></script>
+  <script>
+    var result = JSON.parse(localStorage.getItem("fligtdata"));
+   
+    console.log(result);
+    // console.log(result.departure.at);
+
+    for (i in result){
+        // console.log(result[i].carriers[0].Value);
+        document.getElementById('list').insertAdjacentHTML("beforeend", "<tr><td>" + result[1][i].itineraries[0].segments[1].departure.at + " </td><td>" + result[1][i].itineraries[0].segments[1].departure.terminal + "</td><td>" + result[1][i].price.total+  "</td><td>" + result[1][i].numberOfBookableSeats +  "</td><td>" + result[1][i].itineraries[0].segments[1].number + "</td><td>"  + result[1][i].itineraries[0].segments[1].carrierCode + "</td></tr>" )
+        
+      }
+</script>
+</html>
