@@ -1,71 +1,54 @@
 <!DOCTYPE html>
 <html lang="en-US">
+
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,700,800" rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" type="text/css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
+	<script src="https://kit.fontawesome.com/58e618022f.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="assets/css/style.css">
+	<title>FLIGHT+HOTEL | Travel Agency</title>
+</head>
 
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,700,800" rel="stylesheet">
-	
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" type="text/css">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<body>
+	<!-- display hotel and flightresult -->
+	<div class="output table-responsive-md col-md-12">
+		<table id="hf" class="output-table table table-dark table-striped">
+			<thead>
+				<tr class="table-font">
+					<th scope="col"><i class="fas fa-hotel">&nbsp;</i>HOTEL</th>
+					<th scope="col"><i class="fas fa-map-marker-alt">&nbsp;</i>ADDRESS</th>
+					<th scope="col"><i class="fas fa-phone">&nbsp;</i>PHONE</th>
+					<th scope="col"><i class="fas fa-list-ol">&nbsp;</i>FLIGHT No.</th>
+					<th scope="col"><i class="fas fa-tags">&nbsp;</i>CARRIER</th>
+					<th scope="col"><i class="fas fa-terminal">&nbsp;</i>TERMINAL</th>
+					<th scope="col"><i class="fas fa-euro-sign">&nbsp;</i>PRICE(EURO)</th>
+				</tr>
+			</thead>
+			<tbody></tbody>
+		</table>
+	</div>
+	<script src="assets/js/getElem.js"></script>
+	<script>
+		// fetch hotel and flight data from localstorage
+		    var result = JSON.parse(localStorage.getItem("FandHdata"));
+		   
+		    console.log(result);
+		    // console.log(result.departure.at);
+		
+		    for (i in result) {
+		    x = result[i];
+		    // inject response data into html table
+		    document.getElementById('hf').insertAdjacentHTML("beforeend", "<tr><td>" + x.hotel + " </td><td>" + x.address + "</td><td>" + x.phone +  "</td><td>" + x.flightnb +  "</td><td>" + x.carrier + "</td><td>"  + x.terminal + "</td><td>"  + x.price + "</td></tr>" )
+		              
+		    }
+	</script>
+</body>
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
-
-<script src="https://kit.fontawesome.com/58e618022f.js" crossorigin="anonymous"></script>
-
-   <link rel="stylesheet" href="assets/css/style.css">
-
-    <title>FLIGHT+HOTEL | Travel Agency</title>
-       
-    </head>
-     <body>
-            <!-- display hotel and flightresult -->
-        <div class="output col-md-12">
-                <table id="hf" class="output-table table table-dark table-striped col-md-12">
-                    <thead>
-                        <tr>
-                            <th scope="col">HOTEL</th>
-                            <th scope="col">ADDRESS</th>
-                            <th scope="col">PHONE</th>
-                            <th scope="col">FLIGHT No.</th>
-                            <th scope="col">CARRIER</th> 
-                            <th scope="col">TERMINAL</th>
-                             <th scope="col">PRICE(EURO)</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                       
-                    
-                    </tbody>
-                
-                </table>
-             </div>
-    </body>
-<script type="text/javascript" src="assets/js/getElem.js"></script>
-  <script>
-    
-    // fetch hotel and flight data from localstorage
-    var result = JSON.parse(localStorage.getItem("FandHdata"));
-   
-    console.log(result);
-    // console.log(result.departure.at);
-
-    for (i in result) {
-    x = result[i];
-    // inject response data into html table
-    document.getElementById('hf').insertAdjacentHTML("beforeend", "<tr><td>" + x.hotel + " </td><td>" + x.address + "</td><td>" + x.phone +  "</td><td>" + x.flightnb +  "</td><td>" + x.carrier + "</td><td>"  + x.terminal + "</td><td>"  + x.price + "</td></tr>" )
-              
-    }
-
-    // // for loop objects in result variable and inject into html table
-    // for (i in result){
-            
-    //        // inject response data into html table
-    //        document.getElementById('hf').insertAdjacentHTML("beforeend", "<tr><td>" + result.hotel + " </td><td>" + result.address + "</td><td>" + result.phone +  "</td><td>" + result.flightnb +  "</td><td>" + result.carrier + "</td><td>"  + result.terminal + "</td></tr>" )
-                  
-    //     }
-</script>
 </html>

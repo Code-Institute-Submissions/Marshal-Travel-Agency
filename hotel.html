@@ -1,62 +1,53 @@
 <!DOCTYPE html>
 <html lang="en-US">
+
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,700,800" rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" type="text/css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
+	<script src="https://kit.fontawesome.com/58e618022f.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="assets/css/style.css">
+	<title>HOTEL | Travel Agency</title>
+</head>
 
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,700,800" rel="stylesheet">
-	
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" type="text/css">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<body>
+	<div class="output col-md-12">
+		<table id="hotel" class=" output-table table table-dark table-striped col-md-12">
+			<thead>
+				<tr class="table-font">
+					<th scope="col"><i class="fas fa-calendar-alt">&nbsp;</i>CHECK IN</th>
+					<th scope="col"><i class="fas fa-calendar-alt">&nbsp;</i>CHECK OUT</th>
+					<th scope="col"><i class="fas fa-euro-sign">&nbsp;</i>PRICE(EUROS)</th>
+					<th scope="col"><i class="fas fa-hotel">&nbsp;</i>HOTEL NAME</th>
+					<th scope="col"><i class="fas fa-city">&nbsp;</i>CITY</th>
+					<th scope="col"><i class="fas fa-map-marker-alt">&nbsp;</i>ADDRESS</th>
+					<th scope="col"><i class="fas fa-phone">&nbsp;</i>PHONE</th>
+				</tr>
+			</thead>
+			<tbody></tbody>
+		</table>
+	</div>
+	<script src="assets/js/getElem.js"></script>
+	<script>
+		// fetch hotel data from localstorage
+		    var result = JSON.parse(localStorage.getItem("hoteldata"));
+		   
+		    console.log(result);
+		    // console.log(result.departure.at);
+		
+		    // for loop objects in result variable and inject into html table
+		    for (i in result){
+		            
+		            document.getElementById('hotel').insertAdjacentHTML("beforeend", "<tr><td>" + result[i].offers[0].checkInDate + " </td><td>" + result[i].offers[0].checkOutDate + "</td><td>" + result[i].offers[0].price.total + "</td><td>"  + result[i].hotel.name + "</td><td>" +  result[i].hotel.address.cityName + "</td>"  + "<td>" + result[i].hotel.address.lines[0] + "</td><td>"   + result[i].hotel.contact.phone + "</td></tr>" )
+		          
+		        }
+	</script>
+</body>
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
-
-<script src="https://kit.fontawesome.com/58e618022f.js" crossorigin="anonymous"></script>
-
-   <link rel="stylesheet" href="assets/css/style.css">
-
-    <title>HOTEL | Travel Agency</title>
-       
-    </head>
-    <body>
-            <div class="output col-md-12">
-                    <table id="hotel" class=" output-table table table-dark table-striped">
-                        <thead>
-                            <tr>
-                                <th scope="col">Check In Date</th>
-                                <th scope="col">Check Out Date</th>
-                                <th scope="col">Price(Euros)</th>
-                                <th scope="col">Hotel name</th>
-                                <th scope="col">City</th> 
-                                <th scope="col">Address</th>
-                                <th scope="col">Phone</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                           
-                        
-                        </tbody>
-                    
-                    </table>
-                 </div>
-    </body>
-<script type="text/javascript" src="assets/js/getElem.js"></script>
-  <script>
-    
-    // fetch hotel data from localstorage
-    var result = JSON.parse(localStorage.getItem("hoteldata"));
-   
-    console.log(result);
-    // console.log(result.departure.at);
-
-    // for loop objects in result variable and inject into html table
-    for (i in result){
-            
-            document.getElementById('hotel').insertAdjacentHTML("beforeend", "<tr><td>" + result[i].offers[0].checkInDate + " </td><td>" + result[i].offers[0].checkOutDate + "</td><td>" + result[i].offers[0].price.total + "</td><td>"  + result[i].hotel.name + "</td><td>" +  result[i].hotel.address.cityName + "</td>"  + "<td>" + result[i].hotel.address.lines[0] + "</td><td>"   + result[i].hotel.contact.phone + "</td></tr>" )
-          
-        }
-</script>
 </html>
