@@ -14,7 +14,17 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
 
+<!-- vuetify import -->
+<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/@mdi/font@4.x/css/materialdesignicons.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.min.css" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+<!-- end vuetify import -->
+
 <script src="https://kit.fontawesome.com/58e618022f.js" crossorigin="anonymous"></script>
+<!-- vuejs CDN -->
+<script src="https://cdn.jsdelivr.net/npm/vue@2.6.0"></script>
+<!-- close vuejs -->
    <link rel="stylesheet" href="assets/css/style.css">
 
     <title>HOME | Travel Agency</title>
@@ -90,7 +100,7 @@
   <div class="hero-text">
     <h1 class="caption">Perfect Vacation</h1>
     <p class="write-ups">Lets help you see the world</p>
-    <a href="#bookings"><button class="book">BOOK NOW</button></a> 
+    <a href="#bookings" class="btn btn-default book">BOOK NOW</a> 
   </div>
   <div class="hero-exclusions">
     <a href="#popup1">
@@ -109,7 +119,7 @@
     </div>
   </div>
 </div>
-<div id="about us.html">
+<div id="aboutus">
 <div class="container-aboutus">
 <div class="img-aboutus">  
 <img class="responsive" src="assets/images/aboutus.jpg" alt="aboutus"/>
@@ -143,12 +153,11 @@
             <!-- Section heading -->
             <h2 class="h2-responsive font-weight-bold my-5">Our Services</h2>
             <!-- Section description -->
-            <p class="dark-grey-text w-responsive mx-auto mb-5">
+            <p class="jumbotron bg-transparent dark-grey-text w-responsive mx-auto mb-5">
                 With access to over 500 IATA airlines and hoteliers worldwide for reservations and bookings, 
                 We assist our clients in planning their trips to cut down transportation cost, time and resources.
                 Our clients enjoy maximum rewards and update on latest beneficial information on their loved airlines. 
-                We also provide car hire needs of our clients in all major cities in the world, both pick ups and drop offs. To add to that, 
-                we provide airport protocol services at airports including a special meet-and-assist service.
+                We also provide car hire needs of our clients in all major cities in the world including a special meet-and-assist service.
             </p>
 
             <!-- Grid row -->
@@ -162,16 +171,16 @@
                         <div class="card-up"></div>
                         
                         <div class="avatar mx-auto">
-                            <img src="assets/images/flight.jpg" class="img-fluid">
+                            <img src="assets/images/flight.jpg" class="img-fluid" alt="flight">
                         </div>
                         <div class="card-body">
                             
                             <h4 class="font-weight-bold mb-4">Flight Bookings</h4>
                             <hr>
                             
-                            <h3 class="dark-grey-text mt-4 mb-4">
-                                <b><i class="fas fa-plane" aria-hidden="true"></i></b>
-                            </h3>
+                            <p class="dark-grey-text mt-4 mb-4">
+                                <b><i class="fas fa-plane fa-2x" aria-hidden="true"></i></b>
+                            </p>
                             <a href="#contact" class="btn btn-info">More Information</a>
                        </div>
 					</div>
@@ -188,16 +197,16 @@
                         </div>
                         
                         <div class="avatar mx-auto">
-                            <img src="assets/images/hotel.jpg" class="img-fluid">
+                            <img src="assets/images/hotel.jpg" class="img-fluid" alt="hotel">
                         </div>
                         <div class="card-body">
                             
                             <h4 class="font-weight-bold mb-4">Hotel Bookings</h4>
                             <hr>
                             
-                            <h3 class="dark-grey-text mt-4 mb-4">
-                                <b><i class="fas fa-bed" aria-hidden="true"></i></b>
-                            </h3>
+                            <p class="dark-grey-text mt-4 mb-4">
+                                <b><i class="fas fa-bed fa-2x" aria-hidden="true"></i></b>
+                            </p>
                             <a href="#contact" class="btn btn-info">More Information</a>
                         </div>
                     </div>
@@ -213,16 +222,16 @@
                         <div class="card-up"></div>
                         
                         <div class="avatar mx-auto">
-                            <img src="assets/images/car.png" class="img-fluid">
+                            <img src="assets/images/car.png" class="img-fluid" alt="car">
                         </div>
                         <div class="card-body">
                             
                             <h4 class="font-weight-bold mb-4">Car Service</h4>
                             <hr>
                             
-                            <h3 class="dark-grey-text mt-4 mb-4">
-                                <b><i class="fas fa-car" aria-hidden="true"></i></b>
-                            </h3>
+                            <p class="dark-grey-text mt-4 mb-4">
+                                <b><i class="fas fa-car fa-2x" aria-hidden="true"></i></b>
+                            </p>
                             <a href="#contact" class="btn btn-info">More Information</a>
                         </div>
                     </div>
@@ -244,16 +253,16 @@
                         <div class="card-up"></div>
                        
                         <div class="avatar mx-auto">
-                            <img src="assets/images/cruise.jpeg" class="img-fluid">
+                            <img src="assets/images/cruise.jpeg" class="img-fluid" alt="cruise">
                         </div>
                         <div class="card-body">
                             
                             <h4 class="font-weight-bold mb-4">Tour/Cruise Packaging</h4>
                             <hr>
                             
-                            <h3 class="dark-grey-text mt-4 mb-4">
-                                <b><i class="fas fa-ship" aria-hidden="true"></i></b>
-                            </h3>
+                            <p class="dark-grey-text mt-4 mb-4">
+                                <b><i class="fas fa-ship fa-2x" aria-hidden="true"></i></b>
+                            </p>
                             <a href="#contact" class="btn btn-info">More Information</a>
                         </div>
                     </div>
@@ -270,16 +279,16 @@
                         </div>
                         
                         <div class="avatar mx-auto">
-                            <img src="assets/images/visa.jpeg" class="img-fluid">
+                            <img src="assets/images/visa.jpeg" class="img-fluid" alt="visa">
                         </div>
                         <div class="card-body">
                             
                             <h4 class="font-weight-bold mb-4">Visa Assistance</h4>
                             <hr>
                             
-                            <h3 class="dark-grey-text mt-4 mb-4">
-                                <b><i class="fas fa-address-card" aria-hidden="true"></i></b>
-                            </h3>
+                            <p class="dark-grey-text mt-4 mb-4">
+                                <b><i class="fas fa-address-card fa-2x" aria-hidden="true"></i></b>
+                            </p>
                             <a href="#contact" class="btn btn-info">More Information</a>
                         </div>
                     </div>
@@ -295,16 +304,16 @@
                         <div class="card-up"></div>
                         
                         <div class="avatar mx-auto">
-                            <img src="assets/images/excursion.jpeg" class="img-fluid">
+                            <img src="assets/images/excursion.jpeg" class="img-fluid" alt="exercursion">
                         </div>
                         <div class="card-body">
                            
                             <h4 class="font-weight-bold mb-4">Educational Excursion</h4>
                             <hr>
                             
-                            <h3 class="dark-grey-text mt-4 mb-4">
-                                <b><i class="fas fa-graduation-cap" aria-hidden="true"></i></b>
-                            </h3>
+                            <p class="dark-grey-text mt-4 mb-4">
+                                <b><i class="fas fa-graduation-cap fa-2x" aria-hidden="true"></i></b>
+                            </p>
                             <a href="#contact" class="btn btn-info">More Information</a>
                         </div>
                     </div>
@@ -318,21 +327,24 @@
         </div>
         <!-- Section Our Services-->
     </section>
+
     <section id="bookings" class="selection-tab">
  <div class="container container-tab p-1 py-4">
  <h2 class="h2-responsive font-weight-bold text-center my-5 book-text">Bookings</h2>
-    <div class="tab col-md-12">
+    <div class="tab col-md-12 mt-5">
   <button class="tablinks col-md-2 rf" onclick="openCity(event, 'Flight')" id="defaultOpen"><b><i class="fas fa-plane-departure"></i></b>&nbsp;Flights</button>
   <button class="tablinks col-md-2 rb" onclick="openCity(event, 'Hotel')"><b><i class="fas fa-bed"></i></b>&nbsp;Hotels</button>
-<button class="tablinks mb-1 col-md-2 departure" onclick="openCity(event, 'Flight + Hotel')"><div class="plane-hotel"><div class="first"><i class="fas fa-plane-departure"></i></div><div class="second"><i class="fas fa-bed"></i></div></div>&nbsp;Flight + Hotel</button>
-  <button class="tablinks col-md-2 rc" onclick="openCity(event, 'Car Rental')"><b><i class="fas fa-car"></i></b>&nbsp;Car Rental</button>
+  <button type="button" class="btn btn-second tablinks mb-1 col-md-2 departure" data-container="body" data-toggle="popover" data-placement="top" data-content="Save upto 30%"
+  onclick="openCity(event, 'Flight+Hotel')"><span class="plane-hotel"><span class="first"><i class="fas fa-plane-departure fa-lg"></i></span><span class="second"><i class="fas fa-bed fa-lg"></i></span></span>&nbsp;Flight + Hotel</button>
+  <button class="tablinks col-md-2 rc" onclick="openCity(event, 'Car-Rental')"><b><i class="fas fa-car"></i></b>&nbsp;Car Rental</button>
 </div>
 
 <div id="Flight" class="tabcontent mt-2">
 <div class="class-options">
+ <article class="alert alert-primary status" style="display: none;"></article>
  
   <div class="form-check form-check-inline">
-<input class="form-check-input" type="radio" id="return" value="return" name="flight_preference" aria-label="return" required>
+<input class="form-check-input" type="radio" id="isreturn" value="return" name="flight_preference" aria-label="return" required>
 <label class="form-check-label" for="return">Return</label>
 </div>
 <div class="form-check form-check-inline">
@@ -343,7 +355,7 @@
 <input class="form-check-input" type="radio" id="multicity" value="multicity" name="flight_preference" aria-label="multicity" required>
 <label class="form-check-label" for="multicity">Multi-City</label>
 </div>|&nbsp; &nbsp; &nbsp;
-<div class="form-group col-md-2 form-check form-check-inline">
+<div class="form-group col-md-2 form-check form-check-inline cl">
       <label for="inputClass"></label>
       <select id="inputClass" class="form-control selected-class mb-2">
         <option selected>Economy</option>
@@ -352,95 +364,94 @@
         <option>First</option>
       </select>
     </div>|
-<div class="form-check col-md-2 form-check-inline mt-2">
-<input type="checkbox" class="form-check-input" id="exampleCheck1">
-<label class="form-check-label" for="exampleCheck1">Direct flights only</label>
+<div class="form-check form-check-inline mt-2 df">
+<input type="checkbox" class="form-check-input" id="flightonly">
+<label class="form-check-label" v-text="ot" for="direct-flight">Direct flights only</label>
 
 <!----<input type="text" id="US" placeholder="country" required /><br />
 <input type="text" id="USDcurrency" placeholder="currency" required /><br />
 <input type="text" id="en-US" placeholder="locale" required /><br />----->
 </div></div>
-<form id="addFlight">
-<form>
+
+
   <div class="form-row">
-    <div class="col-md-2">
-    <label for="from">From Where<span>*</span></label>
+    <div class="col-md-2 ob">
+    <label for="OutboundLeg">From Where<span>*</span></label>
       <input type="text" class="form-control" id="OutboundLeg" placeholder="From" aria-label="from" required>
     </div>
-    <div class="col-md-2">
-    <label for="to">To Where<span>*</span></label>
+    <div class="col-md-2 ib">
+    <label for="InboundLeg">To Where<span>*</span></label>
       <input type="text" class="form-control" id="InboundLeg" placeholder="To" aria-label="to" required>
     </div>
-    <div class="col-md-2">
-    <label for="departure">Depature<span>*</span></label>
-	<input type="date" class="form-control" id="DepartureDate" placeholder="Departure" aria-label="date" required>
+    <div class="col-md-2 dd">
+    <label for="DepartureDate">Depature<span>*</span></label>
+	<input type="date" class="form-control" id="DepartureDate" aria-label="date" required>
 	</div>
-    <div class="col-md-2">
-    <label for="return">Return<span>*</span></label>
-	<input type="date" class="form-control" placeholder="Return" aria-label="date" required>
+    <div class="col-md-2 rd">
+    <label for="returndate">Return<span>*</span></label>
+	<input type="date" class="form-control" id="datereturn" aria-label="date" required>
 	</div>
      <div class="col-md-1">
     <label for="adults">Adults<span>*</span></label>
-      <input type="number" class="form-control" placeholder="16+" aria-label="adults" required>
+      <input type="number" class="form-control" id="adult" placeholder="16+" aria-label="adults" required>
     </div>
      <div class="col-md-1">
     <label for="children">Children<span>*</span></label>
-      <input type="number" class="form-control" placeholder="2-15" aria-label="children" required>
+      <input type="number" class="form-control" id="children" placeholder="2-15" aria-label="children" required>
     </div>
      <div class="col-md-1">
     <label for="infants">Infants<span>*</span></label>
-      <input type="number" class="form-control" placeholder="<2" aria-label="infants" required>
-    </div>
+      <input type="number" class="form-control" id="infants" placeholder="<2" aria-label="infants" required></div>
   </div>
-</form>
-<!-----<form>
-<div class="form-row">
-<div class="col-md-3 mt-3">
-<label for="fname">First Name<span>*</span></label>
-<input type="text" class="form-control" id="firstname" placeholder="First Name" aria-label="first name" required>
+      <div class="search py-5 pr-5">
+    <button class="btn btn-info col-md-12" id="fBtn" ><strong>Search Flights</strong></button><span class="search-signal" id="status"> searching....</span>          
+    </div>
+  
 </div>
 
-<div class="col-md-3  mt-3">
-<label for="lname">Last Name<span>*</span></label>
-<input type="text" class="form-control" id="lastname" placeholder="Last Name" aria-label="last name" required>
-</div>
-
-<div class="col-md-3  mt-3">
-<label for="phone">Phone Number<span>*</span></label>
-<input type="number" class="form-control" id="phonenumber" placeholder="tel" aria-label="phone number" required>
-</div>
-<div class="col-md-3  mt-3">
-<label for="email">E-mail Address<span>*</span></label>
-<input type="email" class="form-control" id="emailaddress" placeholder="Email" aria-label="email" required>
-</div>
-</div>
-</form>---->
-<div class="search py-5">
-<div class="container">
-      <!---<input id="city" type="text" placeholder="City" class="query-input col-md-5">--->
- <a href="contact" class="btn btn-info" id="search_button"><strong>Search Flights</strong></a>
- <div id="output"></div>
-             
-        </div>
-</div></form>
-</div>
 <div id="Hotel" class="tabcontent">
- <form>
+ 
   <div class="form-row">
+   <article class="alert alert-primary status" style="display: none;"></article>
     <div class="col py-3">
-      <input type="text" class="form-control" placeholder="Destination, Country, City, District or Landmark" aria-label="destination" required>
-    </div>
+      <input type="text" id="loc" class="form-control" placeholder="Destination, Country, City, District or Landmark" aria-label="destination" required>
+      </div>
   </div>
- </form> 
+      <!--<div class="container" style="margin: 0 auto;">
+  
+  <button class="btn btn-info" id="hBtn" ><strong>Search Hotel</strong></button> <span id="status2" style="display:none; color: white"> searching....</span>           
+  </div>-->
+  <!--display hotel result
+  <div id="output2" style="background-color: red; margin: 0 auto;">
+      <table id="hotel" class="table table-borderless table-striped " style="width:100%">
+          <thead>
+              <tr>
+                  <th>Check In Date</th>
+                  <th>Check Out Date</th>
+                  <th>Price(Euros)</th>
+                  <th>Hotel name</th>
+                  <th>City</th> 
+                  <th>Address</th>
+                  <th>Phone</th>
+              </tr>
+          </thead>
+          <tbody>
+             
+          
+          </tbody>
+      
+      </table>
+   </div>--->
+   
 <form>
 <div class="form-row">
  <div class="col-md-6">
-    <label for="departure">Check-in<span>*</span></label>
-	<input type="date" class="form-control" placeholder="Departure" aria-label="date" required>
+    <label for="checkin">Check-in<span>*</span></label>
+	<input type="date" class="form-control" id="checkin" aria-label="date" required>
 	</div>
     <div class="col-md-6">
-    <label for="return">Check-out<span>*</span></label>
-	<input type="date" class="form-control" aria-label="date" required>
+    <label for="checkout">Check-out<span>*</span></label>
+	<input type="date" class="form-control" id="checkout" aria-label="date" required>
 	</div> 
 </div>
 </form>
@@ -448,17 +459,17 @@
 <div class="form-row">
  <div class="col-md-1 mt-3">
     <label for="rooms">Rooms<span>*</span></label>
-      <input type="number" class="form-control" placeholder="0" aria-label="rooms" required>
+      <input type="number" class="form-control" id="rooms" placeholder="0" aria-label="rooms" required>
     </div>
      <div class="col-md-1 mt-3">
-    <label for="adults">Adults<span>*</span></label>
-      <input type="number" class="form-control" placeholder="0" aria-label="adults" required>
+    <label for="adult">Adults<span>*</span></label>
+      <input type="number" class="form-control" id="adult2" placeholder="0" aria-label="adults" required>
     </div>
      <div class="col-md-1 mt-3">
-    <label for="children">Children<span>*</span></label>
-      <input type="number" class="form-control" placeholder="0" aria-label="children" required>
+    <label for="children2">Children<span>*</span></label>
+      <input type="number" class="form-control" id="children2" placeholder="0" aria-label="children" required>
     </div>
-    <div class="form-group form-check form-check-inline mt-5">
+    <div class="form-group form-check form-check-inline col-md-2 mt-5">
       <label for="inputStar"></label>
       <select id="inputStar" class="form-control selected-class">
         <option selected>Hotel Rating</option>
@@ -472,16 +483,17 @@
     </div>
   </div>
    <div class="pb-5 search-h">
- <a href="contact" class="btn btn-info"><strong>Search Hotels</strong></a>
+  <button class="btn btn-info" id="hBtn"><strong>Search Hotels</strong></button>&nbsp;<span class="search-signal" id="status1"> searching....</span>
 </div>
 </form>
 
 </div>
 
-<div id="Flight + Hotel" class="tabcontent">
+<div id="Flight+Hotel" class="tabcontent">
 <div class="class-options">
- 
-  <div class="form-check form-check-inline">
+<article class="alert alert-primary status" style="display: none;"></article>
+ <p class="discount mt-2">&nbsp;<i class="fas fa-check"></i>&nbsp;Book your Flight + Hotel together and save up to 30%</p>
+  <div class="form-check form-check-inline mt-3">
 <input class="form-check-input" type="radio" id="return2" value="return" name="flight_preference" aria-label="return" required>
 <label class="form-check-label" for="return">Return</label>
 </div>
@@ -502,70 +514,53 @@
         <option>First</option>
       </select>
     </div>|
-<div class="form-check col-md-2 form-check-inline mt-2">
-<input type="checkbox" class="form-check-input" id="direct flight">
-<label class="form-check-label" for="direct flight">Direct flights only</label>
+<div class="form-check form-check-inline mt-2">
+<input type="checkbox" class="form-check-input" id="directflight">
+<label class="form-check-label" for="directflight">Direct flights only</label>
 </div></div> 
 <form>
   <div class="form-row">
     <div class="col-md-2">
     <label for="from">From Where<span>*</span></label>
-      <input type="text" class="form-control" placeholder="From" aria-label="from" required>
+      <input type="text" class="form-control" id="where" placeholder="From" aria-label="from" required>
     </div>
     <div class="col-md-2">
     <label for="to">To Where<span>*</span></label>
-      <input type="text" class="form-control" placeholder="To" aria-label="to" required>
+      <input type="text" class="form-control" id="destination" placeholder="To" aria-label="to" required>
     </div>
     <div class="col-md-2">
     <label for="departure">Depature<span>*</span></label>
-	<input type="date" class="form-control" placeholder="Departure" aria-label="date" required>
+	<input type="date" class="form-control" id="departure" aria-label="date" required>
 	</div>
     <div class="col-md-2">
-    <label for="return">Return<span>*</span></label>
-	<input type="date" class="form-control" aria-label="date" required>
+    <label for="return3">Return<span>*</span></label>
+	<input type="date" class="form-control" id="return3" aria-label="date" required>
 	</div>
      <div class="col-md-1">
-    <label for="adults">Adults<span>*</span></label>
-      <input type="number" class="form-control" placeholder="16+" aria-label="adults" required>
+    <label for="adults2">Adults<span>*</span></label>
+      <input type="number" class="form-control" id="adults2" placeholder="16+" aria-label="adults" required>
     </div>
      <div class="col-md-1">
     <label for="children">Children<span>*</span></label>
-      <input type="number" class="form-control" placeholder="2-15" aria-label="children" required>
+      <input type="number" class="form-control" id="children3" placeholder="2-15" aria-label="children" required>
     </div>
      <div class="col-md-1">
-    <label for="infants">Infants<span>*</span></label>
-      <input type="number" class="form-control" placeholder="<2" aria-label="infants" required>
+    <label for="infants2">Infants<span>*</span></label>
+      <input type="number" class="form-control" id="infants2" placeholder="<2" aria-label="infants" required>
     </div>
     <div class="col-md-1">
-    <label for="rooms">Rooms<span>*</span></label>
-      <input type="number" class="form-control" placeholder="0" aria-label="rooms" required>
+    <label for="rooms2">Rooms<span>*</span></label>
+      <input type="number" class="form-control" id="room" placeholder="0" aria-label="rooms" required>
     </div>
+       <!--<div class="container" style="margin: 0 auto;">
+  
+        <button class="btn btn-info" id="sBtn" ><strong>Search</strong></button><span id="status3" style="display:none; color: white"> searching....</span>           
+        </div>-->
+        
   </div>
 </form> 
 
-<!-----<form>
-<div class="form-row">
-<div class="col-md-3 mt-3">
-<label for="fname">First Name<span>*</span></label>
-<input type="text" class="form-control" id="first name" placeholder="First Name" aria-label="first name" required>
-</div>
-
-<div class="col-md-3  mt-3">
-<label for="lname">Last Name<span>*</span></label>
-<input type="text" class="form-control" id="last name" placeholder="Last Name" aria-label="last name" required>
-</div>
-
-<div class="col-md-3  mt-3">
-<label for="phone">Phone Number<span>*</span></label>
-<input type="number" class="form-control" id="phone number" placeholder="tel" aria-label="phone number" required>
-</div>
-<div class="col-md-3  mt-3">
-<label for="email">E-mail Address<span>*</span></label>
-<input type="email" class="form-control" id="email address" placeholder="Email" aria-label="email" required>
-</div>
-</div>
-</form>--->
-<div class="form-group form-check form-check-inline  py-5">
+<div class="form-group form-check form-check-inline  py-4">
       <label for="inputStar"></label>
       <select id="inputStar2" class="form-control selected-class">
         <option selected>Hotel Rating</option>
@@ -577,45 +572,51 @@
         <option>5 Stars</option>
       </select>
     </div>
-<div class="search py-5">
- <a href="contact" class="btn btn-info"><strong>Search</strong></a>
+<!---<div class="search py-4">
+ <a class="btn btn-info"><strong>Search</strong></a>
+</div>--->
+<div class="search py-4">
+  
+        <button class="btn btn-info" id="sBtn" ><strong>Search</strong></button><span class="search-signal" id="status2"> searching....</span>           
+        </div>
 </div>
-</div>
-<div id="Car Rental" class="tabcontent">
-<form>
+<div id="Car-Rental" class="tabcontent">
+
   <div class="form-row">
+  <article class="alert alert-primary status" style="display: none;"></article>
     <div class="col py-3">
-      <input type="text" class="form-control" placeholder="Pickup Location, Airport, Station..." aria-label="destination" required>
+      <input type="text" id="pickloc" class="form-control" placeholder="Pickup Location, Airport, Station..." aria-label="destination" required>
     </div>
   </div>
- </form>
+ 
 
- <div class="form-check col-md-3 form-check-inline py-2">
-<input type="checkbox" class="form-check-input" id="different location">
-<label class="form-check-label" for="direct flight">Return to a different location</label>
+ <div class="form-check form-check-inline py-2">
+<input type="checkbox" class="form-check-input" id="differentlocation">
+<label class="form-check-label" for="different-location">Return to a different location</label>
 </div> 
-<form>
+
   <div class="form-row">
   <div class="col-md-4">
-    <label for="departure">Pick Up Date<span>*</span></label>
-	<input type="date" class="form-control" placeholder="pickup" aria-label="date" required>
+    <label for="pickupdate">Pick Up Date<span>*</span></label>
+	<input type="date" id="hiredate" class="form-control" aria-label="date" required>
 	</div>
     <div class="col-md-2">
     <label for="time">Time:<span>*</span></label>
-      <input type="time" name="time"  value="10:00" class="form-control"  id="time" placeholder="time" aria-label="from" required>
+      <input type="time" id="picktime" name="time" class="form-control" aria-label="from" required>
     </div>
    <div class="col-md-4">
-    <label for="return">Drop Off Date<span>*</span></label>
-	<input type="date" class="form-control" aria-label="date" required>
+    <label for="dropoffdate">Drop Off Date<span>*</span></label>
+	<input type="date" id="dropoff" class="form-control" aria-label="date" required>
     </div>
     <div class="col-md-2">
     <label for="time">Time:<span>*</span></label>
-      <input type="time" name="time"  value="10:00" class="form-control"  id="time2" placeholder="time" aria-label="from" required>
+      <input type="time" id="droptime" name="time" class="form-control" aria-label="from" required>
     </div>
-    </div>
- </form>
- <div class="search py-4">
- <a href="contact" class="btn btn-info"><strong>Search Cars</strong></a>
+  </div>
+      <div class="search py-4">
+    <button class="btn btn-info" id="cBtn"><strong>Search Cars</strong></button>&nbsp;<span class="search-signal" id="status3">searching....</span>         
+        
+        
 </div> 
 </div>
 </div>
@@ -628,15 +629,15 @@
 <div class="row contact-container mx-auto">
 <div class="form-group col-md-7 mx-auto">
 <label for="fname">Full Name<span>*</span></label>
-<input type="text" name="name" class="form-control" id="fullname" placeholder="Full Name" aria-label="full name" required>
+<input type="text" name="name" class="form-control" id="fname" placeholder="Full Name" aria-label="full name" required>
 </div>
 <div class="form-group col-md-7 mx-auto">
 <label for="phone">Phone Number<span>*</span></label>
-<input type="number" name="phonenumber" class="form-control" id="phone2" placeholder="tel" aria-label="phone number" required>
+<input type="number" name="phonenumber" class="form-control" id="phone" placeholder="tel" aria-label="phone number" required>
 </div>
 <div class="form-group col-md-7 mx-auto">
 <label for="email">E-mail Address<span>*</span></label>
-<input type="email" name="emailaddress" class="form-control" id="email2" placeholder="Email" aria-label="Email" required>
+<input type="email" name="emailaddress" class="form-control" id="email" placeholder="Email" aria-label="Email" required>
 </div>
 <div class="form-group col-md-7 mx-auto">
 
@@ -644,7 +645,7 @@
 <textarea id="message" name="bookingsummary" rows="4" class="form-control" placeholder="Feel free to ask a question..." aria-label="comments" required></textarea>
 </div>
 </div>
-<div class="form-button contact-container mx-auto justify-content-center">
+<div class="form-button contact-container mx-auto px-3 justify-content-center">
 <button type="submit" data-toggle="modal" data-target="#Submit" class="btn btn-info btn-lg col-md-7 text-uppercase mt-3">Submit</button>
 </div>
 <!-- Modal for feedback message delivery -->
@@ -736,7 +737,7 @@
 
                     <ul class="list-unstyled social-links">
                         
-                        <li><a href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="Visit us on Facebook"><small><i class="fab fa-facebook-f mt-2" aria-hidden="true"></i>&nbsp; Facebook</small></a>
+                        <li><a href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="Visit us on Facebook"><small><i class="fab fa-facebook-f mt-2" aria-hidden="true"></i>&nbsp;Facebook</small></a>
 							</li>
                         
                         <li><a href="https://twitter.com/" target="_blank" rel="noopener" aria-label="Visit us on Twitter"><small><i class="fab fa-twitter mt-2" aria-hidden="true"></i>&nbsp; Twitter</small></a>
@@ -759,7 +760,7 @@
 
         <!-- Copyright -->
         <div class="footer-copyright text-center py-3">
-            <small><p class="text-muted mb-3">© Copyright 2020 | Theme by Marshal | All Rights Reserved |</p></small>
+            <p class="text-muted mb-3"><small>© Copyright 2020 | Theme by Marshal | All Rights Reserved |</small></p>
         </div>
         <!-- Copyright -->
 
@@ -772,8 +773,57 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="assets/js/back-to-top-button.js"></script>
     <script src="assets/js/tab.js"></script>
+    <script src="assets/js/hotelflight.js"></script>
     <script src="assets/js/flight.js"></script>
+    <script src="assets/js/hotel.js"></script>
+    <script src="assets/js/car.js"></script>
     <script src="assets/js/sendEmail.js"></script>
-        
+    <script>
+$(document).ready(function(){
+    $('[data-toggle="popover"]').popover();   
+});
+</script>
+
 </body>
+<script type="text/javascript" src="assets/js/getElem.js"></script>
+  <script>
+    // on page load function that executes when page loads
+    // on page load will initiate API request call to get and store API access token to be used for making subsequent API calls
+    window.onload = function() {
+    // API request body payload 
+    var data = "client_id=u7FbgcRQda0HGn2yTxSGk2WZAG4IlvVq&client_secret=QuQoeBidCP5gGW8Y&grant_type=client_credentials";
+
+    var xhr = new XMLHttpRequest();
+    xhr.withCredentials = true;
+    
+    // function run when API request is made
+    xhr.onreadystatechange = function() {
+      // get API access token if request returns status 200
+        if(xhr.readyState == 4 && xhr.status == 200) {
+            // set request response in variable named data,
+            var data=xhr.responseText;
+            // parse responseText to JSON so its iterable
+            var jsonResponse = JSON.parse(data);
+
+            // store API access token in localstorage
+            localStorage.setItem("token", jsonResponse.access_token);
+            console.log(jsonResponse.access_token);
+            console.log(jsonResponse);
+        }
+    }
+
+    // request url
+    xhr.open("POST", "https://test.api.amadeus.com/v1/security/oauth2/token");
+    // set request header to form urlencoded
+    xhr.setRequestHeader("content-type", "application/x-www-form-urlencoded");
+    // disable request header credentials
+    xhr.withCredentials = false
+    // post request body payload
+    xhr.send(data);
+  
+    };
+
+  
+
+</script>
 </html>

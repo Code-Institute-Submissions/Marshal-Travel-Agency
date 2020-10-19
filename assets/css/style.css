@@ -79,7 +79,7 @@ h4 {
   border: none;
   border-color:#333;
  }
-
+/*
 .bookings {
   position: relative;
   display: inline-block;
@@ -113,7 +113,7 @@ h4 {
 .dropbtn:hover .dropbtn:focus {
     background-color: #333!;
 }
-
+*/
 .navbar .dropdown-menu {
         width: 100%;
         left: 0;
@@ -198,7 +198,7 @@ h4 {
   color: white;
 }
 
-.hero-text button {
+.hero-text .btn-default {
   
   outline: 0;
   display: inline-block;
@@ -217,7 +217,7 @@ h4 {
   font-style: italic;
 }
 
-.hero-text button:hover {
+.hero-text .btn-default:hover {
   background-color: transparent;
   color: white;
   border: 5px solid black;
@@ -326,6 +326,21 @@ h4 {
     font-size: 1rem;
     color: white;
   }
+}
+
+.departure, .rf, .rb, .rc {
+    max-width: 169px;
+}
+
+@media screen and (max-width: 770px) {
+  .departure, .rf, .rb, .rc {
+    max-width: 520px;
+   
+  }
+}
+.jumbotron {
+    background: rgba(204, 204, 204, 0.7);
+    color: #fff; 
 }
 
 /* unvisited link */
@@ -592,7 +607,7 @@ span {
 }
 
 /* Style the buttons inside the tab */
-.tab button {
+.btn-second, .tab button {
   background-color: grey;
   float: left;
   border: 3px solid#1d2527;
@@ -608,13 +623,27 @@ span {
 
 
 /* Change background color of buttons on hover */
-.tab button:hover {
+.btn-second, .tab button:hover {
   background-color: #ddd;
+  color: black;
 }
 
 /* Create an active/current tablink class */
-.tab button.active {
+.btn-second, .tab button.active {
   background-color: grey;
+  color: black;
+}
+
+.popover {
+    background-color: #4CAF50;
+}
+
+.fa-check, .discount {
+    color:#fffff2;
+}
+
+.btn-second {
+    color: black;
 }
 
 /* Style the tab content */
@@ -623,7 +652,7 @@ span {
   padding: 6px 12px;
   border: 1px solid grey;
   border-top: 1px solid grey;
-  height:300px;
+  height:350px;
    background-color: grey;
    border-radius:20px;
 }
@@ -635,9 +664,14 @@ span {
     }
 
 
- .plane-hotel {
+ .plane-hotel, .departure {
     font-size: 9px;
      display: inline-block;
+ }
+
+ .first, .second {
+     display: block;
+     color: #000;
  }
 
  .rf, .rb, .rc {
@@ -647,7 +681,6 @@ span {
  .rf, .rb, .rc, .departure {
     display: block; 
  }
-
 
  .class-options {
      display: inline;
@@ -717,4 +750,23 @@ footer {
 	background: #e84610;
 }
 
+.output {
+    background-color: #1d2527;
+    width: 100%;
+    height: 100%;
+}
 
+.output-table{
+    background-color:#1E2123;
+    color: white;
+    width: 100%;
+}
+
+.search-signal{
+    display:none;
+    color: white
+}
+
+.car-table th i {
+	color: #e84610;
+}

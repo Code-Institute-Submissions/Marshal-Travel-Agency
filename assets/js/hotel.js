@@ -1,4 +1,4 @@
-// function for getting document by id used in form input value 
+/* function for getting document by id used in form input value 
 function _(x){
 	return document.querySelector(x);
 }
@@ -62,3 +62,71 @@ function _(x){
 
         })
       });
+      */
+
+// function for getting document by id used in form input value 
+function _(x){
+	return document.querySelector(x);
+}
+
+
+    // search hotel button click listener
+    _("#hBtn").addEventListener("click", function() {
+        //  Book hotel form inputs
+          var location = _("#loc").value;
+         
+          
+          console.log(location)
+
+          // get API access token from localstorag
+          var token = localStorage.getItem("token");
+
+          var url = 'https://test.api.amadeus.com/v2/shopping/hotel-offers?cityCode='+ location;
+         
+          // get class id for showing loading notification
+          document.getElementById('status1').style.display = 'inline';
+
+          // check if required input is not empty
+          if (location == '' ) {
+              
+            alert("All fields required");
+            document.getElementById('status1').style.display = 'none';
+            return false;
+          }
+          // show loading notification while making request
+          _('.status1').innerHTML = 'Please wait...';
+          
+
+          // begin get request
+          fetch(url, {
+              method: 'GET',
+              headers: new Headers({
+                  'Content-Type': 'application/json',
+                  'AUTHORIZATION': 'Bearer '+ token
+              })
+          }).then(res => res.json()).catch(error => console.log('Error:', error)).then(response => {
+
+            document.getElementById('status1').style.display = 'none';
+
+            console.log(response);
+             
+          // for loop in response object and push all object into result variable
+            var result = [];
+            var d = [];
+            d= response.data;
+            for (var i in d) {
+            d[i].id = i;
+             result.push(d[i]);
+              // console.log(d[i]);
+            }
+            
+            // store hotel data in local storage
+            localStorage.setItem("hoteldata", JSON.stringify(result));
+            //window.open('./hotel.html', '_blank');
+            window.location = './hotel.html';
+          
+        })
+      });
+
+
+

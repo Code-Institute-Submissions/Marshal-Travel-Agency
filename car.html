@@ -23,15 +23,16 @@
     </head>
     <body>
             <!-- display car hire result -->
-        <div class="output" style="margin: 0 auto;"> 
-                <table id="ch" class="output-table table table-borderless table-striped">
+        <div class="output col-md-12"> 
+                <table id="ch" class="output-table table table-dark table-striped col-md-12">
                     <thead>
-                        <tr>
-                            <th>Pickup</th>
-                            <th>Destination</th>
-                            <th>Car Type</th>
-                            <th>Service Type</th>
-                            <th>Time</th> 
+                        <tr class="car-table">
+                            <th scope="col"><i class="fas fa-map-marker-alt">&nbsp;</i>PICK-UP LOCATION</th>
+                            <th scope="col"><i class="fas fa-map-marker-alt">&nbsp;</i>DROP-OFF LOCATION</th>
+                            <th scope="col"><i class="fas fa-car">&nbsp;</i>CAR TYPE</th>
+                            <th scope="col"><i class="fas fa-briefcase">&nbsp;</i>SERVICE TYPE</th>
+                            <th scope="col"><i class="fas fa-clock">&nbsp;</i>PICK-UP TIME</th> 
+                            <th scope="col"><i class="fas fa-clock">&nbsp;</i>DROP-OFF TIME</th> 
                         </tr>
                     </thead>
                     <tbody>
@@ -53,7 +54,7 @@
     for (i in result) {
     x = result[i];
     // inject response data into html table
-       document.getElementById('ch').insertAdjacentHTML("beforeend", "<tr><td>" + x.pickup + " </td><td>" + x.Location + "</td><td>" + x.car +  "</td><td>" + x.type +  "</td>"  + "<td>"  + x.time + "</td></tr>" )
+       document.getElementById('ch').insertAdjacentHTML("beforeend", "<tr><td>" + x.pickup + " </td><td>" + x.Location + "</td><td>" + x.car +  "</td><td>" + x.type +  "</td>"  + "<td>"  + x.time + "</td><td>" + x.drop + "</td></tr>" )
           
     }
 
