@@ -93,8 +93,6 @@ function _(x){
             document.getElementById('status1').style.display = 'none';
             return false;
           }
-          // show loading notification while making request
-          _('.status1').innerHTML = 'Please wait...';
           
 
           // begin get request

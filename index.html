@@ -18,7 +18,6 @@
 <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
 <link href="https://cdn.jsdelivr.net/npm/@mdi/font@4.x/css/materialdesignicons.min.css" rel="stylesheet">
 <link href="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.min.css" rel="stylesheet">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
 <!-- end vuetify import -->
 
 <script src="https://kit.fontawesome.com/58e618022f.js" crossorigin="anonymous"></script>
@@ -29,10 +28,10 @@
 
     <title>HOME | Travel Agency</title>
     
-    <script type="text/javascript"
+    <script 
         src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js">
 </script>
-<script type="text/javascript">
+<script>
    (function(){
       emailjs.init("user_UN0AJ6LHyr0IIvojL3oSW");
       
@@ -76,16 +75,6 @@
                     <a class="nav-link" href="#bookings">Bookings</a>
                 </li>
                 
-<!--<div class="bookings">
-  <button class="dropbtn" data-toggle="#bookings">Bookings</button>
-  <div class="bookings-content">
-  <a href="#flight">Flights</a>
-    
-  
-    <a href="#hotel">Hotels</a>
-    <a href="#car">Car Service</a>
-  </div>
-</div>--->
 
                 <li class="nav-item">
                     <a class="nav-link" href="#contact">Contact Us</a>
@@ -344,7 +333,7 @@
  <article class="alert alert-primary status" style="display: none;"></article>
  
   <div class="form-check form-check-inline">
-<input class="form-check-input" type="radio" id="isreturn" value="return" name="flight_preference" aria-label="return" required>
+<input class="form-check-input" type="radio" id="return" value="return" name="flight_preference" aria-label="return" required>
 <label class="form-check-label" for="return">Return</label>
 </div>
 <div class="form-check form-check-inline">
@@ -366,11 +355,7 @@
     </div>|
 <div class="form-check form-check-inline mt-2 df">
 <input type="checkbox" class="form-check-input" id="flightonly">
-<label class="form-check-label" v-text="ot" for="direct-flight">Direct flights only</label>
-
-<!----<input type="text" id="US" placeholder="country" required /><br />
-<input type="text" id="USDcurrency" placeholder="currency" required /><br />
-<input type="text" id="en-US" placeholder="locale" required /><br />----->
+<label class="form-check-label" for="flightonly">Direct flights only</label>
 </div></div>
 
 
@@ -388,11 +373,11 @@
 	<input type="date" class="form-control" id="DepartureDate" aria-label="date" required>
 	</div>
     <div class="col-md-2 rd">
-    <label for="returndate">Return<span>*</span></label>
+    <label for="datereturn">Return<span>*</span></label>
 	<input type="date" class="form-control" id="datereturn" aria-label="date" required>
 	</div>
      <div class="col-md-1">
-    <label for="adults">Adults<span>*</span></label>
+    <label for="adult">Adults<span>*</span></label>
       <input type="number" class="form-control" id="adult" placeholder="16+" aria-label="adults" required>
     </div>
      <div class="col-md-1">
@@ -417,31 +402,7 @@
       <input type="text" id="loc" class="form-control" placeholder="Destination, Country, City, District or Landmark" aria-label="destination" required>
       </div>
   </div>
-      <!--<div class="container" style="margin: 0 auto;">
-  
-  <button class="btn btn-info" id="hBtn" ><strong>Search Hotel</strong></button> <span id="status2" style="display:none; color: white"> searching....</span>           
-  </div>-->
-  <!--display hotel result
-  <div id="output2" style="background-color: red; margin: 0 auto;">
-      <table id="hotel" class="table table-borderless table-striped " style="width:100%">
-          <thead>
-              <tr>
-                  <th>Check In Date</th>
-                  <th>Check Out Date</th>
-                  <th>Price(Euros)</th>
-                  <th>Hotel name</th>
-                  <th>City</th> 
-                  <th>Address</th>
-                  <th>Phone</th>
-              </tr>
-          </thead>
-          <tbody>
-             
-          
-          </tbody>
       
-      </table>
-   </div>--->
    
 <form>
 <div class="form-row">
@@ -521,11 +482,11 @@
 <form>
   <div class="form-row">
     <div class="col-md-2">
-    <label for="from">From Where<span>*</span></label>
+    <label for="where">From Where<span>*</span></label>
       <input type="text" class="form-control" id="where" placeholder="From" aria-label="from" required>
     </div>
     <div class="col-md-2">
-    <label for="to">To Where<span>*</span></label>
+    <label for="destination">To Where<span>*</span></label>
       <input type="text" class="form-control" id="destination" placeholder="To" aria-label="to" required>
     </div>
     <div class="col-md-2">
@@ -541,7 +502,7 @@
       <input type="number" class="form-control" id="adults2" placeholder="16+" aria-label="adults" required>
     </div>
      <div class="col-md-1">
-    <label for="children">Children<span>*</span></label>
+    <label for="children3">Children<span>*</span></label>
       <input type="number" class="form-control" id="children3" placeholder="2-15" aria-label="children" required>
     </div>
      <div class="col-md-1">
@@ -549,13 +510,10 @@
       <input type="number" class="form-control" id="infants2" placeholder="<2" aria-label="infants" required>
     </div>
     <div class="col-md-1">
-    <label for="rooms2">Rooms<span>*</span></label>
+    <label for="room">Rooms<span>*</span></label>
       <input type="number" class="form-control" id="room" placeholder="0" aria-label="rooms" required>
     </div>
-       <!--<div class="container" style="margin: 0 auto;">
-  
-        <button class="btn btn-info" id="sBtn" ><strong>Search</strong></button><span id="status3" style="display:none; color: white"> searching....</span>           
-        </div>-->
+       
         
   </div>
 </form> 
@@ -572,9 +530,7 @@
         <option>5 Stars</option>
       </select>
     </div>
-<!---<div class="search py-4">
- <a class="btn btn-info"><strong>Search</strong></a>
-</div>--->
+
 <div class="search py-4">
   
         <button class="btn btn-info" id="sBtn" ><strong>Search</strong></button><span class="search-signal" id="status2"> searching....</span>           
@@ -592,24 +548,24 @@
 
  <div class="form-check form-check-inline py-2">
 <input type="checkbox" class="form-check-input" id="differentlocation">
-<label class="form-check-label" for="different-location">Return to a different location</label>
+<label class="form-check-label" for="differentlocation">Return to a different location</label>
 </div> 
 
   <div class="form-row">
   <div class="col-md-4">
-    <label for="pickupdate">Pick Up Date<span>*</span></label>
+    <label for="hiredate">Pick Up Date<span>*</span></label>
 	<input type="date" id="hiredate" class="form-control" aria-label="date" required>
 	</div>
     <div class="col-md-2">
-    <label for="time">Time:<span>*</span></label>
+    <label for="picktime">Time:<span>*</span></label>
       <input type="time" id="picktime" name="time" class="form-control" aria-label="from" required>
     </div>
    <div class="col-md-4">
-    <label for="dropoffdate">Drop Off Date<span>*</span></label>
+    <label for="dropoff">Drop Off Date<span>*</span></label>
 	<input type="date" id="dropoff" class="form-control" aria-label="date" required>
     </div>
     <div class="col-md-2">
-    <label for="time">Time:<span>*</span></label>
+    <label for="droptime">Time:<span>*</span></label>
       <input type="time" id="droptime" name="time" class="form-control" aria-label="from" required>
     </div>
   </div>
@@ -778,14 +734,15 @@
     <script src="assets/js/hotel.js"></script>
     <script src="assets/js/car.js"></script>
     <script src="assets/js/sendEmail.js"></script>
+    <script src="assets/js/getElem.js"></script>
     <script>
 $(document).ready(function(){
     $('[data-toggle="popover"]').popover();   
 });
 </script>
 
-</body>
-<script type="text/javascript" src="assets/js/getElem.js"></script>
+
+
   <script>
     // on page load function that executes when page loads
     // on page load will initiate API request call to get and store API access token to be used for making subsequent API calls
@@ -826,4 +783,5 @@ $(document).ready(function(){
   
 
 </script>
+</body>
 </html>
