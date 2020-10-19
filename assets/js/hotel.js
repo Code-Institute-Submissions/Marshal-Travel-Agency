@@ -74,9 +74,13 @@ function _(x){
     _("#hBtn").addEventListener("click", function() {
         //  Book hotel form inputs
           var location = _("#loc").value;
-         
+          var checkin = _("#checkin").value;
+          var checkout = _("#checkout").value;
+          var rooms = _("#rooms").value;
           
-          console.log(location)
+
+          console.log(location);
+          console.log('button clicked')
 
           // get API access token from localstorag
           var token = localStorage.getItem("token");
@@ -87,7 +91,7 @@ function _(x){
           document.getElementById('status1').style.display = 'inline';
 
           // check if required input is not empty
-          if (location == '' ) {
+          if (location == '' || checkin == '' || checkout == '' || rooms == '' ) {
               
             alert("All fields required");
             document.getElementById('status1').style.display = 'none';
@@ -103,6 +107,13 @@ function _(x){
                   'AUTHORIZATION': 'Bearer '+ token
               })
           }).then(res => res.json()).catch(error => console.log('Error:', error)).then(response => {
+              //clear form
+            location = ''
+            checkin = ''
+            checkout = ''
+            rooms = ''
+            children = ''
+            inputStar = ''
 
             document.getElementById('status1').style.display = 'none';
 

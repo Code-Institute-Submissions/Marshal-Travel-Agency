@@ -86,6 +86,11 @@ function _(x){
                       // 'AUTHORIZATION': 'Bearer '+ token
                   })
               }).then(res => res.json()).catch(error => console.log('Error:', error)).then(response => {
+                  //clear form
+                where = ''
+                destination = ''
+                departure = ''
+                room = ''
                 
                 document.getElementById('status2').style.display = 'none';
                

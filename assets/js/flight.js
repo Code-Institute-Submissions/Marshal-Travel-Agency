@@ -130,6 +130,18 @@ _("#fBtn").addEventListener("click", function() {
               'AUTHORIZATION': 'Bearer '+ token
           })
       }).then(res => res.json()).catch(error => console.log('Error:', error)).then(response => {
+          //clear form
+        datereturn = ''
+        oneway = ''
+        multicity = ''
+        inputClass = ''
+        flightonly = ''
+        OutboundLeg = ''
+        InboundLeg = ''
+        DepartureDate = ''
+        adultValue = ''
+        children = ''
+        infants = ''
        
         // document.getElementById('status').style.display = 'none';
         console.log(response);
