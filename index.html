@@ -70,7 +70,9 @@
 			<div class="popup"> <a class="close" href="#">&times;</a>
 				<div class="content mt-4 mb-5">
 					<h2>Have Fun with the Perfect Vacation</h2>
-					We organize trips/tours to some of the most fascinating destinations around the world. We take you to these destinations at a cost that will keep you coming for more.</div>
+					We organize trips/tours to some of the most fascinating destinations around the world. We take you to these destinations at a cost that will keep you coming for more.
+                    Book your Flight + Hotel together and save up to 30%
+                    </div>
 			</div>
 		</div>
 	</div>
@@ -105,7 +107,7 @@
 			<!-- Section heading -->
 			<h2 class="h2-responsive font-weight-bold my-5">Our Services</h2>
 			<!-- Section description -->
-			<p class="jumbotron bg-transparent dark-grey-text w-responsive mx-auto mb-5">With access to over 500 IATA airlines and hoteliers worldwide for reservations and bookings, We assist our clients in planning their trips to cut down transportation cost, time and resources. Our clients enjoy maximum rewards and update on latest beneficial information on their loved airlines. We also provide car hire needs of our clients in all major cities in the world including a special meet-and-assist service.</p>
+			<p class="jumbotron bg-transparent dark-grey-text w-responsive mx-auto mb-5">We assist our clients in planning their trips to cut down transportation cost, time and resources. Our clients enjoy maximum rewards and update on latest beneficial information on their loved airlines. We also provide car hire needs of our clients in all major cities in the world including a special meet-and-assist service.</p>
 			<!-- Grid row -->
 			<div class="row">
 				<!--Grid column-->
@@ -553,11 +555,12 @@
 				<div class="col-md-6 mt-md-0 mt-3">
 					<!-- Content -->
 					<div class="col-md-8">
-						<form>
+						<form action="/action_page.php" onsubmit="myFunction()">
 							<h6>SUBSCRIBE TO OUR NEWSLETTER</h6>
 							<div class="input-group">
 								<input type="email" class="form-control" placeholder="Enter your email" required> <span class="input-group-btn">
                                     <button class="btn btn-primary no-border-radius" type="submit">Subscribe Now</button>
+                                   
                                 </span>
 							</div>
 						</form>
@@ -623,6 +626,12 @@
 	<script src="assets/js/car.js"></script>
 	<script src="assets/js/sendEmail.js"></script>
 	<script src="assets/js/getElem.js"></script>
+    <script>
+function myFunction() {
+  alert("The form was submitted");
+}
+</script>
+
 	<script>
 		$(document).ready(function(){
 		    $('[data-toggle="popover"]').popover();   

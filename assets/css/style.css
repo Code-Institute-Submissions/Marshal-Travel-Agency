@@ -453,6 +453,14 @@ span {
 	background-color: #EE6059;
 	color: #fffff9;
 }
+.back {
+	background-color: #EE6059;
+	font-size: 90%;
+}
+.backto {
+	background-color: #1d2527;
+	font-size: 90%;
+}
 .book-text {
 	color: #fffff9;
 }
@@ -496,6 +504,10 @@ span {
 }
 .popover {
 	background-color: #4caf50;
+    color:  #fffff2 !important;
+}
+.popover-content {
+    color: #fffff2 !important;
 }
 .fa-check,
 .discount {
@@ -573,6 +585,9 @@ span {
 	padding-top: 2%;
 	padding-bottom: 5%;
 }
+.container-tab {
+    margin-top: 0;
+}
 footer {
 	background-color: #121315;
 	color: #fafafa;
@@ -600,7 +615,7 @@ footer {
 	background: #e84610;
 }
 .output {
-	background-color: #1d2527;
+   background-color: #1d2527;
 	width: 100%;
 	height: 100%;
 }

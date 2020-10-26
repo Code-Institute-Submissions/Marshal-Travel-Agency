@@ -1,39 +1,63 @@
-<img src="https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png" style="margin: 0;">
 
-Welcome Patrick,
+# MARSHAL TRAVEL AGENCY WEBSITE
+## DESCRIPTION
+This is an interactive Travel Agency website created to provide proactive customer service by maximizing customers feedback.
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. You can safely delete this README.md file, or change it for your own project.
+We are customer-centric, we essentially master your wants and needs to provide travel and tourism related services.
 
-## Gitpod Reminders
+## UX
+The visual flow of the site is intended to be pleasing and intuitive with the home page as the anchor.
+The aim here is ensuring that users find value in what the website provides, more so it was a deliberate act to make it usable,
+useful, desirable and accessible.
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+## User Stories
 
-`python3 -m http.server`
+Users:
+* As a prospective user, I want to know about the company and what they offer/benefits, particularly appealing benefits
+* As a user, I want to find out available flights, hotels, cars for rent and fare information
+* As a user, I want to get travel guide about my vacation, tour packages and suitable cost
+* As a user, I want make alternative booking arrangements if changes arise before or during trip
+* As a user, I want to get expert advice about my destination and plan my trip itineraries
 
-A blue button should appear to click: *Make Public*,
+Owners:
+* As a owner, I want my website to be desirable and accessible to users I want users to see what sets me apart from the competition.
+Meets with clients to determine travel needs, budgets and preferences.
+* As a owner, I want to know what my contemporaries are doing and ways to improve
+* As a owner, I want end-user feedback in shaping services to fit their needs more accurately
+* As a owner, I want users to get notifications and publications via newsletter when there are new offers
 
-Another blue button should appear to click: *Open Browser*.
+## Wireframe
+The skeletal framework of this website was designed using [Balsamiq](https://balsamiq.com) as a visual guide to represent the page schematic and screen blueprint.
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+Links to final version of the wireframe can be found below:
+* [Wireframe Final Version](https://seagather.github.io/Marshal-Travel-Agency/wireframes/marshal-travel-wireframe.pdf)
 
-A blue button should appear to click: *Make Public*,
+## FEATURES
 
-Another blue button should appear to click: *Open Browser*.
+## Existing Features
+* The Index page offers four nav bars which uses internal hyperlinks page jump to take users to relevant sections.
+It contains full-width responsive Hero Image Heading Caption with a call-to-action button and a popup design.
+The call-to-action button takes user straight to booking section while the popup design additionally showcase the website appealing benefits.
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the backend lessons.
+* The services section features transparent Jumbotron with a brief text informing users about services.
+After the brief text description, a Grid system with inner card elements presents different services.
+Each of the eye-catching pictures has a button which takes user directly to contact section for more information as related to services.
 
-## Updates Since The Instructional Video
+* The Booking section contains togglable tab which utilizes JavaScript to click on the specified tab button.
+Each tab houses relevant forms and button in tandem to the subject matter.
+The Flight and hotel button specifically contains popover which makes use of JavaScript to inform user about discount.
+The Flight and Hotel search Tab renders data with Dynamic API (Amadeus Content-based) while Flight+Hotel and Car makes use of Static API: it can be dynamically generated
+but it is statically delivered.
 
-We continually tweak and adjust this template to help give you the best experience. Here are the updates since the original video was made:
+* The Contact section contains contact form with EmailJS Integration for submission.
+The contact form has a validating pop up modal assuring users upon submission of their enquires or request.
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+* When users get at the button of a long page, they often need to get back to the top.
+There is a Back to Top button integration with JavaScript to allow users to quickly navigate to the top of the page.
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+## Features Left to Implement
+* I will like to add more data for different locations.
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
-
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
-
---------
-
-Happy coding!
+* A Virtual Reality should be added for users. 
+This will allow travelers to test out experiences before they book a trip. Guests can preview hotel rooms, attractions and experiences 
+as if they’re really there. It helps guests ensure they are spending their time and money wisely and planning the trip of their dreams.

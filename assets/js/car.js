@@ -92,11 +92,11 @@ _("#cBtn").addEventListener("click", function () {
 		})
 	}).then(res => res.json()).catch(error => console.log('Error:', error)).then(response => {
 		//clear form
-		pickloc = ''
-		hiredate = ''
-		picktime = ''
-		dropoff = ''
-		droptime = ''
+		pickloc = '';
+		hiredate = '';
+		picktime = '';
+		dropoff = '';
+		droptime = '';
 		document.getElementById('status3').style.display = 'none';
 		console.log(response);
 		// add response to result variable
