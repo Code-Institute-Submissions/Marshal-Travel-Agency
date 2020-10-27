@@ -61,3 +61,46 @@ There is a Back to Top button integration with JavaScript to allow users to quic
 * A Virtual Reality should be added for users. 
 This will allow travelers to test out experiences before they book a trip. Guests can preview hotel rooms, attractions and experiences 
 as if they’re really there. It helps guests ensure they are spending their time and money wisely and planning the trip of their dreams.
+
+## TECHNOLOGIES USED
+**Languages:**
+* [HTML5:](https://www.w3schools.com/html/default.asp)
+    - HTML5 was used to code the content of the website.
+* [CSS:](https://www.w3schools.com/css/default.asp)
+    - CSS3 was used to style the content.
+* [JavaScript:](https://www.w3schools.com/js/default.asp)
+    - JavaScript was used to style the significant interactive functionality.
+
+**Tools and Libraries:**
+* [Bootstrap:](https://getbootstrap.com/)
+    - Bootstrap was used to structure the Modal, Carousel, grid system and card to render responsive website.
+* [W3C Validator:](https://validator.w3.org/)
+    - The W3C Markup Validator and W3C CSS Validator Services were used to validate every page of the project to clear syntax errors.
+* [Font-Awesome:](https://fontawesome.com/)
+    - Font Awesome was used on all pages throughout the website to add icons like the social media links for aesthetic and UX purposes.
+* [jQuery:](https://jquery.com/)
+    - jQuery library was used to simplify the JavaScript.
+* [Tinypng:](https://tinypng.com)
+    - Tinypng was used to compress the file size of PNG and JPG files.
+* [GTmetrix:](https://gtmetrix.com)
+    - GTmetrix was used to run speed tests on each page.
+* [Pingdom:](https://tools.pingdom.com)
+    - Pingdom was used to run speed tests on each page.
+* [HTML and CSS Beautifier:](http://minifycode.com/html-beautifier/)
+    - HTML and CSS was used to format the codes to make it more readable.
+* [Google Fonts:](https://fonts.google.com/)
+    - Exo and Roboto fonts were imported from google fonts.
+* [Git:](https://git-scm.com/)
+    - Git was used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub.
+* [GitHub:](https://github.com/)
+    - This project has been deployed through and hosted by GitHub.
+
+## MEDIA
+* [Am I Responsive:](http://ami.responsivedesign.is/) used for UX Image section
+* [Unsplash:](https://unsplash.com/) for website images.
+* [LogoMaker:](https://logomaker.com) was used for the logo design.
+
+I used [Tinypng](https://tinypng.com) which utilised smart lossy compression techniques to reduce the file size of PNG and JPG files. This shrunk the image size to 67%.
+the site uses less bandwith and load faster.
+
+![image-compressor](https://seagather.github.io/Marshal-Travel-Agency/assets/images/image-compressor.png)
