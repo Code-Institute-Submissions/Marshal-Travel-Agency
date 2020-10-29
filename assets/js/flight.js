@@ -130,21 +130,23 @@ _("#fBtn").addEventListener("click", function() {
               'AUTHORIZATION': 'Bearer '+ token
           })
       }).then(res => res.json()).catch(error => console.log('Error:', error)).then(response => {
-          //clear form
-        datereturn = ''
-        oneway = ''
-        multicity = ''
-        inputClass = ''
-        flightonly = ''
-        OutboundLeg = ''
-        InboundLeg = ''
-        DepartureDate = ''
-        adultValue = ''
-        children = ''
-        infants = ''
+         //clear form
+          document.getElementById('datereturn').value = '';
+          document.getElementById('oneway').value = '';
+          document.getElementById('multicity').value = '';
+          document.getElementById('inputClass').value = '';
+          document.getElementById('flightonly').value = '';
+          document.getElementById('OutboundLeg').value = '';
+          document.getElementById('datereturn').value = '';
+          document.getElementById('InboundLeg').value = '';
+          document.getElementById('DepartureDate').value = '';
+          document.getElementById('adult').value = '';
+          document.getElementById('children').value = '';
+          document.getElementById('infants').value = '';
        
         // document.getElementById('status').style.display = 'none';
         console.log(response);
+        console.log(response.json);
          
       // for loop in response object and push all object into result variable
         var result = [];
@@ -154,7 +156,7 @@ _("#fBtn").addEventListener("click", function() {
         d[i].id = i;
          result.push(d[i]);
           // console.log(d[i]);
-        }
+        };
           
         localStorage.setItem("fligtdata", JSON.stringify(result));
         //window.open('./flight.html', '_blank');

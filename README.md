@@ -13,15 +13,14 @@ useful, desirable and accessible.
 ## User Stories
 
 Users:
-* As a prospective user, I want to know about the company and what they offer/benefits, particularly appealing benefits
-* As a user, I want to find out available flights, hotels, cars for rent and fare information
-* As a user, I want to get travel guide about my vacation, tour packages and suitable cost
-* As a user, I want make alternative booking arrangements if changes arise before or during trip
-* As a user, I want to get expert advice about my destination and plan my trip itineraries
+* As a prospective user, I want to know about the company and what they offer/particularly appealing benefits
+* As a first time user, I want to be able to easily navigate throughout the site to find content about available flights, hotels, cars for rent and fare information
+* As a user, I want to get expert advice, plan my trip itineraries, tour packages and suitable cost about my destination.
+* As a user, I want make alternative booking arrangements or cancellation if changes arise before or during trip
+
 
 Owners:
 * As a owner, I want my website to be desirable and accessible to users I want users to see what sets me apart from the competition.
-Meets with clients to determine travel needs, budgets and preferences.
 * As a owner, I want to know what my contemporaries are doing and ways to improve
 * As a owner, I want end-user feedback in shaping services to fit their needs more accurately
 * As a owner, I want users to get notifications and publications via newsletter when there are new offers
@@ -45,7 +44,7 @@ Each of the eye-catching pictures has a button which takes user directly to cont
 
 * The Booking section contains togglable tab which utilizes JavaScript to click on the specified tab button.
 Each tab houses relevant forms and button in tandem to the subject matter.
-The Flight and hotel button specifically contains popover which makes use of JavaScript to inform user about discount.
+The Flight and hotel button specifically contains popover which makes use of JavaScript to inform users about discount.
 The Flight and Hotel search Tab renders data with Dynamic API (Amadeus Content-based) while Flight+Hotel and Car makes use of Static API: it can be dynamically generated
 but it is statically delivered.
 
@@ -104,3 +103,59 @@ I used [Tinypng](https://tinypng.com) which utilised smart lossy compression tec
 the site uses less bandwith and load faster.
 
 ![image-compressor](https://seagather.github.io/Marshal-Travel-Agency/assets/images/image-compressor.png)
+
+## TESTING
+
+## Speed Test
+The Initial speed performance test generated a poor loading analysis which necessitated the use of Tinypng to shrink the image size to 67%.
+The page sizes were reduced and the perfomance score was improved as seen below:
+
+Website was tested on [GTmetrix](https://gtmetrix.com) and [Pingdom](https://tools.pingdom.com) platforms.
+
+![speed-test](https://seagather.github.io/Marshal-Travel-Agency/assets/images/speed-test.png)
+
+## Testing User Stories from User Experience (UX) Section
+
+Users:
+* As a prospective user, I want to know about the company and what they offer/particularly appealing benefits.
+    - The Hero image and colors will essentially communicate visual aesthetic state of mind to viewers, first time user would assimilate the front page
+      with various options of self explanatory navigation bar.
+    - There is also a "click here for details" popup link at the bottom of the home section after the "Book Now" button which will inform users about our ethos at a glance.
+    - There appears a popover box upon clicking the "Flight+Hotel" Tab button at the Booking section which will inform users about discount. 
+    
+
+* As a first time user, I want to be able to easily navigate throughout the site to find content about available flights, hotels, cars for rent and fare information
+    - The site has been designed to be intuitive and accessible to user. At the top of the index page there is a clean navigation bar, each link describes at what section they will end up at clearly.
+    - At the middle of the Hero image there is a "Book Now" call to action button that will take users directly to booking section.
+    - The Booking section tab was well structured pertaining to each subject matter with relevant forms and button in sync for users quest.
+    - When users must have completed the relevant inputs and check buttons for a particular tab, upon clicking search pops up another page to cleary render feedback information.
+    
+* As a user, I want to get expert advice, plan my trip itineraries, tour packages and suitable cost about my destination.
+    - Users can make use of the Contact section which contains contact form with EmailJS Integration for submission.
+      The contact form has a validating pop up modal assuring users upon submission of their enquires or request.
+    - Users are provided with button options at the bottom card of each eye-catching picture on the service section which takes them directly to contact section for more information as related to services.
+    - At the footer "Contact details" there is a clickable Email address and Phone number provided for user accessibility and easy workflow.
+    
+* As a user, I want make alternative booking arrangements or cancellation if changes arise before or during trip.
+    - Users can always channel their relevant request through the Contact section.
+    - At the footer of the "Connect With Us", the user can alternatively contact the organisation on social media which highlights the links to them.
+
+Owners:
+* As a owner, I want my website to be desirable and accessible to users, I want users to see what sets me apart from the competition.
+    - The well detailed composition of the website speaks volume, the colors, the captions, the call to action buttons, pop ups and links
+     strategically positioned and escalated to desired sections serves to interact with clients to determine travel needs, budgets and preferences.
+    - The pop up modal at the contact form section after users submission of their enquires or request is reassuring.
+    - Each page has a clickable Email address and Phone number at the footer "contact details" for accessibility.
+
+* As a owner, I want to know what my contemporaries are doing and ways to improve.
+    - The Feedback from users on the Contact section comment and the social media platforms depicted with icons on each footer of the page will generate resources for improvement.
+
+* As a owner, I want end-user feedback in shaping services to fit their needs more accurately
+    - The "connect with us" social media icons were clearly displayed at the footer for followers and feedbacks.
+
+* As a owner, I want users to get notifications and publications via newsletter when there are new offers.
+    - The newsletter subscription option is provided for users at the footer of the website to cascade vital information and promos which will promote the site.
+
+## Further Testing
+
+## Bugs
