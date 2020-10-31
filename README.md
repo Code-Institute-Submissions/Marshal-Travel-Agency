@@ -114,6 +114,19 @@ Website was tested on [GTmetrix](https://gtmetrix.com) and [Pingdom](https://too
 
 ![speed-test](https://seagather.github.io/Marshal-Travel-Agency/assets/images/speed-test.png)
 
+## EmailJS Test
+
+Integration of the EmailJS was very easy because I followed the well implemented course in code institute module.
+methods may vary as integration evolves but the end result was achieved as seen below:
+
+## EmailJS Sent
+
+![emailjs-test](https://seagather.github.io/Marshal-Travel-Agency/assets/images/emailjs-test.png)
+
+## EmailJS Received
+
+![emailjs-received](https://seagather.github.io/Marshal-Travel-Agency/assets/images/emailjs-received.png)
+
 ## Testing User Stories from User Experience (UX) Section
 
 Users:
@@ -158,4 +171,23 @@ Owners:
 
 ## Further Testing
 
+* All links were tested. Internal links all work. External links all work and open in new window.
+* The Website was tested on Google Chrome, Internet Explorer, Firefox, Microsoft Edge and Safari browsers.
+* The website was test run on a variety of devices such as Desktop, Laptop, iPhoneXR, Samsung Note3, Samsung Tab2 & Nokia.
+* The site was test run by friends and colleagues for possible user experience issues and bugs.
+* All the pages are responsive on all screen sizes.
+* All the API calls returned responses as expected.
+* The call to action buttons links as expected and the modal form pops up with all the input components validated.
+* Each Search button generates feedback data on a new page which has a back to homepage link.
+* The Email and Phone number at each footer "contact details" are clickable for users.
+* All Codes were validated through the Markup Validator to erase syntax error.
+
 ## Bugs
+
+## DEPLOYMENT
+
+## Credits
+
+## Media
+
+## Acknowledgements
