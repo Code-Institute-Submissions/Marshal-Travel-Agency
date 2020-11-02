@@ -1,11 +1,15 @@
 
 # MARSHAL TRAVEL AGENCY WEBSITE
-## DESCRIPTION
+
+View the live project [here](https://seagather.github.io/Marshal-Travel-Agency/)
+
+![responsive](https://seagather.github.io/Marshal-Travel-Agency/assets/images/responsive.png)
+
 This is an interactive Travel Agency website created to provide proactive customer service by maximizing customers feedback.
 
 We are customer-centric, we essentially master your wants and needs to provide travel and tourism related services.
 
-## UX
+# UX
 The visual flow of the site is intended to be pleasing and intuitive with the home page as the anchor.
 The aim here is ensuring that users find value in what the website provides, more so it was a deliberate act to make it usable,
 useful, desirable and accessible.
@@ -31,7 +35,7 @@ The skeletal framework of this website was designed using [Balsamiq](https://bal
 Links to final version of the wireframe can be found below:
 * [Wireframe Final Version](https://seagather.github.io/Marshal-Travel-Agency/wireframes/marshal-travel-wireframe.pdf)
 
-## FEATURES
+# Features
 
 ## Existing Features
 * The Index page offers four nav bars which uses internal hyperlinks page jump to take users to relevant sections.
@@ -61,7 +65,7 @@ There is a Back to Top button integration with JavaScript to allow users to quic
 This will allow travelers to test out experiences before they book a trip. Guests can preview hotel rooms, attractions and experiences 
 as if they’re really there. It helps guests ensure they are spending their time and money wisely and planning the trip of their dreams.
 
-## TECHNOLOGIES USED
+# Technologies Used
 **Languages:**
 * [HTML5:](https://www.w3schools.com/html/default.asp)
     - HTML5 was used to code the content of the website.
@@ -94,17 +98,12 @@ as if they’re really there. It helps guests ensure they are spending their tim
 * [GitHub:](https://github.com/)
     - This project has been deployed through and hosted by GitHub.
 
-## MEDIA
-* [Am I Responsive:](http://ami.responsivedesign.is/) used for UX Image section
-* [Unsplash:](https://unsplash.com/) for website images.
-* [LogoMaker:](https://logomaker.com) was used for the logo design.
-
 I used [Tinypng](https://tinypng.com) which utilised smart lossy compression techniques to reduce the file size of PNG and JPG files. This shrunk the image size to 67%.
 the site uses less bandwith and load faster.
 
 ![image-compressor](https://seagather.github.io/Marshal-Travel-Agency/assets/images/image-compressor.png)
 
-## TESTING
+# Testing
 
 ## Speed Test
 The Initial speed performance test generated a poor loading analysis which necessitated the use of Tinypng to shrink the image size to 67%.
@@ -125,7 +124,7 @@ methods may vary as integration evolves but the end result was achieved as seen 
 
 ## EmailJS Received
 
-![emailjs-received](https://seagather.github.io/Marshal-Travel-Agency/assets/images/emailjs-received.png)
+![emailjs-received](https://seagather.github.io/Marshal-Travel-Agency/assets/images/emailjs-received.jpeg)
 
 ## Testing User Stories from User Experience (UX) Section
 
@@ -184,10 +183,45 @@ Owners:
 
 ## Bugs
 
-## DEPLOYMENT
+# Deployment
 
-## Credits
+Website has been deployed to [Github Pages](https://seagather.github.io/Marshal-Travel-Agency/)
+
+This site was developed on GitPod, using git and GitHub to host the repository.
+
+When deploying Marshal Travel Agency using GitHub Pages the following steps were taken:
+
+* Log in to GitHub and locate the [GitHub Repository](https://github.com/)
+* Selected my repositories.
+* Navigated to '/Seagather/Marshal-Travel-Agency'.
+* In the top navigation clicked 'settings'.
+* Scrolled down to the GitHub Pages area.
+* Selected 'Master Branch' from the 'Source' dropdown menu.
+* Clicked to confirm my selection.
+* Marshal Travel Agency will now go live on GitHub Pages.
+
+## Running Marshal Travel Agency Locally
+Cloning Marshal Travel Agency from GitHub:
+
+* Navigate to '/Seagather/Marshal-Travel-Agency'.
+* Click the green 'Clone or Download' button.
+* Copy the url in the dropdown box.
+* Open up your preferred terminal on any IDE of your choice. 
+* Navigate to your desired file location.
+* Copy the following code and paste to your terminal to clone Marshal Travel Agency.
+
+```
+ git clone https://github.com/Seagather/Marshal-Travel-Agency.git 
+
+```
+
+# Credits
+
+## Content
 
 ## Media
+* [Am I Responsive:](http://ami.responsivedesign.is/) used for UX Image section
+* [Unsplash:](https://unsplash.com/) for website images.
+* [LogoMaker:](https://logomaker.com) was used for the logo design.
 
 ## Acknowledgements
