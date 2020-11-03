@@ -61,19 +61,6 @@ h4 {
 .dropdown-item {
 	color: #333!important;
 }
-/* Dropdown */
-
-/*
-.dropbtn {
-  background-color: #333;
-  color: white;
-  padding: 16px;
-  font-size: 16px;
-  border: none;
-  border-color:#333;
- }
-*/
-
 .navbar .dropdown-menu {
 	width: 100%;
 	left: 0;
@@ -588,9 +575,7 @@ span {
 	padding-top: 2%;
 	padding-bottom: 5%;
 }
-.container-tab {
-    margin-top: 0;
-}
+
 footer {
 	background-color: #121315;
 	color: #fafafa;
@@ -620,7 +605,7 @@ footer {
 .output {
    background-color: #1d2527;
 	width: 100%;
-	height: 100%;
+	height: auto;
 }
 .output-table {
 	background-color: #1E2123;

@@ -15,7 +15,9 @@
 	<link rel="stylesheet" href="assets/css/style.css">
 	<title>CAR | Travel Agency</title>
 </head>
-<!-- NAVBAR CONTENT -->
+
+<body>
+	<!-- NAVBAR CONTENT -->
 	<!-- Header-->
 	<header class="top-bar sticky-top">
 		<!--Navigation element-->
@@ -35,20 +37,29 @@
 				<ul class="navbar-nav">
 					<li class="nav-item"> <a class="nav-link" href="index.html#">Home</a>
 					</li>
-					
 					<li class="nav-item"> <a class="nav-link" href="#bookings">Bookings</a>
 					</li>
 				</ul>
 			</div>
 		</nav>
 	</header>
-
-
-<body>
-<!--<div class="backto pt-1"><a href="index.html" class="btn btn-info back"><strong><i class="fas fa-chevron-circle-left">&nbsp;</i>Back to Home Page</strong></a></div>-->
-
-	<section id="bookings" class="selection-tab output-page pt-1 pb-1">
-    
+	<!-- display car hire result -->
+	<div class="output table-responsive col-md-12">
+		<table id="ch" class="output-table table table-dark table-striped mt-5">
+			<thead>
+				<tr class="table-font">
+					<th scope="col"><i class="fas fa-map-marker-alt">&nbsp;</i>PICK-UP LOCATION</th>
+					<th scope="col"><i class="fas fa-map-marker-alt">&nbsp;</i>DROP-OFF LOCATION</th>
+					<th scope="col"><i class="fas fa-car">&nbsp;</i>CAR TYPE</th>
+					<th scope="col"><i class="fas fa-briefcase">&nbsp;</i>SERVICE TYPE</th>
+					<th scope="col"><i class="fas fa-clock">&nbsp;</i>PICK-UP TIME</th>
+					<th scope="col"><i class="fas fa-clock">&nbsp;</i>DROP-OFF TIME</th>
+				</tr>
+			</thead>
+			<tbody></tbody>
+		</table>
+	</div>
+    <section id="bookings" class="selection-tab">
 		<div class="container container-tab">
 			<h2 class="h2-responsive font-weight-bold text-center my-5 book-text">Bookings</h2>
 			<div class="tab col-md-12 mt-5">
@@ -57,19 +68,11 @@
 				<button type="button" class="btn btn-second tablinks mb-1 col-md-2 departure" data-container="body" data-toggle="popover" data-placement="top" data-content="Save upto 30%" onclick="openCity(event, 'Flight+Hotel')"><span class="plane-hotel"><span class="first"><i class="fas fa-plane-departure fa-lg"></i></span><span class="second"><i class="fas fa-bed fa-lg"></i></span></span>&nbsp;Flight + Hotel</button>
 				<button class="tablinks col-md-2 rc" onclick="openCity(event, 'Car-Rental')"><b><i class="fas fa-car"></i></b>&nbsp;Car Rental</button>
 			</div>
-			<div id="Flight" class="tabcontent mt-2">
+			<div id="Flight" class="tabcontent flight-content mt-2">
 				<div class="class-options">
 					<div class="form-check form-check-inline">
 						<input class="form-check-input" type="radio" id="return" value="return" name="flight_preference" aria-label="return" required>
 						<label class="form-check-label" for="return">Return</label>
-					</div>
-					<div class="form-check form-check-inline">
-						<input class="form-check-input" type="radio" id="oneway" value="oneway" name="flight_preference" aria-label="oneway" required>
-						<label class="form-check-label" for="oneway">One Way</label>
-					</div>
-					<div class="form-check form-check-inline">
-						<input class="form-check-input" type="radio" id="multicity" value="multicity" name="flight_preference" aria-label="multicity" required>
-						<label class="form-check-label" for="multicity">Multi-City</label>
 					</div>|&nbsp; &nbsp; &nbsp;
 					<div class="form-group col-md-2 form-check form-check-inline cl">
 						<label for="inputClass"></label>
@@ -86,48 +89,52 @@
 					</div>
 				</div>
 				<div class="form-row">
-					<div class="col-md-2 ob">
+					<div class="col-md-3">
 						<label for="OutboundLeg">From Where<span>*</span>
 						</label>
 						<input type="text" class="form-control" id="OutboundLeg" placeholder="From" aria-label="from" required>
 					</div>
-					<div class="col-md-2 ib">
+					<div class="col-md-3">
 						<label for="InboundLeg">To Where<span>*</span>
 						</label>
 						<input type="text" class="form-control" id="InboundLeg" placeholder="To" aria-label="to" required>
 					</div>
-					<div class="col-md-2 dd">
+					<div class="col-md-3">
 						<label for="DepartureDate">Depature<span>*</span>
 						</label>
 						<input type="date" class="form-control" id="DepartureDate" aria-label="date" required>
 					</div>
-					<div class="col-md-2 rd">
+					<div class="col-md-3">
 						<label for="datereturn">Return<span>*</span>
 						</label>
 						<input type="date" class="form-control" id="datereturn" aria-label="date" required>
-					</div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					</div>
+				</div>
+				<!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-->
+				<div class="form-row mt-3">
 					<div class="col-md-1">
 						<label for="adult">Adults<span>*</span>
 						</label>
 						<input type="number" class="form-control" id="adult" placeholder="16+" aria-label="adults" required>
-					</div>
+					</div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 					<div class="col-md-1">
 						<label for="children">Children<span>*</span>
 						</label>
 						<input type="number" class="form-control" id="children" placeholder="2-15" aria-label="children" required>
-					</div>
+					</div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 					<div class="col-md-1">
 						<label for="infants">Infants<span>*</span>
 						</label>
 						<input type="number" class="form-control" id="infants" placeholder="<2" aria-label="infants" required>
 					</div>
 				</div>
-				<div class="search py-5 pr-1">
+				<!--</div>-->
+				<div class="search py-5">
 					<button class="btn btn-info col-md-12" id="fBtn"><strong>Search Flights</strong>
 					</button><span class="search-signal" id="status"> searching....</span> 
 				</div>
 			</div>
-			<div id="Hotel" class="tabcontent">
+			<div id="Hotel" class="tabcontent hotel-content">
 				<div class="form-row">
 					<div class="col py-3">
 						<input type="text" id="loc" class="form-control" placeholder="Destination, Country, City, District or Landmark" aria-label="destination" required>
@@ -155,7 +162,7 @@
 							<input type="number" class="form-control" id="rooms" placeholder="0" aria-label="rooms" required>
 						</div>
 						<div class="col-md-1 mt-3">
-							<label for="adult">Adults<span>*</span>
+							<label for="adult2">Adults<span>*</span>
 							</label>
 							<input type="number" class="form-control" id="adult2" placeholder="0" aria-label="adults" required>
 						</div>
@@ -186,18 +193,10 @@
 			<div id="Flight+Hotel" class="tabcontent">
 				<div class="class-options">
 					<p class="discount mt-2">&nbsp;<i class="fas fa-check"></i>&nbsp;Book your Flight + Hotel together and save up to 30%</p>
-					<div class="form-check form-check-inline mt-3">
+					<div class="form-check form-check-inline mt-2">
 						<input class="form-check-input" type="radio" id="return2" value="return" name="flight_preference" aria-label="return" required>
 						<label class="form-check-label" for="return">Return</label>
 					</div>
-					<div class="form-check form-check-inline">
-						<input class="form-check-input" type="radio" id="oneway2" value="oneway" name="flight_preference" aria-label="oneway" required>
-						<label class="form-check-label" for="oneway">One Way</label>
-					</div>
-					<div class="form-check form-check-inline">
-						<input class="form-check-input" type="radio" id="multicity2" value="multicity" name="flight_preference" aria-label="multicity" required>
-						<label class="form-check-label" for="multicity">Multi-City</label>
-					</div>|
 					<div class="form-group col-md-2 form-check form-check-inline">
 						<label for="inputClass"></label>
 						<select id="inputClass2" class="form-control selected-class mb-2">
@@ -213,67 +212,69 @@
 					</div>
 				</div>
 				<form>
-					<div class="form-row">
-						<div class="col-md-2">
+					<div class="form-row mb-3">
+						<div class="col-md-3">
 							<label for="where">From Where<span>*</span>
 							</label>
 							<input type="text" class="form-control" id="where" placeholder="From" aria-label="from" required>
 						</div>
-						<div class="col-md-2">
+						<div class="col-md-3">
 							<label for="destination">To Where<span>*</span>
 							</label>
 							<input type="text" class="form-control" id="destination" placeholder="To" aria-label="to" required>
 						</div>
-						<div class="col-md-2">
+						<div class="col-md-3">
 							<label for="departure">Depature<span>*</span>
 							</label>
 							<input type="date" class="form-control" id="departure" aria-label="date" required>
 						</div>
-						<div class="col-md-2">
+						<div class="col-md-3">
 							<label for="return3">Return<span>*</span>
 							</label>
 							<input type="date" class="form-control" id="return3" aria-label="date" required>
 						</div>
+					</div>
+					<div class="form-row mt-4">
 						<div class="col-md-1">
 							<label for="adults2">Adults<span>*</span>
 							</label>
 							<input type="number" class="form-control" id="adults2" placeholder="16+" aria-label="adults" required>
-						</div>
+						</div>&nbsp;&nbsp;&nbsp;&nbsp;
 						<div class="col-md-1">
 							<label for="children3">Children<span>*</span>
 							</label>
 							<input type="number" class="form-control" id="children3" placeholder="2-15" aria-label="children" required>
-						</div>
+						</div>&nbsp;&nbsp;&nbsp;&nbsp;
 						<div class="col-md-1">
 							<label for="infants2">Infants<span>*</span>
 							</label>
 							<input type="number" class="form-control" id="infants2" placeholder="<2" aria-label="infants" required>
-						</div>
+						</div>&nbsp;&nbsp;&nbsp;&nbsp;
 						<div class="col-md-1">
 							<label for="room">Rooms<span>*</span>
 							</label>
 							<input type="number" class="form-control" id="room" placeholder="0" aria-label="rooms" required>
 						</div>
+						<div class="form-group form-check form-check-inline mt-4 pl-2">
+							<label for="inputStar"></label>
+							<select id="inputStar2" class="form-control selected-class">
+								<option selected>Hotel Rating</option>
+								<option>Any</option>
+								<option>1 Star</option>
+								<option>2 Stars</option>
+								<option>3 Stars</option>
+								<option>4 Stars</option>
+								<option>5 Stars</option>
+							</select>
+						</div>
 					</div>
 				</form>
-				<div class="form-group form-check form-check-inline  py-5">
-					<label for="inputStar"></label>
-					<select id="inputStar2" class="form-control selected-class">
-						<option selected>Hotel Rating</option>
-						<option>Any</option>
-						<option>1 Star</option>
-						<option>2 Stars</option>
-						<option>3 Stars</option>
-						<option>4 Stars</option>
-						<option>5 Stars</option>
-					</select>
-				</div>
-				<div class="search py-5">
+				<div class="search mb-5 search-fh">
 					<button class="btn btn-info" id="sBtn"><strong>Search</strong>
 					</button><span class="search-signal" id="status2"> searching....</span> 
 				</div>
 			</div>
-			<div id="Car-Rental" class="tabcontent">
+			<div id="Car-Rental" class="tabcontent car-content">
 				<div class="form-row">
 					<div class="col py-3">
 						<input type="text" id="pickloc" class="form-control" placeholder="Pickup Location, Airport, Station..." aria-label="destination" required>
@@ -312,25 +313,7 @@
 			</div>
 		</div>
 	</section>
-
-
-	<!-- display car hire result -->
-	<div class="output table-responsive-md col-md-12">
-		<table id="ch" class="output-table table table-dark table-striped">
-			<thead>
-				<tr class="table-font">
-					<th scope="col"><i class="fas fa-map-marker-alt">&nbsp;</i>PICK-UP LOCATION</th>
-					<th scope="col"><i class="fas fa-map-marker-alt">&nbsp;</i>DROP-OFF LOCATION</th>
-					<th scope="col"><i class="fas fa-car">&nbsp;</i>CAR TYPE</th>
-					<th scope="col"><i class="fas fa-briefcase">&nbsp;</i>SERVICE TYPE</th>
-					<th scope="col"><i class="fas fa-clock">&nbsp;</i>PICK-UP TIME</th>
-					<th scope="col"><i class="fas fa-clock">&nbsp;</i>DROP-OFF TIME</th>
-				</tr>
-			</thead>
-			<tbody></tbody>
-		</table>
-	</div>
-    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+	<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 	<script src="assets/js/tab.js"></script>
@@ -339,7 +322,7 @@
 	<script src="assets/js/hotel.js"></script>
 	<script src="assets/js/car.js"></script>
 	<script src="assets/js/getElem.js"></script>
-    <script>
+	<script>
 		$(document).ready(function(){
 		    $('[data-toggle="popover"]').popover();   
 		});
