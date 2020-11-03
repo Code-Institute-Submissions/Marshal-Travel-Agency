@@ -689,12 +689,12 @@ footer {
 	.rf,
 	.rb,
 	.rc {
-		max-width: 520px;
+		max-width: 500px;
 	}
 }
 /* Styles for the content section */
 
-@media (min-width: 500px) {
+@media (min-width: 480px) {
 	#button {
 		margin: 20px;
 	}
