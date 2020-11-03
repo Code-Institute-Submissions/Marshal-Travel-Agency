@@ -649,42 +649,42 @@ footer {
 	}
 }
 */
-@media screen and (max-width: 747px) {
+@media screen and (max-width: 770px) {
 	.selection-tab {
 		display: flex;
 		font-size: 1rem;
 		color: white;
 	}
 }
-@media screen and (max-width: 747px) {
+@media screen and (max-width: 764px) {
 	.flight-content {
 		display: flex;
 		height: 810px;
         background-color: #1E2123;
 	}
 }
-@media screen and (max-width: 747px) {
+@media screen and (max-width: 764px) {
 	.hotel-content {
 		display: flex;
 		height: 680px;
         background-color: #1E2123;
 	}
 }
-@media screen and (max-width: 747px) {
+@media screen and (max-width: 764px) {
 	.flight-hotel-content {
 		display: flex;
 		height: 1020px;
         background-color: #1E2123;
 	}
 }
-@media screen and (max-width: 747px) {
+@media screen and (max-width: 764px) {
 	.car-content {
 		display: flex;
 		height: 520px;
         background-color: #1E2123;
 	}
 }
-@media screen and (max-width: 747px) {
+@media screen and (max-width: 770px) {
 	.departure,
 	.rf,
 	.rb,
