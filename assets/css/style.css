@@ -640,6 +640,7 @@ footer {
 		font-size: 1rem;
 	}
 }
+/*
 @media screen and (max-width: 700px) {
 	.selection-tab {
 		display: flex;
@@ -647,35 +648,36 @@ footer {
 		color: white;
 	}
 }
-@media screen and (max-width: 770px) {
+*/
+@media screen and (max-width: 766px) {
 	.selection-tab {
 		display: flex;
 		font-size: 1rem;
 		color: white;
 	}
 }
-@media screen and (max-width: 770px) {
+@media screen and (max-width: 766px) {
 	.flight-content {
 		display: flex;
-		height: 600px;
+		height: 810px;
         background-color: #1E2123;
 	}
 }
-@media screen and (max-width: 770px) {
+@media screen and (max-width: 766px) {
 	.hotel-content {
 		display: flex;
-		height: 500px;
+		height: 680px;
         background-color: #1E2123;
 	}
 }
-@media screen and (max-width: 770px) {
-	.tabcontent {
+@media screen and (max-width: 766px) {
+	.flight-hotel-content {
 		display: flex;
 		height: 1000px;
         background-color: #1E2123;
 	}
 }
-@media screen and (max-width: 770px) {
+@media screen and (max-width: 766px) {
 	.car-content {
 		display: flex;
 		height: 500px;
