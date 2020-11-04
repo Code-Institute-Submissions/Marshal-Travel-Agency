@@ -673,7 +673,7 @@ footer {
 @media screen and (max-width: 764px) {
 	.flight-hotel-content {
 		display: flex;
-		height: 1130px;
+		height: 1120px;
         background-color: #1E2123;
 	}
 }
