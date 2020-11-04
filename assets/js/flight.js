@@ -65,12 +65,12 @@
  		return false;
  	}
  	// check from where input location code
- 	else if (InboundLeg != 'SYD' && InboundLeg != 'BKK' && InboundLeg != 'NYC' && InboundLeg != 'LON' && InboundLeg != 'PAR' && InboundLeg != 'GVA' && InboundLeg != 'FRA' && InboundLeg != 'GRU' && InboundLeg != 'PEK' && InboundLeg != 'YVR' && InboundLeg != 'OSL' && InboundLeg != 'ABV' && InboundLeg != 'GLA' && InboundLeg != 'BCN' && InboundLeg != 'DXB' && InboundLeg != 'CPT' && InboundLeg != 'TLV' && InboundLeg != 'CDG' && InboundLeg != 'HAV' && InboundLeg != 'LHR' && InboundLeg != 'DUB' && InboundLeg != 'SVO') {
+ 	else if (InboundLeg != 'SYD' && InboundLeg != 'BKK' && InboundLeg != 'JFK' && InboundLeg != 'LON' && InboundLeg != 'PAR' && InboundLeg != 'GVA' && InboundLeg != 'FRA' && InboundLeg != 'GRU' && InboundLeg != 'PEK' && InboundLeg != 'YVR' && InboundLeg != 'OSL' && InboundLeg != 'ABV' && InboundLeg != 'GLA' && InboundLeg != 'BCN' && InboundLeg != 'DXB' && InboundLeg != 'CPT' && InboundLeg != 'TLV' && InboundLeg != 'CDG' && InboundLeg != 'HAV' && InboundLeg != 'LHR' && InboundLeg != 'DUB' && InboundLeg != 'SVO') {
  		alert("Inputed Locations not Known");
  		document.getElementById('status').style.display = 'none';
  		return false;
  		// check to where input location code
- 	} else if (OutboundLeg != 'SYD' && OutboundLeg != 'BKK' && OutboundLeg != 'NYC' && OutboundLeg != 'LON' && OutboundLeg != 'PAR' && OutboundLeg != 'GVA' && OutboundLeg != 'FRA' && InboundLeg != 'GRU' && InboundLeg != 'PEK' && InboundLeg != 'YVR' && InboundLeg != 'OSL' && InboundLeg != 'ABV' && InboundLeg != 'GLA' && InboundLeg != 'BCN' && InboundLeg != 'DXB' && InboundLeg != 'CPT' && InboundLeg != 'TLV' && InboundLeg != 'CDG' && InboundLeg != 'HAV' && InboundLeg != 'LHR' && InboundLeg != 'DUB' && InboundLeg != 'SVO') {
+ 	} else if (OutboundLeg != 'SYD' && OutboundLeg != 'BKK' && OutboundLeg != 'JFK' && OutboundLeg != 'LON' && OutboundLeg != 'PAR' && OutboundLeg != 'GVA' && OutboundLeg != 'FRA' && InboundLeg != 'GRU' && InboundLeg != 'PEK' && InboundLeg != 'YVR' && InboundLeg != 'OSL' && InboundLeg != 'ABV' && InboundLeg != 'GLA' && InboundLeg != 'BCN' && InboundLeg != 'DXB' && InboundLeg != 'CPT' && InboundLeg != 'TLV' && InboundLeg != 'CDG' && InboundLeg != 'HAV' && InboundLeg != 'LHR' && InboundLeg != 'DUB' && InboundLeg != 'SVO') {
  		alert("Inputed Locations not Known");
  		document.getElementById('status').style.display = 'none';
  		return false;

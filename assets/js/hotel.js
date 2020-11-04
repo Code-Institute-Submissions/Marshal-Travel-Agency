@@ -58,7 +58,7 @@ _("#hBtn").addEventListener("click", function () {
 		return false;
 	}
 	// check if location code is valid
-	else if (location != 'SYD' && location != 'BKK' && location != 'NYC' && location != 'LON' && location != 'PAR' && location != 'GVA' && location != 'FRA') {
+	else if (location != 'SYD' && location != 'BKK' && location != 'NYC' && location != 'LON' && location != 'PAR' && location != 'GVA' && location != 'FRA' && location != 'BOM' && location != 'CIA' && location != 'ACC' && location != 'ABD' && location != 'KIN') {
 		alert("Inputed Locations not Known");
 		document.getElementById('status').style.display = 'none';
 		return false;
