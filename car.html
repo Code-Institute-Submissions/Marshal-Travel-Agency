@@ -60,7 +60,7 @@
 		</table>
 	</div>
     <section id="bookings" class="selection-tab">
-		<div class="container container-tab">
+		<div class="container container-tab p-1 py-4">
 			<h2 class="h2-responsive font-weight-bold text-center my-5 book-text">Bookings</h2>
 			<div class="tab col-md-12 mt-5">
 				<button class="tablinks col-md-2 rf" onclick="openCity(event, 'Flight')" id="defaultOpen"><b><i class="fas fa-plane-departure"></i></b>&nbsp;Flights</button>
@@ -110,7 +110,6 @@
 						<input type="date" class="form-control" id="datereturn" aria-label="date" required>
 					</div>
 				</div>
-				<!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-->
 				<div class="form-row mt-3">
 					<div class="col-md-1">
 						<label for="adult">Adults<span>*</span>
@@ -156,22 +155,22 @@
 				</form>
 				<form>
 					<div class="form-row">
-						<div class="col-md-1 mt-3">
+						<div class="col-md-1 mt-3 pl-3">
 							<label for="rooms">Rooms<span>*</span>
 							</label>
 							<input type="number" class="form-control" id="rooms" placeholder="0" aria-label="rooms" required>
 						</div>
-						<div class="col-md-1 mt-3">
+						<div class="col-md-1 mt-3 pl-3">
 							<label for="adult2">Adults<span>*</span>
 							</label>
 							<input type="number" class="form-control" id="adult2" placeholder="0" aria-label="adults" required>
 						</div>
-						<div class="col-md-1 mt-3">
+						<div class="col-md-1 mt-3 pl-3">
 							<label for="children2">Children<span>*</span>
 							</label>
 							<input type="number" class="form-control" id="children2" placeholder="0" aria-label="children" required>
 						</div>
-						<div class="form-group form-check form-check-inline col-md-2 mt-5">
+						<div class="form-group form-check form-check-inline pl-3 mt-5">
 							<label for="inputStar"></label>
 							<select id="inputStar" class="form-control selected-class">
 								<option selected>Hotel Rating</option>
@@ -190,7 +189,7 @@
 					</div>
 				</form>
 			</div>
-			<div id="Flight+Hotel" class="tabcontent">
+			<div id="Flight+Hotel" class="tabcontent flight-hotel-content">
 				<div class="class-options">
 					<p class="discount mt-2">&nbsp;<i class="fas fa-check"></i>&nbsp;Book your Flight + Hotel together and save up to 30%</p>
 					<div class="form-check form-check-inline mt-2">
@@ -234,28 +233,28 @@
 							<input type="date" class="form-control" id="return3" aria-label="date" required>
 						</div>
 					</div>
-					<div class="form-row mt-4">
-						<div class="col-md-1">
-							<label for="adults2">Adults<span>*</span>
+					<div class="form-row">
+						<div class="col-md-1 mt-3">
+							<label for="adults3">Adults<span>*</span>
 							</label>
-							<input type="number" class="form-control" id="adults2" placeholder="16+" aria-label="adults" required>
+							<input type="number" class="form-control" id="adults3" placeholder="16+" aria-label="adults" required>
 						</div>&nbsp;&nbsp;&nbsp;&nbsp;
-						<div class="col-md-1">
+						<div class="col-md-1 mt-3">
 							<label for="children3">Children<span>*</span>
 							</label>
 							<input type="number" class="form-control" id="children3" placeholder="2-15" aria-label="children" required>
 						</div>&nbsp;&nbsp;&nbsp;&nbsp;
-						<div class="col-md-1">
-							<label for="infants2">Infants<span>*</span>
+						<div class="col-md-1 mt-3">
+							<label for="infants3">Infants<span>*</span>
 							</label>
-							<input type="number" class="form-control" id="infants2" placeholder="<2" aria-label="infants" required>
+							<input type="number" class="form-control" id="infants3" placeholder="<2" aria-label="infants" required>
 						</div>&nbsp;&nbsp;&nbsp;&nbsp;
-						<div class="col-md-1">
+						<div class="col-md-1 mt-3">
 							<label for="room">Rooms<span>*</span>
 							</label>
 							<input type="number" class="form-control" id="room" placeholder="0" aria-label="rooms" required>
 						</div>
-						<div class="form-group form-check form-check-inline mt-4 pl-2">
+						<div class="form-group form-check form-check-inline pl-4 mt-5">
 							<label for="inputStar"></label>
 							<select id="inputStar2" class="form-control selected-class">
 								<option selected>Hotel Rating</option>
@@ -269,7 +268,7 @@
 						</div>
 					</div>
 				</form>
-				<div class="search mb-5 search-fh">
+				<div class="search pb-5 search-fh">
 					<button class="btn btn-info" id="sBtn"><strong>Search</strong>
 					</button><span class="search-signal" id="status2"> searching....</span> 
 				</div>
