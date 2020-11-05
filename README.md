@@ -104,6 +104,15 @@ the site uses less bandwith and load faster.
 ![image-compressor](https://seagather.github.io/Marshal-Travel-Agency/assets/images/image-compressor.png)
 
 # Testing
+During the development process of this project, I intend to use Rapid API, but because I couldn't secure authentication key from Skyscanner
+I adopted Amadeus self service APIs. It wasn't an easy integration for me, I had to rigorously follow some examples both written and youtube videos
+now and then checking that all the API calls returned responses as expected.
+The flight and Hotel search is returning live data and responses in real-time with the use of 3-letter IATA Codes for Cities and Airport as inputs.
+This was further simplify by creating a dropdown options with the IATA codes well defined for good user experience.
+
+Amadeus doesn't have endpoints for flight+Hotel jointly and car hire service, so I made use of a mock API server for flight+Hotel and Car search
+which returns dummy data. It generates data dynamically but the responses are static with no realistic result in this case, it doesn't perform any
+action other than delivering content(static JSON files) to the requesting user.
 
 ## Speed Test
 The Initial speed performance test generated a poor loading analysis which necessitated the use of Tinypng to shrink the image size to 67%.
@@ -140,7 +149,7 @@ Users:
     - The site has been designed to be intuitive and accessible to user. At the top of the index page there is a clean navigation bar, each link describes at what section they will end up at clearly.
     - At the middle of the Hero image there is a "Book Now" call to action button that will take users directly to booking section.
     - The Booking section tab was well structured pertaining to each subject matter with relevant forms and button in sync for users quest.
-    - When users must have completed the relevant inputs and check buttons for a particular tab, upon clicking search pops up another page to cleary render feedback information.
+    - When users must have completed the relevant inputs and check buttons for a particular tab, upon clicking search button pops up another page to clearly render feedback information.
     
 * As a user, I want to get expert advice, plan my trip itineraries, tour packages and suitable cost about my destination.
     - Users can make use of the Contact section which contains contact form with EmailJS Integration for submission.
