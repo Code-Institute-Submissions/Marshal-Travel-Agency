@@ -659,7 +659,7 @@ footer {
 @media screen and (max-width: 764px) {
 	.flight-content {
 		display: flex;
-		height: 810px;
+		height: 850px;
         background-color: #1E2123;
 	}
 }
