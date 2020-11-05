@@ -666,7 +666,7 @@ footer {
 @media screen and (max-width: 764px) {
 	.hotel-content {
 		display: flex;
-		height: 680px;
+		height: 720px;
         background-color: #1E2123;
 	}
 }
