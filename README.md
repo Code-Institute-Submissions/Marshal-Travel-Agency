@@ -33,7 +33,7 @@ Owners:
 The skeletal framework of this website was designed using [Balsamiq](https://balsamiq.com) as a visual guide to represent the page schematic and screen blueprint.
 
 Links to final version of the wireframe can be found below:
-* [Wireframe Final Version](https://seagather.github.io/Marshal-Travel-Agency/assets/wireframes/marshal-travel-wireframe.pdf)
+* [Wireframe Final Version](https://seagather.github.io/Marshal-Travel-Agency/wireframes/marshal-travel-wireframe.pdf)
 
 # Features
 
