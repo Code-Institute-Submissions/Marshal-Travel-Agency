@@ -226,7 +226,12 @@ Cloning Marshal Travel Agency from GitHub:
 
 # Credits
 
+## Code
+* The full-width responsive Hero Image Heading Caption code came from [CSS CodeLab](https://www.csscodelab.com/).
+Code was modified to better fit my needs
+
 ## Content
+* The API comes from [Amadeus](https://developers.amadeus.com/)
 
 ## Media
 * [Am I Responsive:](http://ami.responsivedesign.is/) used for UX Image section
@@ -234,3 +239,7 @@ Cloning Marshal Travel Agency from GitHub:
 * [LogoMaker:](https://logomaker.com) was used for the logo design.
 
 ## Acknowledgements
+* Special thanks to [Felipe Alarcon](https://github.com/felipe-alarcon), I appreciate more than you' ll ever know
+* Most sincere appreciation to my fellow students and Support team at Code Institute for their immeasurable feedback.
+* I can't thank the Code Institute Slack community enough, yet another institution that never run out of ideas.
+
