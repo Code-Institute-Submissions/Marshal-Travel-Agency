@@ -60,7 +60,7 @@
 			<tbody></tbody>
 		</table>
 	</div>
-    <section id="bookings" class="selection-tab">
+	<section id="bookings" class="selection-tab">
 		<div class="container container-tab p-1 py-4">
 			<h2 class="h2-responsive font-weight-bold text-center my-5 book-text">Bookings</h2>
 			<div class="tab col-md-12 mt-5">
@@ -90,15 +90,133 @@
 					</div>
 				</div>
 				<div class="form-row">
-					<div class="col-md-3">
+					<div class="form-group col-md-3 form-check">
 						<label for="OutboundLeg">From Where<span>*</span>
 						</label>
-						<input type="text" class="form-control" id="OutboundLeg" placeholder="From" aria-label="from" required>
+						<select id="OutboundLeg" class="form-control selected-class mb-2 required">
+							<option value="">Select</option>
+							<option value="ABV">ABV - Nnamdi Azikiwe Int'l Airport Abuja</option>
+							<option value="ACC">ACC - Accra Kotoka Int'l Airport Ghana</option>
+							<option value="ADD">ADD - Bole Int'l Airport Addis Ababa</option>
+							<option value="AKL">AKL - Auckland Int'l Airport New Zealand</option>
+							<option value="AMS">AMS - Amsterdan Int'l Airport Schiphol</option>
+							<option value="ARN">ARN - Stockholm Arland Int'l Airport Sweden</option>
+							<option value="ASU">ASU - Silvio Pettirossi Int'l Airport Asuncion Paraguay</option>
+							<option value="ATH">ATH - Athens Int'l Airport Greece</option>
+							<option value="ATL">ATL - Hartsfield Jackson Int'l Airport Atlanta</option>
+							<option value="BCN">BCN - El Prat Airport Barcelona</option>
+							<option value="BKK">BKK - Suvarnabhumi Airport Bangkok</option>
+							<option value="BOM">BOM - Mumbai Int'l Airport India</option>
+							<option value="BRU">BRU - Brussels Int'l Airport Belgium</option>
+							<option value="CAI">CAI - Cairo Int'l Airport Egypt</option>
+							<option value="CCS">CCS - Simon Bolivar Int'l Airport Venezuela</option>
+							<option value="CDG">CDG - Paris Charles de Gaulle Airport France</option>
+							<option value="CPH">CPH - Copenhagen Int'l Airport Denmark</option>
+							<option value="CPT">CPT - Cape Town Int'l Airport</option>
+							<option value="DEL">DEL - Indira Gandhi Int'l Airport New Delhi</option>
+							<option value="DMM">DMM - King Fahd Int'l Airport Saudi Arabia</option>
+							<option value="DOH">DOH - Hamad Int'l Airport Qatar</option>
+							<option value="DUB">DUB - Dublin Airport</option>
+							<option value="DXB">DXB - Dubai International Airport</option>
+							<option value="EZE">EZE - Ministro Pistarini Int'l Airport Argentina</option>
+							<option value="FCO">FCO - Rome Fiumicino Int'l Airport Italy</option>
+							<option value="FRA">FRA - Frankfurt am Main Airport</option>
+							<option value="GLA">GLA - Glasgow International Airport</option>
+							<option value="GRU">GRU - Governador André Franco Montoro Airport São Paulo</option>
+							<option value="GVA">GVA - Cointrin Airport Geneva</option>
+							<option value="HAV">HAV - José Marti Int'l Airport La Habana Cuba</option>
+							<option value="HKG">HKG - Hong Kong Int'l Airport</option>
+							<option value="ICN">ICN - Incheon Int'l Airport South Korea</option>
+							<option value="IST">IST - Istanbul Int'l Airport Turkey</option>
+							<option value="JFK">JFK - John F. Kennedy Int'l Airport</option>
+							<option value="JNB">JNB - O.R Tambo Int'l Airport South Africa</option>
+							<option value="KIN">KIN - Kingston Norman Manley Int'l Airport Jamaica</option>
+							<option value="LHR">LHR - Heathrow Airport London</option>
+							<option value="LIS">LIS - Lisbon Int'l Airport Portugal</option>
+							<option value="LON">LON - London Airport</option>
+							<option value="LOS">LOS - Murtala Muhammed Int'l Airport Lagos</option>
+							<option value="MEX">MEX - Mexico City Int'l Airport</option>
+							<option value="MNL">MNL - Manila Ninoy Aquino Airport Philippines</option>
+							<option value="NAS">NAS - Lynden Pindling Int'l Airport Bahamas</option>
+							<option value="NBO">NBO - Jomo Kenyatta Int'l Airport Nairobi</option>
+							<option value="NRT">NRT - Narita Int'l Airport Japan</option>
+							<option value="OSL">OSL - Oslo Gardermoen Airport Norway</option>
+							<option value="PEK">PEK - Beijing Capital Int'l Airport</option>
+							<option value="SCL">SCL - Santiago Int'l Airport Chile</option>
+							<option value="SGN">SGN - Tân Sõn Nhât Int'l Airport Vietnam</option>
+							<option value="SJU">SJU - Luis Muñoz Marín Int'l Airport San Juan</option>
+							<option value="SOF">SOF - Sofia Int'l Airport Bulgaria</option>
+							<option value="SYD">SYD - Sydney Airport Australia</option>
+							<option value="SVO">SVO - Sheremetyevo Int'l Airport Moscow</option>
+							<option value="TLV">TLV - Ben Gurion Int'l Airport Israel</option>
+							<option value="YVR">YVR - Vancouver Int'l Airport Richmond, Canada</option>
+							<option value="YYZ">YVR - Toronto Pearson Int'l Airport, Canada</option>
+							<option value="ZAG">ZAG - Zagreb Int'l Airport Croatia</option>
+						</select>
 					</div>
-					<div class="col-md-3">
+					<div class="form-group col-md-3 form-check">
 						<label for="InboundLeg">To Where<span>*</span>
 						</label>
-						<input type="text" class="form-control" id="InboundLeg" placeholder="To" aria-label="to" required>
+						<select id="InboundLeg" class="form-control selected-class mb-2 required">
+							<option value="">Select</option>
+							<option value="ABV">ABV - Nnamdi Azikiwe Int'l Airport Abuja</option>
+							<option value="ACC">ACC - Accra Kotoka Int'l Airport Ghana</option>
+							<option value="ADD">ADD - Bole Int'l Airport Addis Ababa</option>
+							<option value="AKL">AKL - Auckland Int'l Airport New Zealand</option>
+							<option value="AMS">AMS - Amsterdan Int'l Airport Schiphol</option>
+							<option value="ARN">ARN - Stockholm Arland Int'l Airport Sweden</option>
+							<option value="ASU">ASU - Silvio Pettirossi Int'l Airport Asuncion Paraguay</option>
+							<option value="ATH">ATH - Athens Int'l Airport Greece</option>
+							<option value="ATL">ATL - Hartsfield Jackson Int'l Airport Atlanta</option>
+							<option value="BCN">BCN - El Prat Airport Barcelona</option>
+							<option value="BKK">BKK - Suvarnabhumi Airport Bangkok</option>
+							<option value="BOM">BOM - Mumbai Int'l Airport India</option>
+							<option value="BRU">BRU - Brussels Int'l Airport Belgium</option>
+							<option value="CAI">CAI - Cairo Int'l Airport Egypt</option>
+							<option value="CCS">CCS - Simon Bolivar Int'l Airport Venezuela</option>
+							<option value="CDG">CDG - Paris Charles de Gaulle Airport France</option>
+							<option value="CPH">CPH - Copenhagen Int'l Airport Denmark</option>
+							<option value="CPT">CPT - Cape Town Int'l Airport</option>
+							<option value="DEL">DEL - Indira Gandhi Int'l Airport New Delhi</option>
+							<option value="DMM">DMM - King Fahd Int'l Airport Saudi Arabia</option>
+							<option value="DOH">DOH - Hamad Int'l Airport Qatar</option>
+							<option value="DUB">DUB - Dublin Airport</option>
+							<option value="DXB">DXB - Dubai International Airport</option>
+							<option value="EZE">EZE - Ministro Pistarini Int'l Airport Argentina</option>
+							<option value="FCO">FCO - Rome Fiumicino Int'l Airport Italy</option>
+							<option value="FRA">FRA - Frankfurt am Main Airport</option>
+							<option value="GLA">GLA - Glasgow International Airport</option>
+							<option value="GRU">GRU - Governador André Franco Montoro Airport São Paulo</option>
+							<option value="GVA">GVA - Cointrin Airport Geneva</option>
+							<option value="HAV">HAV - José Marti Int'l Airport La Habana Cuba</option>
+							<option value="HKG">HKG - Hong Kong Int'l Airport</option>
+							<option value="ICN">ICN - Incheon Int'l Airport South Korea</option>
+							<option value="IST">IST - Istanbul Int'l Airport Turkey</option>
+							<option value="JFK">JFK - John F. Kennedy Int'l Airport</option>
+							<option value="JNB">JNB - O.R Tambo Int'l Airport South Africa</option>
+							<option value="KIN">KIN - Kingston Norman Manley Int'l Airport Jamaica</option>
+							<option value="LHR">LHR - Heathrow Airport London</option>
+							<option value="LIS">LIS - Lisbon Int'l Airport Portugal</option>
+							<option value="LON">LON - London Airport</option>
+							<option value="LOS">LOS - Murtala Muhammed Int'l Airport Lagos</option>
+							<option value="MEX">MEX - Mexico City Int'l Airport</option>
+							<option value="MNL">MNL - Manila Ninoy Aquino Airport Philippines</option>
+							<option value="NAS">NAS - Lynden Pindling Int'l Airport Bahamas</option>
+							<option value="NBO">NBO - Jomo Kenyatta Int'l Airport Nairobi</option>
+							<option value="NRT">NRT - Narita Int'l Airport Japan</option>
+							<option value="OSL">OSL - Oslo Gardermoen Airport Norway</option>
+							<option value="PEK">PEK - Beijing Capital Int'l Airport</option>
+							<option value="SCL">SCL - Santiago Int'l Airport Chile</option>
+							<option value="SGN">SGN - Tân Sõn Nhât Int'l Airport Vietnam</option>
+							<option value="SJU">SJU - Luis Muñoz Marín Int'l Airport San Juan</option>
+							<option value="SOF">SOF - Sofia Int'l Airport Bulgaria</option>
+							<option value="SYD">SYD - Sydney Airport Australia</option>
+							<option value="SVO">SVO - Sheremetyevo Int'l Airport Moscow</option>
+							<option value="TLV">TLV - Ben Gurion Int'l Airport Israel</option>
+							<option value="YVR">YVR - Vancouver Int'l Airport Richmond, Canada</option>
+							<option value="YYZ">YVR - Toronto Pearson Int'l Airport, Canada</option>
+							<option value="ZAG">ZAG - Zagreb Int'l Airport Croatia</option>
+						</select>
 					</div>
 					<div class="col-md-3">
 						<label for="DepartureDate">Depature<span>*</span>
@@ -115,30 +233,87 @@
 					<div class="col-md-1">
 						<label for="adult">Adults<span>*</span>
 						</label>
-						<input type="number" class="form-control" id="adult" placeholder="16+" aria-label="adults" required>
+						<input type="number" class="form-control" id="adult" placeholder="0" aria-label="adults" required>
 					</div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 					<div class="col-md-1">
 						<label for="children">Children<span>*</span>
 						</label>
-						<input type="number" class="form-control" id="children" placeholder="2-15" aria-label="children" required>
+						<input type="number" class="form-control" id="children" placeholder="0" aria-label="children" required>
 					</div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 					<div class="col-md-1">
 						<label for="infants">Infants<span>*</span>
 						</label>
-						<input type="number" class="form-control" id="infants" placeholder="<2" aria-label="infants" required>
+						<input type="number" class="form-control" id="infants" placeholder="0" aria-label="infants" required>
 					</div>
 				</div>
-				<!--</div>-->
 				<div class="search py-5">
 					<button class="btn btn-info col-md-12" id="fBtn"><strong>Search Flights</strong>
 					</button><span class="search-signal" id="status"> searching....</span> 
 				</div>
 			</div>
 			<div id="Hotel" class="tabcontent hotel-content">
-				<div class="form-row">
-					<div class="col py-3">
-						<input type="text" id="loc" class="form-control" placeholder="Destination, Country, City, District or Landmark" aria-label="destination" required>
-					</div>
+				<div class="form-group">
+					<label for="loc"></label>
+					<select class="form-control" id="loc" aria-label="destination" required>
+						<option value="">Select Destination</option>
+						<option value="ABV">ABV - FCT-Abuja, Nigeria</option>
+						<option value="ACC">ACC - Accra Kotoka, Ghana</option>
+						<option value="ADD">ADD - Addis Ababa, Ethiopia</option>
+						<option value="AKL">AKL - Auckland, New Zealand</option>
+						<option value="AMS">AMS - Amsterdan Schiphol, Netherland</option>
+						<option value="ARN">ARN - Stockholm Arland, Sweden</option>
+						<option value="ASU">ASU - Luque Asuncion, Paraguay</option>
+						<option value="ATH">ATH - Athens Attica, Greece</option>
+						<option value="ATL">ATL - Atlanta Georgia, USA</option>
+						<option value="BCN">BCN - Barcelona Catalonia Spain</option>
+						<option value="BKK">BKK - Pathum Thani, Thailand, Bangkok</option>
+						<option value="BOM">BOM - Mumbai India</option>
+						<option value="BRU">BRU - Brussels Belgium</option>
+						<option value="CAI">CAI - Cairo Heliopolis, Egypt</option>
+						<option value="CCS">CCS - Carcas Maiquetía Venezuela</option>
+						<option value="CDG">CDG - Paris Rissy-en-France, France</option>
+						<option value="CPH">CPH - Copenhagen, Kastrup, Denmark</option>
+						<option value="CPT">CPT - Cape Town, South Africa</option>
+						<option value="DEL">DEL - Delhi Palam, India</option>
+						<option value="DMM">DMM - Dammam, Saudi Arabia</option>
+						<option value="DOH">DOH - Doha Qatar</option>
+						<option value="DUB">DUB - Collinstown Dublin, Ireland</option>
+						<option value="DXB">DXB - Dubai, United Arab Emirates</option>
+						<option value="EZE">EZE - Ezeiza Buenos Aires, Argentina</option>
+						<option value="FCO">FCO - Fiumicino Rome, Italy</option>
+						<option value="FRA">FRA - Kelsterbach Frankfurt, Germany</option>
+						<option value="GLA">GLA - Abbotsinch Glasgow Scotland, UK</option>
+						<option value="GRU">GRU - Gurulhos São Paulo, Brazil</option>
+						<option value="GVA">GVA - Le Grand-Saconnex Geneva, Switzerland</option>
+						<option value="HAV">HAV - Boyeros Havana Cuba</option>
+						<option value="HKG">HKG - Chek Lap Kok Pearl, Hong Kong</option>
+						<option value="ICN">ICN - Jung District Seoul, South Korea</option>
+						<option value="IST">IST - Arnavutköy Istanbul, Turkey</option>
+						<option value="JFK">JFK - Queens New York, USA</option>
+						<option value="JNB">JNB - Kempton Park Johannesburg, South Africa</option>
+						<option value="KIN">KIN - Palisadoes Kingston, Jamaica</option>
+						<option value="LHR">LHR - Hillingdon London, England</option>
+						<option value="LIS">LIS - Olivais Lisbon, Portugal</option>
+						<option value="LON">LON - London, England, United Kingdom</option>
+						<option value="LOS">LOS - Ikeja Lagos Nigeria</option>
+						<option value="MEX">MEX - Venustiano Carranza, Mexico City</option>
+						<option value="MNL">MNL - Metro Manila Philippines</option>
+						<option value="NAS">NAS - Nassau Bahamas</option>
+						<option value="NBO">NBO - Embakasi Nairobi, Kenya</option>
+						<option value="NRT">NRT - Narita, Chiba Tokyo, Japan</option>
+						<option value="OSL">OSL - Gardermoen Oslo, Norway</option>
+						<option value="PEK">PEK - Shunyi District Beijing, China</option>
+						<option value="SCL">SCL - Pudahuel Santiago, Chile</option>
+						<option value="SGN">SGN - Tan Binh District Ho Chi Minh City, Vietnam</option>
+						<option value="SJU">SJU - Carolina San Juan, Puerto Rico</option>
+						<option value="SOF">SOF - Sofia Bulgaria</option>
+						<option value="SYD">SYD - Mascot, New South Wales Sydney, Australia</option>
+						<option value="SVO">SVO - Khimki Moscow Oblast, Russia</option>
+						<option value="TLV">TLV - Central District Tel Aviv Jerusalem, Israel</option>
+						<option value="YVR">YVR - Metro Vancouver Richmond, Canada</option>
+						<option value="YYZ">YVR - Mississauga, Toronto Ontario, Canada</option>
+						<option value="ZAG">ZAG - Velika Gorica Zagreb, Croatia</option>
+					</select>
 				</div>
 				<form>
 					<div class="form-row">
@@ -212,16 +387,134 @@
 					</div>
 				</div>
 				<form>
-					<div class="form-row mb-3">
-						<div class="col-md-3">
+					<div class="form-row">
+						<div class="form-group col-md-3 form-check">
 							<label for="where">From Where<span>*</span>
 							</label>
-							<input type="text" class="form-control" id="where" placeholder="From" aria-label="from" required>
+							<select id="where" class="form-control selected-class required">
+								<option value="">Select</option>
+								<option value="ABV">ABV - Nnamdi Azikiwe Int'l Airport Abuja</option>
+								<option value="ACC">ACC - Accra Kotoka Int'l Airport Ghana</option>
+								<option value="ADD">ADD - Bole Int'l Airport Addis Ababa</option>
+								<option value="AKL">AKL - Auckland Int'l Airport New Zealand</option>
+								<option value="AMS">AMS - Amsterdan Int'l Airport Schiphol</option>
+								<option value="ARN">ARN - Stockholm Arland Int'l Airport Sweden</option>
+								<option value="ASU">ASU - Silvio Pettirossi Int'l Airport Asuncion Paraguay</option>
+								<option value="ATH">ATH - Athens Int'l Airport Greece</option>
+								<option value="ATL">ATL - Hartsfield Jackson Int'l Airport Atlanta</option>
+								<option value="BCN">BCN - El Prat Airport Barcelona</option>
+								<option value="BKK">BKK - Suvarnabhumi Airport Bangkok</option>
+								<option value="BOM">BOM - Mumbai Int'l Airport India</option>
+								<option value="BRU">BRU - Brussels Int'l Airport Belgium</option>
+								<option value="CAI">CAI - Cairo Int'l Airport Egypt</option>
+								<option value="CCS">CCS - Simon Bolivar Int'l Airport Venezuela</option>
+								<option value="CDG">CDG - Paris Charles de Gaulle Airport France</option>
+								<option value="CPH">CPH - Copenhagen Int'l Airport Denmark</option>
+								<option value="CPT">CPT - Cape Town Int'l Airport</option>
+								<option value="DEL">DEL - Indira Gandhi Int'l Airport New Delhi</option>
+								<option value="DMM">DMM - King Fahd Int'l Airport Saudi Arabia</option>
+								<option value="DOH">DOH - Hamad Int'l Airport Qatar</option>
+								<option value="DUB">DUB - Dublin Airport</option>
+								<option value="DXB">DXB - Dubai International Airport</option>
+								<option value="EZE">EZE - Ministro Pistarini Int'l Airport Argentina</option>
+								<option value="FCO">FCO - Rome Fiumicino Int'l Airport Italy</option>
+								<option value="FRA">FRA - Frankfurt am Main Airport</option>
+								<option value="GLA">GLA - Glasgow International Airport</option>
+								<option value="GRU">GRU - Governador André Franco Montoro Airport São Paulo</option>
+								<option value="GVA">GVA - Cointrin Airport Geneva</option>
+								<option value="HAV">HAV - José Marti Int'l Airport La Habana Cuba</option>
+								<option value="HKG">HKG - Hong Kong Int'l Airport</option>
+								<option value="ICN">ICN - Incheon Int'l Airport South Korea</option>
+								<option value="IST">IST - Istanbul Int'l Airport Turkey</option>
+								<option value="JFK">JFK - John F. Kennedy Int'l Airport</option>
+								<option value="JNB">JNB - O.R Tambo Int'l Airport South Africa</option>
+								<option value="KIN">KIN - Kingston Norman Manley Int'l Airport Jamaica</option>
+								<option value="LHR">LHR - Heathrow Airport London</option>
+								<option value="LIS">LIS - Lisbon Int'l Airport Portugal</option>
+								<option value="LON">LON - London Airport</option>
+								<option value="LOS">LOS - Murtala Muhammed Int'l Airport Lagos</option>
+								<option value="MEX">MEX - Mexico City Int'l Airport</option>
+								<option value="MNL">MNL - Manila Ninoy Aquino Airport Philippines</option>
+								<option value="NAS">NAS - Lynden Pindling Int'l Airport Bahamas</option>
+								<option value="NBO">NBO - Jomo Kenyatta Int'l Airport Nairobi</option>
+								<option value="NRT">NRT - Narita Int'l Airport Japan</option>
+								<option value="OSL">OSL - Oslo Gardermoen Airport Norway</option>
+								<option value="PEK">PEK - Beijing Capital Int'l Airport</option>
+								<option value="SCL">SCL - Santiago Int'l Airport Chile</option>
+								<option value="SGN">SGN - Tân Sõn Nhât Int'l Airport Vietnam</option>
+								<option value="SJU">SJU - Luis Muñoz Marín Int'l Airport San Juan</option>
+								<option value="SOF">SOF - Sofia Int'l Airport Bulgaria</option>
+								<option value="SYD">SYD - Sydney Airport Australia</option>
+								<option value="SVO">SVO - Sheremetyevo Int'l Airport Moscow</option>
+								<option value="TLV">TLV - Ben Gurion Int'l Airport Israel</option>
+								<option value="YVR">YVR - Vancouver Int'l Airport Richmond, Canada</option>
+								<option value="YYZ">YVR - Toronto Pearson Int'l Airport, Canada</option>
+								<option value="ZAG">ZAG - Zagreb Int'l Airport Croatia</option>
+							</select>
 						</div>
-						<div class="col-md-3">
+						<div class="form-group col-md-3 form-check">
 							<label for="destination">To Where<span>*</span>
 							</label>
-							<input type="text" class="form-control" id="destination" placeholder="To" aria-label="to" required>
+							<select id="destination" class="form-control selected-class required">
+								<option value="">Select</option>
+								<option value="ABV">ABV - Nnamdi Azikiwe Int'l Airport Abuja</option>
+								<option value="ACC">ACC - Accra Kotoka Int'l Airport Ghana</option>
+								<option value="ADD">ADD - Bole Int'l Airport Addis Ababa</option>
+								<option value="AKL">AKL - Auckland Int'l Airport New Zealand</option>
+								<option value="AMS">AMS - Amsterdan Int'l Airport Schiphol</option>
+								<option value="ARN">ARN - Stockholm Arland Int'l Airport Sweden</option>
+								<option value="ASU">ASU - Silvio Pettirossi Int'l Airport Asuncion Paraguay</option>
+								<option value="ATH">ATH - Athens Int'l Airport Greece</option>
+								<option value="ATL">ATL - Hartsfield Jackson Int'l Airport Atlanta</option>
+								<option value="BCN">BCN - El Prat Airport Barcelona</option>
+								<option value="BKK">BKK - Suvarnabhumi Airport Bangkok</option>
+								<option value="BOM">BOM - Mumbai Int'l Airport India</option>
+								<option value="BRU">BRU - Brussels Int'l Airport Belgium</option>
+								<option value="CAI">CAI - Cairo Int'l Airport Egypt</option>
+								<option value="CCS">CCS - Simon Bolivar Int'l Airport Venezuela</option>
+								<option value="CDG">CDG - Paris Charles de Gaulle Airport France</option>
+								<option value="CPH">CPH - Copenhagen Int'l Airport Denmark</option>
+								<option value="CPT">CPT - Cape Town Int'l Airport</option>
+								<option value="DEL">DEL - Indira Gandhi Int'l Airport New Delhi</option>
+								<option value="DMM">DMM - King Fahd Int'l Airport Saudi Arabia</option>
+								<option value="DOH">DOH - Hamad Int'l Airport Qatar</option>
+								<option value="DUB">DUB - Dublin Airport</option>
+								<option value="DXB">DXB - Dubai International Airport</option>
+								<option value="EZE">EZE - Ministro Pistarini Int'l Airport Argentina</option>
+								<option value="FCO">FCO - Rome Fiumicino Int'l Airport Italy</option>
+								<option value="FRA">FRA - Frankfurt am Main Airport</option>
+								<option value="GLA">GLA - Glasgow International Airport</option>
+								<option value="GRU">GRU - Governador André Franco Montoro Airport São Paulo</option>
+								<option value="GVA">GVA - Cointrin Airport Geneva</option>
+								<option value="HAV">HAV - José Marti Int'l Airport La Habana Cuba</option>
+								<option value="HKG">HKG - Hong Kong Int'l Airport</option>
+								<option value="ICN">ICN - Incheon Int'l Airport South Korea</option>
+								<option value="IST">IST - Istanbul Int'l Airport Turkey</option>
+								<option value="JFK">JFK - John F. Kennedy Int'l Airport</option>
+								<option value="JNB">JNB - O.R Tambo Int'l Airport South Africa</option>
+								<option value="KIN">KIN - Kingston Norman Manley Int'l Airport Jamaica</option>
+								<option value="LHR">LHR - Heathrow Airport London</option>
+								<option value="LIS">LIS - Lisbon Int'l Airport Portugal</option>
+								<option value="LON">LON - London Airport</option>
+								<option value="LOS">LOS - Murtala Muhammed Int'l Airport Lagos</option>
+								<option value="MEX">MEX - Mexico City Int'l Airport</option>
+								<option value="MNL">MNL - Manila Ninoy Aquino Airport Philippines</option>
+								<option value="NAS">NAS - Lynden Pindling Int'l Airport Bahamas</option>
+								<option value="NBO">NBO - Jomo Kenyatta Int'l Airport Nairobi</option>
+								<option value="NRT">NRT - Narita Int'l Airport Japan</option>
+								<option value="OSL">OSL - Oslo Gardermoen Airport Norway</option>
+								<option value="PEK">PEK - Beijing Capital Int'l Airport</option>
+								<option value="SCL">SCL - Santiago Int'l Airport Chile</option>
+								<option value="SGN">SGN - Tân Sõn Nhât Int'l Airport Vietnam</option>
+								<option value="SJU">SJU - Luis Muñoz Marín Int'l Airport San Juan</option>
+								<option value="SOF">SOF - Sofia Int'l Airport Bulgaria</option>
+								<option value="SYD">SYD - Sydney Airport Australia</option>
+								<option value="SVO">SVO - Sheremetyevo Int'l Airport Moscow</option>
+								<option value="TLV">TLV - Ben Gurion Int'l Airport Israel</option>
+								<option value="YVR">YVR - Vancouver Int'l Airport Richmond, Canada</option>
+								<option value="YYZ">YVR - Toronto Pearson Int'l Airport, Canada</option>
+								<option value="ZAG">ZAG - Zagreb Int'l Airport Croatia</option>
+							</select>
 						</div>
 						<div class="col-md-3">
 							<label for="departure">Depature<span>*</span>
@@ -238,17 +531,17 @@
 						<div class="col-md-1 mt-3">
 							<label for="adults3">Adults<span>*</span>
 							</label>
-							<input type="number" class="form-control" id="adults3" placeholder="16+" aria-label="adults" required>
+							<input type="number" class="form-control" id="adults3" placeholder="0" aria-label="adults" required>
 						</div>&nbsp;&nbsp;&nbsp;&nbsp;
 						<div class="col-md-1 mt-3">
 							<label for="children3">Children<span>*</span>
 							</label>
-							<input type="number" class="form-control" id="children3" placeholder="2-15" aria-label="children" required>
+							<input type="number" class="form-control" id="children3" placeholder="0" aria-label="children" required>
 						</div>&nbsp;&nbsp;&nbsp;&nbsp;
 						<div class="col-md-1 mt-3">
 							<label for="infants3">Infants<span>*</span>
 							</label>
-							<input type="number" class="form-control" id="infants3" placeholder="<2" aria-label="infants" required>
+							<input type="number" class="form-control" id="infants3" placeholder="0" aria-label="infants" required>
 						</div>&nbsp;&nbsp;&nbsp;&nbsp;
 						<div class="col-md-1 mt-3">
 							<label for="room">Rooms<span>*</span>
@@ -275,10 +568,68 @@
 				</div>
 			</div>
 			<div id="Car-Rental" class="tabcontent car-content">
-				<div class="form-row">
-					<div class="col py-3">
-						<input type="text" id="pickloc" class="form-control" placeholder="Pickup Location, Airport, Station..." aria-label="destination" required>
-					</div>
+				<div class="form-group">
+					<label for="pickloc"></label>
+					<select class="form-control" id="pickloc" aria-label="destination" required>
+						<option value="">Select Location</option>
+						<option value="ABV">ABV - FCT-Abuja, Nigeria</option>
+						<option value="ACC">ACC - Accra Kotoka, Ghana</option>
+						<option value="ADD">ADD - Addis Ababa, Ethiopia</option>
+						<option value="AKL">AKL - Auckland, New Zealand</option>
+						<option value="AMS">AMS - Amsterdan Schiphol, Netherland</option>
+						<option value="ARN">ARN - Stockholm Arland, Sweden</option>
+						<option value="ASU">ASU - Luque Asuncion, Paraguay</option>
+						<option value="ATH">ATH - Athens Attica, Greece</option>
+						<option value="ATL">ATL - Atlanta Georgia, USA</option>
+						<option value="BCN">BCN - Barcelona Catalonia Spain</option>
+						<option value="BKK">BKK - Pathum Thani, Thailand, Bangkok</option>
+						<option value="BOM">BOM - Mumbai India</option>
+						<option value="BRU">BRU - Brussels Belgium</option>
+						<option value="CAI">CAI - Cairo Heliopolis, Egypt</option>
+						<option value="CCS">CCS - Carcas Maiquetía Venezuela</option>
+						<option value="CDG">CDG - Paris Rissy-en-France, France</option>
+						<option value="CPH">CPH - Copenhagen, Kastrup, Denmark</option>
+						<option value="CPT">CPT - Cape Town, South Africa</option>
+						<option value="DEL">DEL - Delhi Palam, India</option>
+						<option value="DMM">DMM - Dammam, Saudi Arabia</option>
+						<option value="DOH">DOH - Doha Qatar</option>
+						<option value="DUB">DUB - Collinstown Dublin, Ireland</option>
+						<option value="DXB">DXB - Dubai, United Arab Emirates</option>
+						<option value="EZE">EZE - Ezeiza Buenos Aires, Argentina</option>
+						<option value="FCO">FCO - Fiumicino Rome, Italy</option>
+						<option value="FRA">FRA - Kelsterbach Frankfurt, Germany</option>
+						<option value="GLA">GLA - Abbotsinch Glasgow Scotland, UK</option>
+						<option value="GRU">GRU - Gurulhos São Paulo, Brazil</option>
+						<option value="GVA">GVA - Le Grand-Saconnex Geneva, Switzerland</option>
+						<option value="HAV">HAV - Boyeros Havana Cuba</option>
+						<option value="HKG">HKG - Chek Lap Kok Pearl, Hong Kong</option>
+						<option value="ICN">ICN - Jung District Seoul, South Korea</option>
+						<option value="IST">IST - Arnavutköy Istanbul, Turkey</option>
+						<option value="JFK">JFK - Queens New York, USA</option>
+						<option value="JNB">JNB - Kempton Park Johannesburg, South Africa</option>
+						<option value="KIN">KIN - Palisadoes Kingston, Jamaica</option>
+						<option value="LHR">LHR - Hillingdon London, England</option>
+						<option value="LIS">LIS - Olivais Lisbon, Portugal</option>
+						<option value="LON">LON - London, England, United Kingdom</option>
+						<option value="LOS">LOS - Ikeja Lagos Nigeria</option>
+						<option value="MEX">MEX - Venustiano Carranza, Mexico City</option>
+						<option value="MNL">MNL - Metro Manila Philippines</option>
+						<option value="NAS">NAS - Nassau Bahamas</option>
+						<option value="NBO">NBO - Embakasi Nairobi, Kenya</option>
+						<option value="NRT">NRT - Narita, Chiba Tokyo, Japan</option>
+						<option value="OSL">OSL - Gardermoen Oslo, Norway</option>
+						<option value="PEK">PEK - Shunyi District Beijing, China</option>
+						<option value="SCL">SCL - Pudahuel Santiago, Chile</option>
+						<option value="SGN">SGN - Tan Binh District Ho Chi Minh City, Vietnam</option>
+						<option value="SJU">SJU - Carolina San Juan, Puerto Rico</option>
+						<option value="SOF">SOF - Sofia Bulgaria</option>
+						<option value="SYD">SYD - Mascot, New South Wales Sydney, Australia</option>
+						<option value="SVO">SVO - Khimki Moscow Oblast, Russia</option>
+						<option value="TLV">TLV - Central District Tel Aviv Jerusalem, Israel</option>
+						<option value="YVR">YVR - Metro Vancouver Richmond, Canada</option>
+						<option value="YYZ">YVR - Mississauga, Toronto Ontario, Canada</option>
+						<option value="ZAG">ZAG - Velika Gorica Zagreb, Croatia</option>
+					</select>
 				</div>
 				<div class="form-check form-check-inline py-2">
 					<input type="checkbox" class="form-check-input" id="differentlocation">
@@ -321,20 +672,12 @@
 	<script src="assets/js/flight.js"></script>
 	<script src="assets/js/hotel.js"></script>
 	<script src="assets/js/car.js"></script>
+	<script src="assets/js/output-page-flight+hotel.js"></script>
 	<script src="assets/js/getElem.js"></script>
 	<script>
-		// fetch hotel and flight data from localstorage
-		    var result = JSON.parse(localStorage.getItem("FandHdata"));
-		   
-		    console.log(result);
-		    // console.log(result.departure.at);
-		
-		    for (i in result) {
-		    x = result[i];
-		    // inject response data into html table
-		    document.getElementById('hf').insertAdjacentHTML("beforeend", "<tr><td>" + x.hotel + " </td><td>" + x.address + "</td><td>" + x.phone +  "</td><td>" + x.flightnb +  "</td><td>" + x.carrier + "</td><td>"  + x.terminal + "</td><td>"  + x.price + "</td></tr>" )
-		              
-		    }
+		$(document).ready(function(){
+		    $('[data-toggle="popover"]').popover();   
+		});
 	</script>
 </body>
 

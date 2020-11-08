@@ -18,8 +18,8 @@
 		
 		            // store API access token in localstorage
 		            localStorage.setItem("token", jsonResponse.access_token);
-		            console.log(jsonResponse.access_token);
-		            console.log(jsonResponse);
+		            //console.log(jsonResponse.access_token);
+		            //console.log(jsonResponse);
 		        }
 		    }
 		

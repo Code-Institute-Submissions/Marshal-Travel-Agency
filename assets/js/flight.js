@@ -94,8 +94,8 @@
  		document.getElementById('adult').value = '';
  		document.getElementById('children').value = '';
  		document.getElementById('infants').value = '';
- 		console.log(response);
- 		console.log(response.json);
+ 		//console.log(response);
+ 		//console.log(response.json);
  		// for loop in response object and push all object into result variable
  		var result = [];
  		var d = [];

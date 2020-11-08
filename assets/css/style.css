@@ -87,6 +87,8 @@ h4 {
 }
 /* ----------------------------------------------End header */
 
+/* ----------------------------------General Text and Action section*/
+
 .caption {
 	font-family: Georgia;
 	font-weight: bold;
@@ -354,6 +356,8 @@ a:active {
 	background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.80));
 	background-color: black;
 }
+/* -----------------------------------------------------------Buttons*/
+
 .btn-info {
 	background-color: #EE6059;
 	color: white;
@@ -408,27 +412,6 @@ a:active {
 	opacity: 1;
 	visibility: visible;
 }
-.modal-content {
-	background-color: #1d2527;
-	color: white;
-	border: none;
-}
-.modal-header,
-.modal-body,
-.modal-footer {
-	border: none;
-}
-/*
-.row label + * {
-	color: red;
-} */
-.row label {
-	font-weight: bold;
-	float: left;
-}
-span {
-	color: red;
-}
 .btn-signUp {
 	width: 100%;
 }
@@ -439,25 +422,6 @@ span {
 .btn-signUp {
 	background-color: #EE6059;
 	color: #fffff9;
-}
-.back {
-	background-color: #EE6059;
-	font-size: 90%;
-}
-.backto {
-	background-color: #1d2527;
-	font-size: 90%;
-}
-.book-text {
-	color: #fffff9;
-}
-.selection-tab {
-	background-color: #1d2527;
-}
-.tab {
-	overflow: hidden;
-	border: none;
-	background-color: #1d2527;
 }
 /* Style the buttons inside the tab */
 
@@ -482,19 +446,53 @@ span {
 	background-color: #ddd;
 	color: black;
 }
-/* Create an active/current tablink class */
-
 .btn-second,
 .tab button.active {
 	background-color: grey;
 	color: black;
 }
+.modal-content {
+	background-color: #1d2527;
+	color: white;
+	border: none;
+}
+.modal-header,
+.modal-body,
+.modal-footer {
+	border: none;
+}
+.row label {
+	font-weight: bold;
+	float: left;
+}
+span {
+	color: red;
+}
+.back {
+	background-color: #EE6059;
+	font-size: 90%;
+}
+.backto {
+	background-color: #1d2527;
+	font-size: 90%;
+}
+.book-text {
+	color: #fffff9;
+}
+.selection-tab {
+	background-color: #1d2527;
+}
+.tab {
+	overflow: hidden;
+	border: none;
+	background-color: #1d2527;
+}
 .popover {
 	background-color: #4caf50;
-    color:  #fffff2 !important;
+	color: #fffff2 !important;
 }
 .popover-content {
-    color: #fffff2 !important;
+	color: #fffff2 !important;
 }
 .fa-check,
 .discount {
@@ -559,7 +557,7 @@ span {
 	position: relative;
 }
 .search-fh {
-    padding-left: 39%;
+	padding-left: 39%;
 }
 .contact-section {
 	background-color: #1E2123;
@@ -575,6 +573,7 @@ span {
 	padding-top: 2%;
 	padding-bottom: 5%;
 }
+/* -------------------------------------------------------Footer */
 
 footer {
 	background-color: #121315;
@@ -603,7 +602,7 @@ footer {
 	background: #e84610;
 }
 .output {
-   background-color: #1d2527;
+	background-color: #1d2527;
 	width: 100%;
 	height: auto;
 }
@@ -619,6 +618,8 @@ footer {
 .table-font th i {
 	color: #e84610;
 }
+/* ------------------------------------------- Media Queries */
+
 @media screen and (max-width: 700px) {
 	.box {
 		width: 70%;
@@ -626,29 +627,13 @@ footer {
 	.popup {
 		width: 70%;
 	}
-}/*
-@media screen and (max-width: 600px) {
-	.our-story,
-	.aboutus-text {
-		font-size: 2rem;
-		text-align: justify;
-	}
-}*/
+}
 @media (max-width: 992px) {
 	.our-story,
 	.aboutus-text {
 		font-size: 1rem;
 	}
 }
-/*
-@media screen and (max-width: 700px) {
-	.selection-tab {
-		display: flex;
-		font-size: 1rem;
-		color: white;
-	}
-}
-*/
 @media screen and (max-width: 770px) {
 	.selection-tab {
 		display: flex;
@@ -660,28 +645,28 @@ footer {
 	.flight-content {
 		display: flex;
 		height: 850px;
-        background-color: #1E2123;
+		background-color: #1E2123;
 	}
 }
 @media screen and (max-width: 764px) {
 	.hotel-content {
 		display: flex;
 		height: 720px;
-        background-color: #1E2123;
+		background-color: #1E2123;
 	}
 }
 @media screen and (max-width: 764px) {
 	.flight-hotel-content {
 		display: flex;
 		height: 1120px;
-        background-color: #1E2123;
+		background-color: #1E2123;
 	}
 }
 @media screen and (max-width: 764px) {
 	.car-content {
 		display: flex;
 		height: 520px;
-        background-color: #1E2123;
+		background-color: #1E2123;
 	}
 }
 @media screen and (max-width: 764px) {
@@ -692,8 +677,6 @@ footer {
 		max-width: 480px;
 	}
 }
-/* Styles for the content section */
-
 @media (min-width: 500px) {
 	#button {
 		margin: 20px;

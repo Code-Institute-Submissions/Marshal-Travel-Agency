@@ -37,7 +37,7 @@
  	var picktime = _("#picktime").value;
  	var dropoff = _("#dropoff").value;
  	var droptime = _("#droptime").value;
- 	console.log('car hire clicked');
+ 	//console.log('car hire clicked');
  	var url = 'https://a76dcb3d-31ea-42af-8ff3-5c4a21786b16.mock.pstmn.io/carhire';
  	// get class id for showing loading notification
  	document.getElementById('status3').style.display = 'inline';
@@ -62,7 +62,7 @@
  		document.getElementById('dropoff').value = '';
  		document.getElementById('droptime').value = '';
  		document.getElementById('status3').style.display = 'none';
- 		console.log(response);
+ 		//console.log(response);
  		// add response to result variable
  		var result = response.json;
  		localStorage.setItem("car", JSON.stringify(result));

@@ -42,7 +42,7 @@ _("#sBtn").addEventListener("click", function () {
     var room = _("#room").value;
     var inputStar2 = _("#inputStar2").value;
     
-	console.log('hotel and flight clicked');
+	//console.log('hotel and flight clicked');
 	var url = 'https://a76dcb3d-31ea-42af-8ff3-5c4a21786b16.mock.pstmn.io/hotelflight';
 	// get class id for showing loading notification
 	document.getElementById('status2').style.display = 'inline';
@@ -71,7 +71,7 @@ _("#sBtn").addEventListener("click", function () {
         document.getElementById('room').value = '';
         document.getElementById('inputStar2').value = '';
 		document.getElementById('status2').style.display = 'none';
-		console.log(response);
+		//console.log(response);
 		// add response to result variable
 		var result = response.json;
 		localStorage.setItem("FandHdata", JSON.stringify(result));
