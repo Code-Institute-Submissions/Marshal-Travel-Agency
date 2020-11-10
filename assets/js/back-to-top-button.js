@@ -1,4 +1,4 @@
-var btn = $('#button');
+/*var btn = $('#button');
 
 $(document).ready(function() {
 $(window).scroll(function() {
@@ -13,4 +13,4 @@ btn.on('click', function(e) {
   e.preventDefault();
   $('html, body').animate({scrollTop:0}, '300');
 });
-});
+});*/

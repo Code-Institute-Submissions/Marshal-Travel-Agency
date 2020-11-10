@@ -20,15 +20,15 @@ h4 {
 /* ---------------------------------------------Header */
 
 .top-bar {
-	position: sticky;
+	position: relative;
 	top: 0px;
-	z-index: 1;
 }
 .navbar {
 	position: relative;
 	top: 0px;
 	z-index: 1;
 	background-color: #333;
+    width: 100vw;
 }
 .logo {
 	margin-left: auto;
@@ -118,6 +118,8 @@ h4 {
 	background-repeat: no-repeat;
 	background-size: cover;
 	position: relative;
+   /* margin: 1.3rem auto;
+	margin-top: 92px;*/
 }
 .hero-text {
 	text-align: center;
@@ -490,6 +492,8 @@ span {
 .popover {
 	background-color: #4caf50;
 	color: #fffff2 !important;
+    z-index: 1;
+    position: relative;
 }
 .popover-content {
 	color: #fffff2 !important;

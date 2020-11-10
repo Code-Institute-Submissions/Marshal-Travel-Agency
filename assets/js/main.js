@@ -18,8 +18,7 @@
 		
 		            // store API access token in localstorage
 		            localStorage.setItem("token", jsonResponse.access_token);
-		            //console.log(jsonResponse.access_token);
-		            //console.log(jsonResponse);
+		            
 		        }
 		    }
 		
@@ -32,4 +31,27 @@
 		    // post request body payload
 		    xhr.send(data);
 		  
-		    };
+            };
+            
+// back-to-top-button            
+            var btn = $('#button');
+
+$(document).ready(function() {
+$(window).scroll(function() {
+  if ($(window).scrollTop() > 300) {
+    btn.addClass('show');
+  } else {
+    btn.removeClass('show');
+  }
+});
+
+btn.on('click', function(e) {
+  e.preventDefault();
+  $('html, body').animate({scrollTop:0}, '300');
+});
+});
+
+// getElem   
+function _(x){
+	return document.querySelector(x);
+}

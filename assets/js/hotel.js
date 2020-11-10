@@ -39,8 +39,6 @@ _("#hBtn").addEventListener("click", function () {
 	var children2 = _("#children2").value;
 	var adult2 = _("#adult2").value;
 	var inputStar = _("#inputStar").value;
-	//console.log(location);
-	//console.log('button clicked')
 	// get API access token from localstorag
 	var token = localStorage.getItem("token");
 	var url = 'https://test.api.amadeus.com/v2/shopping/hotel-offers?cityCode=' + location;
@@ -58,7 +56,7 @@ _("#hBtn").addEventListener("click", function () {
 		return false;
 	}
 	// check if location code is valid
-	else if (location != 'SYD' && location != 'BKK' && location != 'NYC' && location != 'LON' && location != 'PAR' && location != 'GVA' && location != 'FRA' && location != 'BOM' && location != 'FCO' && location != 'ACC' && location != 'KIN' && location != 'ABV' && location != 'OSL' && location != 'GRU' && location != 'PEK' && location != 'YVR' && location != 'YYZ' && location != 'GLA' && location != 'BCN' && location != 'DXB' && location != 'CPT' && location != 'TLV' && location != 'CDG' && location != 'HAV' && location != 'LHR' && location != 'DUB' && location != 'SVO' && location != 'ADD' && location != 'IST' && location != 'NRT' && location != 'BRU' && location != 'SCL' && location != 'ATL' && location != 'CAI' && location != 'JNB' && location != 'LOS' && location != 'CPH' && location != 'NBO' && location != 'SOF' && location != 'MEX' && location != 'NAS' && location != 'ATH' && location != 'AMS' && location != 'SJU' && location != 'ZAG' && location != 'ARN' && location != 'LIS' && location != 'EZE' && location != 'ASU' && location != 'ICN' && location != 'AKL' && location != 'MNL' && location != 'HKG' && location != 'SGN' && location != 'CSS' && location != 'DMM' && location != 'DOH' && location != 'DEL') {
+	else if (location != 'SYD' && location != 'BKK' && location != 'NYC' && location != 'JFK' && location != 'LON' && location != 'PAR' && location != 'GVA' && location != 'FRA' && location != 'BOM' && location != 'FCO' && location != 'ACC' && location != 'KIN' && location != 'ABV' && location != 'OSL' && location != 'GRU' && location != 'PEK' && location != 'YVR' && location != 'YYZ' && location != 'GLA' && location != 'BCN' && location != 'DXB' && location != 'CPT' && location != 'TLV' && location != 'CDG' && location != 'HAV' && location != 'LHR' && location != 'DUB' && location != 'SVO' && location != 'ADD' && location != 'IST' && location != 'NRT' && location != 'BRU' && location != 'SCL' && location != 'ATL' && location != 'CAI' && location != 'JNB' && location != 'LOS' && location != 'CPH' && location != 'NBO' && location != 'SOF' && location != 'MEX' && location != 'NAS' && location != 'ATH' && location != 'AMS' && location != 'SJU' && location != 'ZAG' && location != 'ARN' && location != 'LIS' && location != 'EZE' && location != 'ASU' && location != 'ICN' && location != 'AKL' && location != 'MNL' && location != 'HKG' && location != 'SGN' && location != 'CCS' && location != 'DMM' && location != 'DOH' && location != 'DEL') {
 		alert("Inputed Location not Known");
 		document.getElementById('status').style.display = 'none';
 		return false;
@@ -71,7 +69,6 @@ _("#hBtn").addEventListener("click", function () {
 			'AUTHORIZATION': 'Bearer ' + token
 		})
 	}).then(fetchHandler).then(response => {
-		//console.log(response);
 		//clear form
 		document.getElementById('loc').value = '';
 		document.getElementById('checkin').value = '';
@@ -81,7 +78,6 @@ _("#hBtn").addEventListener("click", function () {
 		document.getElementById('adult2').value = '';
 		document.getElementById('inputStar').value = '';
 		document.getElementById('status1').style.display = 'none';
-		//console.log(response);
 		// for loop in response object and push all object into result variable
 		var result = [];
 		var d = [];
@@ -89,7 +85,6 @@ _("#hBtn").addEventListener("click", function () {
 		for (var i in d) {
 			d[i].id = i;
 			result.push(d[i]);
-			// console.log(d[i]);
 		}
 		// store hotel data in local storage
 		localStorage.setItem("hoteldata", JSON.stringify(result));
@@ -97,3 +92,9 @@ _("#hBtn").addEventListener("click", function () {
 		window.location = './hotel.html';
 	});
 });
+// fetch hotel data from localstorage
+var result = JSON.parse(localStorage.getItem("hoteldata"));
+// for loop objects in result variable and inject into html table
+for (i in result) {
+	document.getElementById('hotel').insertAdjacentHTML("beforeend", "<tr><td>" + result[i].offers[0].checkInDate + " </td><td>" + result[i].offers[0].checkOutDate + "</td><td>" + result[i].offers[0].price.total + "</td><td>" + result[i].hotel.name + "</td><td>" + result[i].hotel.address.cityName + "</td>" + "<td>" + result[i].hotel.address.lines[0] + "</td><td>" + result[i].hotel.contact.phone + "</td></tr>");
+}
