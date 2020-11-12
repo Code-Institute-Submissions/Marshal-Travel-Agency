@@ -91,6 +91,8 @@ as if they’re really there. It helps guests ensure they are spending their tim
     - Pingdom was used to run speed tests on each page.
 * [HTML and CSS Beautifier:](http://minifycode.com/html-beautifier/)
     - HTML and CSS was used to format the codes to make it more readable.
+* [JSHint](https://jshint.com/) 
+    - Used to test/validate JavaScript Code.
 * [Google Fonts:](https://fonts.google.com/)
     - Exo and Roboto fonts were imported from google fonts.
 * [Git:](https://git-scm.com/)
@@ -104,6 +106,7 @@ the site uses less bandwith and load faster.
 ![image-compressor](https://seagather.github.io/Marshal-Travel-Agency/assets/images/image-compressor.png)
 
 # Testing
+
 During the development process of this project, I intend to use Rapid API, but because I couldn't secure authentication key from Skyscanner
 I adopted Amadeus self service APIs. It wasn't an easy integration for me, I had to rigorously follow some examples both written and youtube videos
 now and then checking that all the API calls returned responses as expected.
@@ -228,7 +231,8 @@ Cloning Marshal Travel Agency from GitHub:
 
 ## Code
 * The full-width responsive Hero Image Heading Caption code came from [CSS CodeLab](https://www.csscodelab.com/).
-Code was modified to better fit my needs
+Code was modified to better fit my needs.
+* The emailJS code was derived from the emailJS section of the [Code Institute](https://codeinstitute.net/) course.
 
 ## Content
 * The API comes from [Amadeus](https://developers.amadeus.com/)
@@ -241,5 +245,4 @@ Code was modified to better fit my needs
 ## Acknowledgements
 * Special thanks to [Felipe Alarcon](https://github.com/felipe-alarcon), I appreciate more than you' ll ever know
 * Most sincere appreciation to my fellow students and Support team at Code Institute for their immeasurable feedback.
-* I can't thank the Code Institute Slack community enough, yet another institution that never run out of ideas.
 

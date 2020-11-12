@@ -51,7 +51,7 @@ btn.on('click', function(e) {
 });
 });
 
-// getElem   
+/*// getElem   
 function _(x){
 	return document.querySelector(x);
-}
+}*/
