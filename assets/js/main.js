@@ -51,6 +51,11 @@ btn.on('click', function(e) {
 });
 });
 
+// Newsletter feedback  
+function myFunction() {
+		  alert("Thanks for subscribing to our Newsletter");
+		}
+
 /*// getElem   
 function _(x){
 	return document.querySelector(x);

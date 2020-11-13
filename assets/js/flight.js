@@ -48,7 +48,7 @@
  	// get class id for showing loading notification
  	document.getElementById('status').style.display = 'inline';
  	// check if required input is not empty
- 	if (InboundLeg == '' || OutboundLeg == '' || DepartureDate == '' || datereturn == '' || adult == '' || children == '' || infants == '') {
+ 	if (InboundLeg == '' || OutboundLeg == '' || DepartureDate == '' || datereturn == '' || adult == '') {
  		alert("All fields are required");
  		// disable loading
  		document.getElementById('status').style.display = 'none';

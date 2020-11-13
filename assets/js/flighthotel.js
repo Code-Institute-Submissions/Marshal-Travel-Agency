@@ -46,7 +46,7 @@ _("#sBtn").addEventListener("click", function () {
 	// get class id for showing loading notification
 	document.getElementById('status2').style.display = 'inline';
 	// check if required input is not empty
-	if (where == '' || destination == '' || departure == '' || return3 == '' || adults3 == '' || children3 == '' || infants3 == '' || room == '' || inputStar2 == '') {
+	if (where == '' || destination == '' || departure == '' || return3 == '' || adults3 == '' || room == '' || inputStar2 == '') {
 		alert("All fields are required");
 		document.getElementById('status2').style.display = 'none';
 		return false;

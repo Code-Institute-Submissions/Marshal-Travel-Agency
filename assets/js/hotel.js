@@ -45,7 +45,7 @@ _("#hBtn").addEventListener("click", function () {
 	// get class id for showing loading notification
 	document.getElementById('status1').style.display = 'inline';
 	// check if required input is not empty
-	if (location == '' || checkin == '' || checkout == '' || rooms == '' || children2 == '' || adult2 == '' || inputStar == '') {
+	if (location == '' || checkin == '' || checkout == '' || rooms == '' || adult2 == '' || inputStar == '') {
 		alert("All fields are required");
 		document.getElementById('status1').style.display = 'none';
 		return false;

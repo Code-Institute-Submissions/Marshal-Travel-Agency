@@ -108,7 +108,7 @@ the site uses less bandwith and load faster.
 # Testing
 
 During the development process of this project, I intend to use Rapid API, but because I couldn't secure authentication key from Skyscanner
-I adopted Amadeus self service APIs. It wasn't an easy integration for me, I had to rigorously follow some examples both written and youtube videos
+I adopted Amadeus self service APIs. The Amadeus API I used for this site has only return flights. It wasn't an easy integration for me, I had to rigorously follow some examples both written and youtube videos
 now and then checking that all the API calls returned responses as expected.
 The flight and Hotel search is returning live data and responses in real-time with the use of 3-letter IATA Codes for Cities and Airport as inputs.
 This was further simplify by creating a dropdown options with the IATA codes well defined for good user experience.
