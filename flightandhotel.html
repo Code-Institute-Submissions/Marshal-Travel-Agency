@@ -673,11 +673,19 @@
 	<script src="assets/js/hotel.js"></script>
 	<script src="assets/js/car.js"></script>
 	<!--<script src="assets/js/output-page-flight+hotel.js"></script>-->
-	<!--<script src="assets/js/getElem.js"></script>-->
 	<script>
 		$(document).ready(function(){
 		    $('[data-toggle="popover"]').popover();   
 		});
+	</script>
+	<script>
+		// fetch flight and hotel data from localstorage
+		var result = JSON.parse(localStorage.getItem("FandHdata"));
+		for (i in result) {
+			x = result[i];
+			// inject response data into html table
+			document.getElementById('hf').insertAdjacentHTML("beforeend", "<tr><td>" + x.hotel + " </td><td>" + x.address + "</td><td>" + x.phone + "</td><td>" + x.flightnb + "</td><td>" + x.carrier + "</td><td>" + x.terminal + "</td><td>" + x.price + "</td></tr>")
+		}
 	</script>
 </body>
 

@@ -8,7 +8,7 @@
 	<link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
 	<!--<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,700,800" rel="stylesheet">-->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" type="text/css">
-	<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">--->
+	<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">-->
 	<!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">-->
 	<!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />-->
 	<script src="https://kit.fontawesome.com/58e618022f.js" crossorigin="anonymous"></script>
@@ -678,6 +678,16 @@
 		$(document).ready(function(){
 		    $('[data-toggle="popover"]').popover();   
 		});
+	</script>
+	<script>
+		// fetch car data from localstorage
+		var result = JSON.parse(localStorage.getItem("car"));
+		// for loop objects in result variable and inject into html table
+		for (i in result) {
+		    x = result[i];
+		    // inject response data into html table
+		    document.getElementById('ch').insertAdjacentHTML("beforeend", "<tr><td>" + x.pickup + " </td><td>" + x.Location + "</td><td>" + x.car + "</td><td>" + x.type + "</td>" + "<td>" + x.time + "</td><td>" + x.drop + "</td></tr>" );
+		}
 	</script>
 </body>
 
