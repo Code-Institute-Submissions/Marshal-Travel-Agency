@@ -119,6 +119,7 @@ action other than delivering content(static JSON files) to the requesting user.
 
 ## Speed Test
 The Initial speed performance test generated a poor loading analysis which necessitated the use of Tinypng to shrink the image size to 67%.
+I could improve my website speed more if I cache images but due to hosting on github I couldn't use server image caching to improve more.
 The page sizes were reduced and the perfomance score was improved as seen below:
 
 Website was tested on [GTmetrix](https://gtmetrix.com) and [Pingdom](https://tools.pingdom.com) platforms.
@@ -153,6 +154,7 @@ Users:
     - At the middle of the Hero image there is a "Book Now" call to action button that will take users directly to booking section.
     - The Booking section tab was well structured pertaining to each subject matter with relevant forms and button in sync for users quest.
     - When users must have completed the relevant inputs and check buttons for a particular tab, upon clicking search button pops up another page to clearly render feedback information.
+    Each feedback page has a booking section for user accessibility on the spot.
     
 * As a user, I want to get expert advice, plan my trip itineraries, tour packages and suitable cost about my destination.
     - Users can make use of the Contact section which contains contact form with EmailJS Integration for submission.
@@ -179,6 +181,7 @@ Owners:
 
 * As a owner, I want users to get notifications and publications via newsletter when there are new offers.
     - The newsletter subscription option is provided for users at the footer of the website to cascade vital information and promos which will promote the site.
+    - Upon clicking "Subscribe Now" button after submission of email address, user will get a reassuring feedback message.
 
 ## Further Testing
 
@@ -194,6 +197,15 @@ Owners:
 * All Codes were validated through the Markup Validator to erase syntax error.
 
 ## Bugs
+* The fetch data from local storage scripts was merged initially to their respective js files but it was generating the below error on the console: 
+
+## Console error
+![console-error](https://seagather.github.io/Marshal-Travel-Agency/assets/images/console-error.png)
+
+This was rectify by linking the script to the bottom of the body element at each page since I can't have a "for loop" run after redirecting to a new page
+(accessing dom fail because it is redirecting). 
+
+* The "Book Now" button and "Click here for details" link tend to overlap on some mobile devices when held in landscape mode.
 
 # Deployment
 

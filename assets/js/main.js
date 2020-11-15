@@ -20,14 +20,14 @@
 		            localStorage.setItem("token", jsonResponse.access_token);
 		            
 		        }
-		    }
+		    };
 		
 		    // request url
 		    xhr.open("POST", "https://test.api.amadeus.com/v1/security/oauth2/token");
 		    // set request header to form urlencoded
 		    xhr.setRequestHeader("content-type", "application/x-www-form-urlencoded");
 		    // disable request header credentials
-		    xhr.withCredentials = false
+		    xhr.withCredentials = false;
 		    // post request body payload
 		    xhr.send(data);
 		  
@@ -50,6 +50,11 @@ btn.on('click', function(e) {
   $('html, body').animate({scrollTop:0}, '300');
 });
 });
+
+// flight+hotel popover for discount  
+$(document).ready(function(){
+		    $('[data-toggle="popover"]').popover();   
+		});
 
 // Newsletter feedback  
 function myFunction() {
