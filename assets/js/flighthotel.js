@@ -34,19 +34,16 @@ _("#sBtn").addEventListener("click", function () {
 	//  Book flight form inputs
 	var where = _("#where").value;
 	var destination = _("#destination").value;
-    var departure = _("#departure").value;
-    var return3 = _("#return3").value;
-    var adults3 = _("#adults3").value;
-    var children3 = _("#children3").value;
-    var infants3 = _("#infants3").value;
-    var room = _("#room").value;
-    var inputStar2 = _("#inputStar2").value;
-    
+	var departure = _("#departure").value;
+	var returnFlightHotel = _("#returnTicket").value;
+	var adultFlightHotel = _("#adultFlightHotel").value;
+	var roomFlightHotel = _("#roomFlightHotel").value;
+	var inputStarFlightHotel = _("#inputStarFlightHotel").value;
 	var url = 'https://a76dcb3d-31ea-42af-8ff3-5c4a21786b16.mock.pstmn.io/hotelflight';
 	// get class id for showing loading notification
 	document.getElementById('status2').style.display = 'inline';
 	// check if required input is not empty
-	if (where == '' || destination == '' || departure == '' || return3 == '' || adults3 == '' || room == '' || inputStar2 == '') {
+	if (where == '' || destination == '' || departure == '' || returnFlightHotel == '' || adultFlightHotel == '' || roomFlightHotel == '' || inputStarFlightHotel == '') {
 		alert("All fields are required");
 		document.getElementById('status2').style.display = 'none';
 		return false;
@@ -55,22 +52,21 @@ _("#sBtn").addEventListener("click", function () {
 	fetch(url, {
 		method: 'GET',
 		headers: new Headers({
-			'Content-Type': 'application/json',
+			'Content-Type': 'application/json'
 			// 'AUTHORIZATION': 'Bearer '+ token
 		})
 	}).then(fetchHandler).then(response => {
 		//clear form
 		document.getElementById('where').value = '';
 		document.getElementById('destination').value = '';
-        document.getElementById('departure').value = '';
-        document.getElementById('return3').value = '';
-        document.getElementById('adults3').value = '';
-        document.getElementById('children3').value = '';
-        document.getElementById('infants3').value = '';
-        document.getElementById('room').value = '';
-        document.getElementById('inputStar2').value = '';
+		document.getElementById('departure').value = '';
+		document.getElementById('returnFlightHotel').value = '';
+		document.getElementById('adultFlightHotel').value = '';
+		document.getElementById('childrenFlightHotel').value = '';
+		document.getElementById('infantFlightHotel').value = '';
+		document.getElementById('roomFlightHotel').value = '';
+		document.getElementById('inputStarFlightHotel').value = '';
 		document.getElementById('status2').style.display = 'none';
-		
 		// add response to result variable
 		var result = response.json;
 		localStorage.setItem("FandHdata", JSON.stringify(result));

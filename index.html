@@ -6,11 +6,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
-	<!--<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,700,800" rel="stylesheet">-->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" type="text/css">
-	<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">-->
-	<!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">-->
-	<!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />-->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
 	<link rel="stylesheet" href="assets/css/style.css">
 	<script src="https://kit.fontawesome.com/58e618022f.js" crossorigin="anonymous"></script>
 	<title>HOME | Travel Agency</title>
@@ -83,7 +80,7 @@
 					<div class="intro-text">
 						<p class="center-title intro mt-5"><strong>When you can no longer take what you 've been taking....</strong>
 						</p>
-						<h1 class="intro-text-1"><strong>Take Vacation</strong></h1>
+						<h2 class="intro-text-1"><strong>Take Vacation</strong></h2>
 						<p class="intro-text-2 mt-5">“Wether it's a summer vacation with friends, a romantic escape with a loved one, or a family-sized adventure, we have the experience and passion to make it a trip you won't forget. We strain to renew your capacity to wonder, our sweeping comprehensive range is certain to overpower you!”</p>
 					</div>
 				</div>
@@ -241,15 +238,15 @@
 						</select>
 					</div>|
 					<div class="form-check form-check-inline mt-2 df">
-						<input type="checkbox" class="form-check-input" id="flightonly">
-						<label class="form-check-label" for="flightonly">Direct flights only</label>
+						<input type="checkbox" class="form-check-input" id="flightOnly">
+						<label class="form-check-label" for="flightOnly">Direct flights only</label>
 					</div>
 				</div>
 				<div class="form-row">
 					<div class="form-group col-md-3 form-check">
-						<label for="OutboundLeg">From Where<span>*</span>
+						<label for="outBoundLeg">From Where<span>*</span>
 						</label>
-						<select id="OutboundLeg" class="form-control selected-class mb-2 required">
+						<select id="outBoundLeg" class="form-control selected-class mb-2 required">
 							<option value="">Select</option>
 							<option value="ABV">ABV - Nnamdi Azikiwe Int'l Airport Abuja</option>
 							<option value="ACC">ACC - Accra Kotoka Int'l Airport Ghana</option>
@@ -311,9 +308,9 @@
 						</select>
 					</div>
 					<div class="form-group col-md-3 form-check">
-						<label for="InboundLeg">To Where<span>*</span>
+						<label for="inBoundLeg">To Where<span>*</span>
 						</label>
-						<select id="InboundLeg" class="form-control selected-class mb-2 required">
+						<select id="inBoundLeg" class="form-control selected-class mb-2 required">
 							<option value="">Select</option>
 							<option value="ABV">ABV - Nnamdi Azikiwe Int'l Airport Abuja</option>
 							<option value="ACC">ACC - Accra Kotoka Int'l Airport Ghana</option>
@@ -375,14 +372,14 @@
 						</select>
 					</div>
 					<div class="col-md-3">
-						<label for="DepartureDate">Depature<span>*</span>
+						<label for="departureDate">Depature<span>*</span>
 						</label>
-						<input type="date" class="form-control" id="DepartureDate" aria-label="date" required>
+						<input type="date" class="form-control" id="departureDate" aria-label="date" required>
 					</div>
 					<div class="col-md-3">
-						<label for="datereturn">Return<span>*</span>
+						<label for="dateReturn">Return<span>*</span>
 						</label>
-						<input type="date" class="form-control" id="datereturn" aria-label="date" required>
+						<input type="date" class="form-control" id="dateReturn" aria-label="date" required>
 					</div>
 				</div>
 				<div class="form-row mt-3">
@@ -410,8 +407,8 @@
 			</div>
 			<div id="Hotel" class="tabcontent hotel-content">
 				<div class="form-group">
-					<label for="loc"></label>
-					<select class="form-control" id="loc" aria-label="destination" required>
+					<label for="location"></label>
+					<select class="form-control" id="location" aria-label="destination" required>
 						<option value="">Select Destination</option>
 						<option value="ABV">ABV - FCT-Abuja, Nigeria</option>
 						<option value="ACC">ACC - Accra Kotoka, Ghana</option>
@@ -475,33 +472,33 @@
 				<form>
 					<div class="form-row">
 						<div class="col-md-6">
-							<label for="checkin">Check-in<span>*</span>
+							<label for="checkIn">Check-in<span>*</span>
 							</label>
-							<input type="date" class="form-control" id="checkin" aria-label="date" required>
+							<input type="date" class="form-control" id="checkIn" aria-label="date" required>
 						</div>
 						<div class="col-md-6">
-							<label for="checkout">Check-out<span>*</span>
+							<label for="checkOut">Check-out<span>*</span>
 							</label>
-							<input type="date" class="form-control" id="checkout" aria-label="date" required>
+							<input type="date" class="form-control" id="checkOut" aria-label="date" required>
 						</div>
 					</div>
 				</form>
 				<form>
 					<div class="form-row">
 						<div class="col-md-1 mt-3">
-							<label for="rooms">Rooms<span>*</span>
+							<label for="roomHotel">Rooms<span>*</span>
 							</label>
-							<input type="number" class="form-control" id="rooms" placeholder="0" aria-label="rooms" required>
+							<input type="number" class="form-control" id="roomHotel" placeholder="0" aria-label="rooms" required>
 						</div>&nbsp;&nbsp;&nbsp;
 						<div class="col-md-1 mt-3">
-							<label for="adult2">Adults<span>*</span>
+							<label for="adultHotel">Adults<span>*</span>
 							</label>
-							<input type="number" class="form-control" id="adult2" placeholder="0" aria-label="adults" required>
+							<input type="number" class="form-control" id="adultHotel" placeholder="0" aria-label="adults" required>
 						</div>&nbsp;&nbsp;&nbsp;
 						<div class="col-md-1 mt-3">
-							<label for="children2">Children<span>*</span>
+							<label for="childrenHotel">Children<span>*</span>
 							</label>
-							<input type="number" class="form-control" id="children2" placeholder="0" aria-label="children" required>
+							<input type="number" class="form-control" id="childrenHotel" placeholder="0" aria-label="children" required>
 						</div>&nbsp;&nbsp;&nbsp;
 						<div class="form-group form-check form-check-inline mt-5">
 							<label for="inputStar"></label>
@@ -526,12 +523,12 @@
 				<div class="class-options">
 					<p class="discount mt-2">&nbsp;<i class="fas fa-check"></i>&nbsp;Book your Flight + Hotel together and save up to 30%</p>
 					<div class="form-check form-check-inline mt-2">
-						<input class="form-check-input" type="radio" id="return2" value="return" name="flight_preference" aria-label="return" required>
-						<label class="form-check-label" for="return">Return</label>
+						<input class="form-check-input" type="radio" id="returnTicket" value="return" name="flight_preference" aria-label="return" required>
+						<label class="form-check-label" for="returnTicket">Return</label>
 					</div>
 					<div class="form-group col-md-3 form-check form-check-inline">
-						<label for="inputClass"></label>
-						<select id="inputClass2" class="form-control selected-class mb-2">
+						<label for="inputClassFlightHotel"></label>
+						<select id="inputClassFlightHotel" class="form-control selected-class mb-2">
 							<option selected>Economy</option>
 							<option>Premium Economy</option>
 							<option>Business</option>
@@ -539,8 +536,8 @@
 						</select>
 					</div>|
 					<div class="form-check form-check-inline mt-2">
-						<input type="checkbox" class="form-check-input" id="directflight">
-						<label class="form-check-label" for="directflight">Direct flights only</label>
+						<input type="checkbox" class="form-check-input" id="directFlight">
+						<label class="form-check-label" for="directFlight">Direct flights only</label>
 					</div>
 				</div>
 				<form>
@@ -679,35 +676,35 @@
 							<input type="date" class="form-control" id="departure" aria-label="date" required>
 						</div>
 						<div class="col-md-3">
-							<label for="return3">Return<span>*</span>
+							<label for="returnFlightHotel">Return<span>*</span>
 							</label>
-							<input type="date" class="form-control" id="return3" aria-label="date" required>
+							<input type="date" class="form-control" id="returnFlightHotel" aria-label="date" required>
 						</div>
 					</div>
 					<div class="form-row">
 						<div class="col-md-1 mt-3">
-							<label for="adults3">Adults<span>*</span>
+							<label for="adultFlightHotel">Adults<span>*</span>
 							</label>
-							<input type="number" class="form-control" id="adults3" placeholder="0" aria-label="adults" required>
+							<input type="number" class="form-control" id="adultFlightHotel" placeholder="0" aria-label="adults" required>
 						</div>&nbsp;&nbsp;&nbsp;&nbsp;
 						<div class="col-md-1 mt-3">
-							<label for="children3">Children<span>*</span>
+							<label for="childrenFlightHotel">Children<span>*</span>
 							</label>
-							<input type="number" class="form-control" id="children3" placeholder="0" aria-label="children" required>
+							<input type="number" class="form-control" id="childrenFlightHotel" placeholder="0" aria-label="children" required>
 						</div>&nbsp;&nbsp;&nbsp;&nbsp;
 						<div class="col-md-1 mt-3">
-							<label for="infants3">Infants<span>*</span>
+							<label for="infantFlightHotel">Infants<span>*</span>
 							</label>
-							<input type="number" class="form-control" id="infants3" placeholder="0" aria-label="infants" required>
+							<input type="number" class="form-control" id="infantFlightHotel" placeholder="0" aria-label="infants" required>
 						</div>&nbsp;&nbsp;&nbsp;&nbsp;
 						<div class="col-md-1 mt-3">
-							<label for="room">Rooms<span>*</span>
+							<label for="roomFlightHotel">Rooms<span>*</span>
 							</label>
-							<input type="number" class="form-control" id="room" placeholder="0" aria-label="rooms" required>
+							<input type="number" class="form-control" id="roomFlightHotel" placeholder="0" aria-label="rooms" required>
 						</div>&nbsp;&nbsp;&nbsp;&nbsp;
 						<div class="form-group form-check form-check-inline mt-5">
-							<label for="inputStar"></label>
-							<select id="inputStar2" class="form-control selected-class">
+							<label for="inputStarFlightHotel"></label>
+							<select id="inputStarFlightHotel" class="form-control selected-class">
 								<option selected>Hotel Rating</option>
 								<option>Any</option>
 								<option>1 Star</option>
@@ -726,8 +723,8 @@
 			</div>
 			<div id="Car-Rental" class="tabcontent car-content">
 				<div class="form-group">
-					<label for="pickloc"></label>
-					<select class="form-control" id="pickloc" aria-label="destination" required>
+					<label for="pickLocation"></label>
+					<select class="form-control" id="pickLocation" aria-label="destination" required>
 						<option value="">Select Location</option>
 						<option value="ABV">ABV - FCT-Abuja, Nigeria</option>
 						<option value="ACC">ACC - Accra Kotoka, Ghana</option>
@@ -789,29 +786,29 @@
 					</select>
 				</div>
 				<div class="form-check form-check-inline py-2">
-					<input type="checkbox" class="form-check-input" id="differentlocation">
-					<label class="form-check-label" for="differentlocation">Return to a different location</label>
+					<input type="checkbox" class="form-check-input" id="differentLocation">
+					<label class="form-check-label" for="differentLocation">Return to a different location</label>
 				</div>
 				<div class="form-row">
 					<div class="col-md-4">
-						<label for="hiredate">Pick Up Date<span>*</span>
+						<label for="hireDate">Pick Up Date<span>*</span>
 						</label>
-						<input type="date" id="hiredate" class="form-control" aria-label="date" required>
+						<input type="date" id="hireDate" class="form-control" aria-label="date" required>
 					</div>
 					<div class="col-md-2">
-						<label for="picktime">Time:<span>*</span>
+						<label for="pickTime">Time:<span>*</span>
 						</label>
-						<input type="time" id="picktime" name="time" class="form-control" aria-label="from" required>
+						<input type="time" id="pickTime" name="time" class="form-control" aria-label="from" required>
 					</div>
 					<div class="col-md-4">
-						<label for="dropoff">Drop Off Date<span>*</span>
+						<label for="dropOff">Drop Off Date<span>*</span>
 						</label>
-						<input type="date" id="dropoff" class="form-control" aria-label="date" required>
+						<input type="date" id="dropOff" class="form-control" aria-label="date" required>
 					</div>
 					<div class="col-md-2">
-						<label for="droptime">Time:<span>*</span>
+						<label for="dropTime">Time:<span>*</span>
 						</label>
-						<input type="time" id="droptime" name="time" class="form-control" aria-label="from" required>
+						<input type="time" id="dropTime" name="time" class="form-control" aria-label="from" required>
 					</div>
 				</div>
 				<div class="search py-4">
@@ -824,7 +821,7 @@
 	<section id="contact" class="contact-section">
 		<div class="container my-5 p-1 py-4 mx-auto">
 			<h2 class="h1-responsive text-center font-weight-bold my-4">Get In Touch</h2>
-			<form onsubmit="return sendMail(this);" method="POST" action="submit">
+			<form onsubmit="return sendMail(this);" method="POST" action="submit" id="contactForm">
 				<div class="row contact-container mx-auto">
 					<div class="form-group col-md-7 mx-auto">
 						<label for="fname">Full Name<span>*</span>
@@ -848,7 +845,7 @@
 					</div>
 				</div>
 				<div class="form-button contact-container mx-auto px-3 justify-content-center">
-					<button type="submit" data-toggle="modal" data-target="#Submit" class="btn btn-info btn-lg col-md-7 text-uppercase mt-3">Submit</button>
+					<button type="submit" id="subtn" data-toggle="modal" data-target="#Submit" class="btn btn-info btn-lg col-md-7 text-uppercase mt-3" onclick="mySub()">Submit</button>
 				</div>
 				<!-- Modal for feedback message delivery -->
 				<div class="modal fade mx-auto" id="Submit" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="Submit" aria-hidden="true">
@@ -949,13 +946,13 @@
 	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 	<script src="assets/js/tab.js"></script>
-	<script src="assets/js/main.js"></script>
+	<script src="assets/js/scripts.js"></script>
 	<script src="assets/js/flighthotel.js"></script>
 	<script src="assets/js/flight.js"></script>
 	<script src="assets/js/hotel.js"></script>
 	<script src="assets/js/car.js"></script>
 	<script src="assets/js/sendEmail.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js">
+	<script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js">
 	</script>
 	<script>
 		(function(){
@@ -963,11 +960,6 @@
 		      
 		   })();
 	</script>
-	<!--<script>
-		$(document).ready(function(){
-		    $('[data-toggle="popover"]').popover();   
-		});
-	</script>-->
 </body>
 
 </html>

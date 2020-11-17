@@ -100,10 +100,6 @@ as if they’re really there. It helps guests ensure they are spending their tim
 * [GitHub:](https://github.com/)
     - This project has been deployed through and hosted by GitHub.
 
-I used [Tinypng](https://tinypng.com) which utilised smart lossy compression techniques to reduce the file size of PNG and JPG files. This shrunk the image size to 67%.
-the site uses less bandwith and load faster.
-
-![image-compressor](https://seagather.github.io/Marshal-Travel-Agency/assets/images/image-compressor.png)
 
 # Testing
 
@@ -118,13 +114,17 @@ which returns dummy data. It generates data dynamically but the responses are st
 action other than delivering content(static JSON files) to the requesting user.
 
 ## Speed Test
-The Initial speed performance test generated a poor loading analysis which necessitated the use of Tinypng to shrink the image size to 67%.
-I could improve my website speed more if I cache images but due to hosting on github I couldn't use server image caching to improve more.
-The page sizes were reduced and the perfomance score was improved as seen below:
 
 Website was tested on [GTmetrix](https://gtmetrix.com) and [Pingdom](https://tools.pingdom.com) platforms.
 
-![speed-test](https://seagather.github.io/Marshal-Travel-Agency/assets/images/speed-test.png)
+The Initial speed performance test generated a poor loading analysis which necessitated the use of Tinypng to shrink the image size to 67%.
+I could improve my website speed more if I cache images but due to hosting on github I couldn't use server image caching to improve more.
+The JavaScript could also be minify to achieve this.
+
+Tinypng utilises smart lossy compression techniques to reduce the file size of PNG and JPG files. This shrunk the image size to 67%.
+the site uses less bandwith and load faster.
+
+![image-compressor](https://seagather.github.io/Marshal-Travel-Agency/assets/images/image-compressor.png)
 
 ## EmailJS Test
 

@@ -32,12 +32,11 @@ _("#hBtn").addEventListener("click", function () {
 		}
 	}
 	//  Book hotel form inputs
-	var location = _("#loc").value;
-	var checkin = _("#checkin").value;
-	var checkout = _("#checkout").value;
-	var rooms = _("#rooms").value;
-	var children2 = _("#children2").value;
-	var adult2 = _("#adult2").value;
+	var location = _("#location").value;
+	var checkIn = _("#checkIn").value;
+	var checkOut = _("#checkOut").value;
+	var roomHotel = _("#roomHotel").value;
+	var adultHotel = _("#adultHotel").value;
 	var inputStar = _("#inputStar").value;
 	// get API access token from localstorag
 	var token = localStorage.getItem("token");
@@ -45,11 +44,11 @@ _("#hBtn").addEventListener("click", function () {
 	// get class id for showing loading notification
 	document.getElementById('status1').style.display = 'inline';
 	// check if required input is not empty
-	if (location == '' || checkin == '' || checkout == '' || rooms == '' || adult2 == '' || inputStar == '') {
+	if (location == '' || checkIn == '' || checkOut == '' || roomHotel == '' || adultHotel == '' || inputStar == '') {
 		alert("All fields are required");
 		document.getElementById('status1').style.display = 'none';
 		return false;
-	} else if (document.getElementById('loc').value.length > 3 || document.getElementById('loc').value.length < 3) {
+	} else if (document.getElementById('location').value.length > 3 || document.getElementById('location').value.length < 3) {
 		alert("Please Enter IATA 3-letter codes for Cities");
 		// disable loading
 		document.getElementById('status').style.display = 'none';
@@ -70,12 +69,12 @@ _("#hBtn").addEventListener("click", function () {
 		})
 	}).then(fetchHandler).then(response => {
 		//clear form
-		document.getElementById('loc').value = '';
-		document.getElementById('checkin').value = '';
-		document.getElementById('checkout').value = '';
-		document.getElementById('rooms').value = '';
-		document.getElementById('children2').value = '';
-		document.getElementById('adult2').value = '';
+		document.getElementById('location').value = '';
+		document.getElementById('checkIn').value = '';
+		document.getElementById('checkOut').value = '';
+		document.getElementById('roomHotel').value = '';
+		document.getElementById('childrenHotel').value = '';
+		document.getElementById('adultHotel').value = '';
 		document.getElementById('inputStar').value = '';
 		document.getElementById('status1').style.display = 'none';
 		// for loop in response object and push all object into result variable
