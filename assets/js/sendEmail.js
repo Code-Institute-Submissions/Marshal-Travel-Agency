@@ -12,7 +12,7 @@ function sendMail(contactForm) {
 	document.getElementById('contactForm').reset();
 	return false; // To block from loading a new page
 }
-//validation of modal pop-up
+//validation of contact form and modal pop-up
 $(document).on("click", "#submit", function () {
 	var fname = $("#fname").val();
 	var phone = $("#phone").val();

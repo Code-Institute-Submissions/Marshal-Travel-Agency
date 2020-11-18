@@ -197,6 +197,9 @@ Owners:
 * All Codes were validated through the Markup Validator to erase syntax error.
 
 ## Bugs
+
+### Fixed
+
 * The fetch data from local storage scripts was merged initially to their respective js files but it was generating the below error on the console: 
 
 ## Console error
@@ -204,6 +207,8 @@ Owners:
 
 This was rectify by linking the script to the bottom of the body element at each page since I can't have a "for loop" run after redirecting to a new page
 (accessing dom fail because it is redirecting). 
+
+### Known Bugs
 
 * The "Book Now" button and "Click here for details" link tend to overlap on some mobile devices when held in landscape mode.
 
